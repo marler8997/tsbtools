@@ -1,0 +1,186 @@
+Basic Windows Command Line usage
+
+For more detailed description try:
+http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntcmds.mspx
+
+This file describes basic usage of the Windows Command line (the 'cmd' program).
+Topics:
+1. cd command
+2. Auto completion
+3. up and down arrows
+4. Standard in, standard out, standard error.
+5. Pipes and re-direction.
+6. The 'Path'
+7. Batch files
+
+
+In school I started programming in a Linux environment. You cannot avoid the command line
+when using Linux/Unix. In my Junior year in college, I started exploring the Windows command line.
+I found that although the command line interface on windows was not as robust as it is on a Unix
+or Linux platform, it is still quite useful.
+
+I will be describing the Windows command line as it is on Windows XP (most of it applies to Windows 2000 also).
+
+In order to start using the command line, you need to first know how to invoke it.
+The easiest way is to go to the start menu and click on run and type in 'cmd'.
+"Start->Run->cmd"
+
+If you plan on using the command line often you can download a free 'power toy' from Microsoft.
+It's called 'CmdHere', you can find it at: 
+http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx.
+With this power toy you can right click on a folder, and open a command line in that folder (very handy).
+Otherwise you will have to 'cd' to the directory where your stuff is at (which may be a lot of typing).
+
+Commands you should make yourself familiar with:
+
+Command   Unix Equivalent           Purpose
+cd        cd                        change directories  
+copy      cp                        copy files
+del       rm                        delete files
+dir       ls                        list directory contents
+exit      exit                      quit the cmd program
+echo      echo                      Display a message
+findstr   grep                      search for strings in files
+help                                prints out info on many windows command line programs
+move      mv                        rename/move a file
+more      more                      Displays output 1 screen at a time
+mkdir     mkdir                     create a directory
+rmdir     rmdir                     remove a directory
+sort      sort                      sorts lines in a file, prints to standard out
+type      cat                       print the contents of a file to standard out
+start      &                        start a program in a new process
+
+
+Each well-behaved windows command line program can tell you about itself if you type '<program name> /?'.
+Each of the programs listed above has several options to choose from. You may want to spend some time
+studying these programs. If you are new to the Windows command line, the first thing you should do is
+type 'help'. You will get a brief introduction to what's available. Most of the programs that you use
+from the command line are in C:\Windows\System32\, there are other interesting programs in there as well.
+
+Basic Usage:
+1. 'cd' command
+   The first command to master is the 'cd' (change directory) command.
+   The following command will take you to the system32 directory.
+   cmd> cd C:\WINDOWS\system32\
+   The following command will list all the contents of the current directory
+   cmd> dir
+   Move up 1 directory(folder) level
+   cmd> cd ..\
+   1.2 Directory names with spaces.
+   If you want to go to a directory (or reference a file) that has a space in the filename you need to use
+   "quotes" around the directory/filename.
+   cmd> cd "C:\Program Files\TSBm2000"
+   
+2. Using the tab key
+   The tab key is used for auto-completion of file and directory names.
+   cmd> cd C:\Prog<press the tab key here>
+   Will produce the following
+   cmd> cd "C:\Program Files\"
+   If there are multiple file/directory names that begin with what you type, repeating tab key presses will
+   cycle through options
+   cmd> cd C:\WINDOWS\sys<tab key>
+   Will produce
+   cmd> C:\WINDOWS\ststem
+   If we press the tab key again we will get
+   cmd> C:\WINDOWS\ststem32
+   
+   NOTE: On Windows 2000 tab completion is not turned on by default, you must edit a registry entry to get it to 
+   work. (HKEY_CURRENT_USER:Software:Microsoft:CommandProcessor:CompletionChar, set it's DWORD value to '9'. You
+   can use regedit to change it [type 'regedit' at the command line]).
+   
+3. Up and down arrows
+   The up and down arrows will take you to previous commands that you have typed in (very handy).
+   
+4. Standard in, standard out, standard error.
+   When a command line program reads input, it (usually) reads from Standard in, or from a file.
+   Reading from 'Standard in' is basically reading input that a user types in to the command terminal
+   (or input piped in from another program). 
+   A command line program can give feedback to it's user by printing to standard out or to standard error.
+   Typically, only error messages are printed to standard error, and normal output is printed to standard out.
+   By default, both standard error and standard out are printed to the command line terminal.
+   
+5. Pipes and re-direction
+   The pipe '|' and re-direction ('>', '>>') commands are also very useful.
+   The pipe will send the data that a program prints to standard out to another program.
+   'cmd> TSBToolSupreme TSB.nes | findstr QB'
+   The above command will 'give' what TSBToolSupreme prints out to the findstr program, findstr will print out
+   all lines that contain the string 'QB'.
+   The 'more' program works best with pipes (but can also take a file as an argument). Sometimes
+   you will 'cd' to a directory and do a 'dir' only to have a ga-gillion filenames flying past you.
+   The 'more' program will show you the output 1 screen at a time.
+   'cmd> dir | more'
+   To advance 1 screen of info press the space bar, to advance 1 line press enter, to leave the 'more'
+   program hit 'q'.
+   
+   The redirection '>' command will take what a program prints to standard out and put it into a file.
+   'cmd> TSBToolSupreme 1991TSB.nes > TecmoSuperBowl1991.txt'
+   The above command will place everything that TSBToolSupreme prints to standard out into a file called 
+   'TecmoSuperBowl1991.txt'.
+   
+   The other redirection '>>' command will append data to the end of a file.
+   'cmd> TSBToolSupreme 1991TSB.nes > output'
+   Will place the output of 'TSBToolSupreme 1991TSB.nes' into the file 'output'.
+   'cmd> TSBToolSupreme 1992TSB.nes >> output'
+   Will append the output 'TSBToolSupreme 1992TSB.nes' to the file 'output'
+   If you wish to re direct only standard error, you can use '2>'. I don't know if it's possible to pipe
+   standard error to another program, I've never done it (I do know that '2|' does not work).
+   
+6. The 'Path'
+   The Path is a list of directories that your command line program will search looking for programs to execute.
+   When you type in 'regedit' to the command line, the 'cmd' program will search the directories listed
+   in your path until it finds the program. If can't find the program it will print out an error message.
+   To view your 'path' type in the following
+   cmd> echo %PATH%
+   To modify your path do the following
+   Start menu->Control Panel->Performance and Maintenance->System->Advanced->Environment Variables, 
+   Highlight 'PATH', click 'Edit'.
+   To append the directory 'C:\utils' to your path, type a semicolon at the end of the current path, 
+   and then type 'C:\utils' so that it looks something like this:
+   "%SystemRoot%\system32;%SystemRoot%;C:\utils".
+   Now if you put TSBToolSupreme in the directory 'C:\utils' (or in any directory in your path) you can use it from
+   the command line no matter which directory you are in.
+   
+   NOTE: Your path for any current 'cmd' sessions will not see your modified path, but all future 'cmd' 
+   sessions will.
+   
+7. Batch files
+   Batch files are files that store a set of commands in them. They must end with the extension '.bat'.
+   They behave like '.exe' files in that they execute when you double click them (or call them from the 
+   command line). Batch files are just plain text files with a '.bat' extension. You can put any command you
+   use from the command line into a batch file.
+   Example: 
+   (Try using notepad to create the batch file [cmd> notepad jim.bat], paste the following stuff into it
+    and call it from the command line.)
+   
+   :: ====================================
+   :: Jim.bat (this is a comment)
+   :: Update Jim Kelly's name and number in Tecmo Super Bowl
+   @echo off
+   echo TEAM = bills > DataFile.txt
+   echo QB1, Jim Kelly, Face=0x13, #12 >> DataFile.txt
+   TSBToolSupreme TSPRBOWL.nes DataFile.txt -out:TSB_jim.nes
+   :: ====================================
+   
+   Explanation:
+   Stuff following '::' is ignored by the 'cmd' program
+   '@echo off' tells the cmd program to suppress the 'echoing' of the current command.
+   
+7.1 Batch File Arguments
+   You can pass arguments to a batch file.
+   'cmd> stuff.bat myFile.txt'
+   In the line above, the string 'myFile.txt' will be passed as an argument to the batch file 'stuff.bat'.
+   Inside the batch file, you can reference the arguments with '%1%' - '%9%' (Where %1% - %9% are
+   the first through the 9th arguments. You can reference more than 9 arguments, but it's tricky).
+   
+   ::=============================================
+   :: stuff.bat
+   :: Searches the file passed for the string 'QB'.
+   type %1% | findstr QB
+   ::=============================================
+   
+   NOTE: If you call another batch file from your batch file use 'call' i.e.('call stuff.bat'). 
+   Otherwise, execution control will switch from the first batch file to the one that is being called,
+   and once the second batch file finishes, no more of the first batch file gets executed.
+   
+   
+   
