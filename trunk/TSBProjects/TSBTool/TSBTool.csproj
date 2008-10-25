@@ -17,7 +17,7 @@
                 DelaySign = "false"
                 OutputType = "Exe"
                 PreBuildEvent = ""
-                PostBuildEvent = "echo $(SolutionDir)TSBSupreme.config $(TargetDir)&#xd;&#xa;copy $(SolutionDir)TSBToolSupreme.exe.config $(TargetDir)&#xd;&#xa;copy $(SolutionDir)TSBTool_README.txt  $(TargetDir)"
+                PostBuildEvent = "echo $(SolutionDir)TSBSupreme.config $(TargetDir)&#xd;&#xa;::copy $(SolutionDir)TSBToolSupreme.exe.config $(TargetDir)&#xd;&#xa;::copy $(SolutionDir)TSBTool_README.txt  $(TargetDir)"
                 RootNamespace = "TSBTool"
                 RunPostBuildEvent = "OnBuildSuccess"
                 StartupObject = ""
@@ -96,10 +96,6 @@
                 <File
                     RelPath = "49ers.ico"
                     BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "App.ico"
-                    BuildAction = "Content"
                 />
                 <File
                     RelPath = "AssemblyInfo.cs"
