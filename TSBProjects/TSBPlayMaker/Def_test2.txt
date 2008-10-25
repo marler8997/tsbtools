@@ -1,0 +1,3058 @@
+Defense: 00
+
+RE A000: Kickoff; TakeControl; PassRush; // 
+NT A008: F5-Pause(32 64); PassRush // 
+LE A018: PassRush; // 
+ROLB A025: F4-Pause(3C); PassRush // 
+RILB A031: ; PassRush; // 
+LILB A037: F5-Pause(64 FF); F5-Pause(64 FF); PassRush // 
+LOLB A047: ; F5-Pause(64 FF); F5-Pause(64 FF); PassRush // 
+RCB A04D: ; PassRush; // 
+LCB A054: F4-Pause(3C); PassRush // 
+FS A05B: ; ; PassRush; // 
+SS A061: F5-Pause(32 64); PassRush // 
+
+
+Defense: 01
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A35B: 56%  PassRush; // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush; // 
+RCB A068: PassRush; // 
+LCB A075: PassRush; // 
+FS A082: // 
+SS A089: F4-Pause(00); // 
+
+
+Defense: 02
+
+RE A0A5: PassRush; // 
+NT A0AF: PassRush; // 
+LE A0B9: PassRush; // 
+ROLB A0C3: PassRush; // 
+RILB A0CD: PassRush; // 
+LILB A0D7: PassRush; // 
+LOLB A0E1: PassRush; // 
+RCB A0EB: PassRush; // 
+LCB A0F5: PassRush; // 
+FS A0FF: F5-Pause(01 28); PassRush; // 
+SS A109: F4-Pause(00); // 
+
+
+Defense: 03
+
+RE A0A5: PassRush; // 
+NT A0AF: PassRush; // 
+LE A0B9: PassRush; // 
+ROLB A0C3: PassRush; // 
+RILB A0CD: PassRush; // 
+LILB A0D7: PassRush; // 
+LOLB A0E1: PassRush; // 
+RCB A0EB: PassRush; // 
+LCB A0F5: PassRush; // 
+FS A0FF: F5-Pause(01 28); PassRush; // 
+SS A109: F4-Pause(00); // 
+
+
+Defense: 13
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 14
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BB06: 56% 56% 06% m2m-HB; // F4-Pause(1E); m2m-HB; // 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B1D1: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-TE; // ; 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 15
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB B886: 56% 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 12-m2m-FB; ; m2m-FB; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BB06: 56% 56% 06% m2m-HB; // F4-Pause(1E); m2m-HB; // 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B1D1: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-TE; // ; 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BB1C: 56% 56% 06% 11-m2m-HB; ; m2m-HB; // F4-Pause(1E); 11-m2m-HB; ; m2m-HB; // 06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // F4-Pause(14); F5-Pause(0A 78); // 
+SS B8DF: 56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: 16
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B72C: 56% F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 17
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BB34: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 56%  m2m-FB; // m2m-HB; // 
+LCB B57E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44%  m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B72C: 56% F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 18
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB B886: 56% 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 12-m2m-FB; ; m2m-FB; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BB34: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 56%  m2m-FB; // m2m-HB; // 
+LCB B57E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44%  m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B30F: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 11-m2m-HB; ; m2m-HB; // 
+SS B8DF: 56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: 19
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 1A
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B930: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB BB4A: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-HB; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 1B
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BAE5: 56% 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 11-m2m-HB; ; m2m-HB; // 
+RCB B930: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB BB4A: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-HB; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS BA59: 56% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B8DF: 56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: 1C
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BB5D: 63%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(00); // 
+LILB A4BE: F3-Pause(0A); F4-Pause(14); F4-Pause(28); PassRush; // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB BC9E: F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB BCA5: 81%CPUTeamJumpsTo:44% F4-Pause(14); 31% 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(64 C8); PassRush // m2m-WR2; // F4-Pause(14); 31% 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(64 C8); PassRush // 
+FS BCB6: 75%CPUTeamJumpsTo:38% F4-Pause(14); F5-Pause(64 96); PassRush // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS BCC7: 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: 1D
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BB5D: 63%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(00); // 
+LILB A4BE: F3-Pause(0A); F4-Pause(14); F4-Pause(28); PassRush; // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB BC9E: F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B7B7: 63% m2m-WR2; // F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS BB6B: 63% 75%CPUTeamJumpsTo:38% F4-Pause(14); F5-Pause(64 96); PassRush // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // F4-Pause(C8); m2m-HB; // 
+SS BCC7: 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: 1E
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BB5D: 63%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(00); // 
+LILB A4BE: F3-Pause(0A); F4-Pause(14); F4-Pause(28); PassRush; // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB BC9E: F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B7B7: 63% m2m-WR2; // F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS BB6B: 63% 75%CPUTeamJumpsTo:38% F4-Pause(14); F5-Pause(64 96); PassRush // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // F4-Pause(C8); m2m-HB; // 
+SS BB7D: 44% 14-m2m-WR2; ; m2m-WR2; // 56% 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(64 96); PassRush // 11-m2m-HB; ; m2m-HB; // 
+
+
+Defense: 1F
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BCEF: 56%CPUTeamJumpsTo:56% 11-m2m-HB; ; m2m-HB; // m2m-WR2; // F5-Pause(5A C8); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB BCCE: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BCD9: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F5-Pause(5A C8); PassRush // 
+FS BCE4: 75%CPUTeamJumpsTo:31% m2m-HB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(C8); F4-Pause(64); // 
+SS B18E: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(78); PassRush // F4-Pause(14); F5-Pause(5A B4); // 
+
+
+Defense: 20
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BCEF: 56%CPUTeamJumpsTo:56% 11-m2m-HB; ; m2m-HB; // m2m-WR2; // F5-Pause(5A C8); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB BB90: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% 38% m2m-WR2; // F4-Pause(14); m2m-WR2; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BBB1: 44% m2m-HB; // 56% m2m-TE; // m2m-FB; // 
+FS BCE4: 75%CPUTeamJumpsTo:31% m2m-HB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(C8); F4-Pause(64); // 
+SS B18E: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(78); PassRush // F4-Pause(14); F5-Pause(5A B4); // 
+
+
+Defense: 21
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BCEF: 56%CPUTeamJumpsTo:56% 11-m2m-HB; ; m2m-HB; // m2m-WR2; // F5-Pause(5A C8); PassRush // 
+LOLB BBBE: 56% 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 12-m2m-FB; ; m2m-FB; // 
+RCB BB90: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% 38% m2m-WR2; // F4-Pause(14); m2m-WR2; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BBB1: 44% m2m-HB; // 56% m2m-TE; // m2m-FB; // 
+FS BBC8: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 14-m2m-WR2; ; m2m-WR2; // 
+SS BBD5: 56% 15-m2m-TE; ; m2m-TE; // 11-m2m-HB; ; m2m-HB; // 
+
+
+Defense: 22
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT A714: Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB BBE2: Boost-RP(16); Boost-MS(16); m2m-WR2; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A763: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RCB B5AB: // 
+LCB B5B2: // 
+FS B5B9: // 
+SS B5C0: // 
+
+
+Defense: 23
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 24
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB BBF0: 56%  56% m2m-WR1; // m2m-HB; // Motion(82); MotionTo-FB; m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 25
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB B6AD: 56% 11-m2m-HB; ; m2m-HB; // 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB A4D7: F4-Pause(8C); PassRush; // 
+RCB BBF0: 56%  56% m2m-WR1; // m2m-HB; // Motion(82); MotionTo-FB; m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2AF: 44% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B48F: 56% 56% F4-Pause(46); F4-Pause(3C); 56% F5-Pause(01 1E); // PassRush // F5-Pause(0A 1E); F4-Pause(14); F5-Pause(01 64); // 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 
+
+
+Defense: 26
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BD0E: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB B5C7: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 27
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BD0E: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB B504: 44% m2m-WR1; // 56% m2m-FB; // m2m-HB; // 
+LCB B876: 44% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR2; // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: 28
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB B521: 56% 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 11-m2m-HB; ; m2m-HB; // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB B504: 44% m2m-WR1; // 56% m2m-FB; // m2m-HB; // 
+LCB B876: 44% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR2; // 
+FS BA0D: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B8A2: 56% 06% 15-m2m-TE; ; m2m-TE; // 15-m2m-TE; ; m2m-TE; // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: 29
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEF9: 25%CPUTeamJumpsTo: 56% m2m-HB; // m2m-TE; // ; PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: 2A
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEF9: 25%CPUTeamJumpsTo: 56% m2m-HB; // m2m-TE; // ; PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB BC06: 38% Motion(64); MotionTo-WR1; m2m-WR1; // 56% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 56%  m2m-HB; // m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: 2B
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEF9: 25%CPUTeamJumpsTo: 56% m2m-HB; // m2m-TE; // ; PassRush; // 
+RILB B521: 56% 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 11-m2m-HB; ; m2m-HB; // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BD03: 25%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(8C); PassRush; // 
+RCB BC06: 38% Motion(64); MotionTo-WR1; m2m-WR1; // 56% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 56%  m2m-HB; // m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS BC29: 44% 12-m2m-FB; ; m2m-FB; // 15-m2m-TE; ; m2m-TE; // 
+SS BC33: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 13-m2m-WR1; ; m2m-WR1; // 
+
+
+Defense: 50
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB A1BD: F4-Pause(19); PassRush // 
+RILB A83C: 69%  PassRush // PassRush // 
+LILB A1D8: F4-Pause(0A); PassRush // 
+LOLB A1ED: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A7DE: 38%  F4-Pause(00); // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 51
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A7CE: PassRush // 
+LILB A7B3: F4-Pause(28); Mirror Ball Carrier; // 
+LOLB A1ED: PassRush; // 
+RCB A846: 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 52
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A830: 63%  PassRush; // Boost-HP(20); PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A85D: 38%  PassRush // PassRush // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A1ED: PassRush; // 
+RCB A826: 24%  PassRush // Boost-MS(04); PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 53
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT A714: Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A763: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 54
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A8AA: 56%  PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB A264: PassRush // 
+LCB A271: PassRush // 
+FS A8B4: 81%  PassRush // F5-Pause(01 14); PassRush // 
+SS A291: 24%  F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 55
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB A8BE: F3-Pause(1E); Mirror Ball Carrier; // 
+LCB A8FE: 56% Mirror Ball Carrier; // ; F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // 
+FS A284: F5-Pause(01 14); PassRush // 
+SS A89C: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 56
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A8E8: Mirror Ball Carrier; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB A8BE: F3-Pause(1E); Mirror Ball Carrier; // 
+LCB A8EF: F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // 
+FS A284: F5-Pause(01 14); PassRush // 
+SS ADD4: F4-Pause(00); // 
+
+
+Defense: 57
+
+RE A110: PassRush; // 
+NT A907: 25%  PassRush; // Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A226: PassRush; // 
+ROLB A8E8: Mirror Ball Carrier; // 
+RILB A911: 25%  PassRush; // Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A91B: 25%  PassRush; // F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A927: 25%  PassRush; // F3-Pause(28); Boost-HP(30); Boost-RP(08); Boost-MS(08); ; PassRush // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 58
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A15B: F4-Pause(14); F4-Pause(00); // 
+RCB A167: F3-Pause(0A); PassRush // 
+LCB A176: F3-Pause(0A); F3-Pause(00); // 
+FS A95F: 69%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 24% F3-Pause(64); PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 31%  PassRush // PassRush // 
+SS A96D: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 24% F4-Pause(1E); F3-Pause(00); // F5-Pause(32 5A); F4-Pause(14); PassRush; // 
+
+
+Defense: 59
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A8CA: 56%  PassRush; // Mirror Ball Carrier; // 
+LILB A14B: PassRush; // 
+LOLB A98B: 56% F4-Pause(00); // F4-Pause(14); F4-Pause(00); // 
+RCB A97B: 56%  PassRush // PassRush // 
+LCB A176: F3-Pause(0A); F3-Pause(00); // 
+FS A95F: 69%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 24% F3-Pause(64); PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 31%  PassRush // PassRush // 
+SS A96D: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 24% F4-Pause(1E); F3-Pause(00); // F5-Pause(32 5A); F4-Pause(14); PassRush; // 
+
+
+Defense: 5A
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A9D1: 44% 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // F4-Pause(00); // 
+RILB A141: PassRush; // 
+LILB A99A: F3-Pause(14); 69%  PassRush; // Mirror Ball Carrier; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB A97B: 56%  PassRush // PassRush // 
+LCB A9B3: 38% F3-Pause(0A); F3-Pause(00); // F5-Pause(14 64); PassRush; // 
+FS A933: 50%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 31%  PassRush // PassRush // 
+SS A9C0: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  F5-Pause(32 5A); F4-Pause(14); PassRush; // F5-Pause(14 82); PassRush // 
+
+
+Defense: 5B
+
+RE AA11: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT AA1A: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE AA23: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB AA2C: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB AA35: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB AA3E: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 5C
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A2CC: 56%  F4-Pause(00); // F3-Pause(3C); F4-Pause(00); // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB A2F7: F4-Pause(14); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS A30A: 56% F4-Pause(0A); F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(0A); F4-Pause(00); // 
+SS A31D: 56% F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: 5D
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A9DE: 31% F3-Pause(3C); F4-Pause(00); // F3-Pause(14); 56%  PassRush // F4-Pause(00); // 
+LOLB A9F0: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RCB A2F7: F4-Pause(14); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 5E
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB AA50: Mirror Ball Carrier; // 
+LOLB AA7C: PassRush // 
+RCB AA57: PassRush; // 
+LCB AA61: 56%  PassRush // PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AA04: PassRush // 
+
+
+Defense: 5F
+
+RE AA11: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT AA1A: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE AA23: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB AA2C: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB AA35: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB AA3E: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 60
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A334: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A341: 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // 
+LOLB A35B: 56%  PassRush; // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush; // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 61
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A334: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A37B: 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 62
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A334: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 63
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT AA1A: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE AA23: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB AA3E: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 64
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB A1BD: F4-Pause(19); PassRush // 
+RILB A50B: F4-Pause(28); PassRush; // 
+LILB A3C0: PassRush; // 
+LOLB A51A: PassRush; // 
+RCB A264: PassRush // 
+LCB A271: PassRush // 
+FS A8B4: 81%  PassRush // F5-Pause(01 14); PassRush // 
+SS A291: 24%  F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 65
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB AB32: 56%  F4-Pause(19); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+RILB AAF4: 31%  F4-Pause(28); PassRush; // F4-Pause(00); // 
+LILB AB4F: 56%  PassRush; // 56%  F4-Pause(00); // F4-Pause(32); PassRush // 
+LOLB A51A: PassRush; // 
+RCB AB01: 31%  PassRush // F4-Pause(00); // 
+LCB AB11: 56% F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // F4-Pause(00); // 
+FS AB48: Mirror Ball Carrier; // 
+SS AB21: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: 66
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB AB6A: 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+RILB AB71: Mirror Ball Carrier; // 
+LILB AB7B: F4-Pause(32); PassRush // 
+LOLB A51A: PassRush; // 
+RCB AB82: PassRush // 
+LCB AB11: 56% F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // F4-Pause(00); // 
+FS AB48: Mirror Ball Carrier; // 
+SS AB21: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: 67
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT AA1A: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB AB8C: Boost-HP(30); Boost-RP(08); Boost-MS(08); ; PassRush // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 68
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB A3E1: F3-Pause(14); F3-Pause(5A); PassRush // 
+LILB A3EF: F4-Pause(3C); PassRush; // 
+LOLB BF03: PassRush; // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 69
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB A3E1: F3-Pause(14); F3-Pause(5A); PassRush // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB A9F0: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 6A
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB ABB3: 25% F3-Pause(14); F3-Pause(5A); PassRush // F5-Pause(0A 32); PassRush // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA8D: 56%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 31%  F4-Pause(00); // F3-Pause(50); PassRush // 
+SS AAA6: Mirror Ball Carrier; // 
+
+
+Defense: 6B
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A1BD: F4-Pause(19); PassRush // 
+RILB A3B4: F3-Pause(3C); PassRush; // 
+LILB A3C0: PassRush; // 
+LOLB A3CA: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A7DE: 38%  F4-Pause(00); // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 6C
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A7CE: PassRush // 
+LILB A7B3: F4-Pause(28); Mirror Ball Carrier; // 
+LOLB A3CA: PassRush; // 
+RCB A846: 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 6D
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A85D: 38%  PassRush // PassRush // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A3CA: PassRush; // 
+RCB A826: 24%  PassRush // Boost-MS(04); PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A209: PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 6E
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS ADCD: F4-Pause(00); // 
+SS ADD4: F4-Pause(00); // 
+
+
+Defense: 6F
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ABC0: 56% F4-Pause(00); // PassRush // 
+RCB ABCD: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+LCB ABE3: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+FS ABF9: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+SS AC16: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: 70
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A15B: F4-Pause(14); F4-Pause(00); // 
+RCB AC33: 31% 56%  PassRush // PassRush // PassRush // 
+LCB A176: F3-Pause(0A); F3-Pause(00); // 
+FS AC3D: 31% 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 
+SS AC47: 31% 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 
+
+
+Defense: 71
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB A2F7: F4-Pause(14); F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AD62: F4-Pause(00); // 
+
+
+Defense: 72
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A9DE: 31% F3-Pause(3C); F4-Pause(00); // F3-Pause(14); 56%  PassRush // F4-Pause(00); // 
+LOLB A9F0: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RCB A2F7: F4-Pause(14); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 73
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB AA7C: PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 74
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE A408: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A418: 31% F3-Pause(0A); F4-Pause(5A); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(0A); F4-Pause(5A); PassRush; // 
+LILB A42D: F3-Pause(12); F4-Pause(64); PassRush; // 
+LOLB A43B: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 75
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE A408: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A418: 31% F3-Pause(0A); F4-Pause(5A); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(0A); F4-Pause(5A); PassRush; // 
+LILB A42D: F3-Pause(12); F4-Pause(64); PassRush; // 
+LOLB A43B: PassRush; // 
+RCB AC9C: 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+LCB ACB0: 44% 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 76
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE A408: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AC51: F4-Pause(3C); PassRush // 
+LILB A42D: F3-Pause(12); F4-Pause(64); PassRush; // 
+LOLB AC5A: F5-Pause(82 AA); PassRush // 
+RCB AC67: F3-Pause(1E); F4-Pause(28); PassRush // 
+LCB AC75: 63%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F3-Pause(14); F4-Pause(28); PassRush // 
+FS AC87: F4-Pause(32); PassRush // 
+SS AC90: F4-Pause(3C); PassRush // 
+
+
+Defense: 77
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A44B: F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // 
+LILB A462: PassRush; // 
+LOLB A46F: F3-Pause(1E); PassRush; // 
+RCB BD3E: 63% CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 78
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A44B: F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB BD3E: 63% CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+LCB A300: PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AA04: PassRush // 
+
+
+Defense: 79
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A44B: F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB A300: PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 7A
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A1BD: F4-Pause(19); PassRush // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A3CA: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A7DE: 38%  F4-Pause(00); // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 7B
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A7CE: PassRush // 
+LILB AB4F: 56%  PassRush; // 56%  F4-Pause(00); // F4-Pause(32); PassRush // 
+LOLB A3CA: PassRush; // 
+RCB A846: 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 7C
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A85D: 38%  PassRush // PassRush // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A3CA: PassRush; // 
+RCB ACEB: F4-Pause(32); PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 7D
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A50B: F4-Pause(28); PassRush; // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB BD69: 75%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // 25% F4-Pause(00); // 69% 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // PassRush // 
+LCB BD56: 31%  F4-Pause(50); PassRush // 63%CPUTeamJumpsTo:F4-Pause(28); Boost-HP(30); ; PassRush // F4-Pause(50); PassRush // 
+FS A7DE: 38%  F4-Pause(00); // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 7E
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A7CE: PassRush // 
+LILB AB4F: 56%  PassRush; // 56%  F4-Pause(00); // F4-Pause(32); PassRush // 
+LOLB A1ED: PassRush; // 
+RCB BD69: 75%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // 25% F4-Pause(00); // 69% 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // PassRush // 
+LCB BD56: 31%  F4-Pause(50); PassRush // 63%CPUTeamJumpsTo:F4-Pause(28); Boost-HP(30); ; PassRush // F4-Pause(50); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 7F
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A85D: 38%  PassRush // PassRush // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A1ED: PassRush; // 
+RCB BD69: 75%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // 25% F4-Pause(00); // 69% 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 80
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A527: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A537: F4-Pause(50); PassRush; // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 81
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A8CA: 56%  PassRush; // Mirror Ball Carrier; // 
+LILB A24A: PassRush; // 
+LOLB A527: PassRush; // 
+RCB A8BE: F3-Pause(1E); Mirror Ball Carrier; // 
+LCB ACF7: 56%  F4-Pause(50); PassRush; // 63%  PassRush // 56% Mirror Ball Carrier; // ; F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // 
+FS A284: F5-Pause(01 14); PassRush // 
+SS A89C: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 82
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A888: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A8CA: 56%  PassRush; // Mirror Ball Carrier; // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A527: PassRush; // 
+RCB ACEB: F4-Pause(32); PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A284: F5-Pause(01 14); PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 83
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A55F: PassRush; // 
+LILB A56C: PassRush; // 
+LOLB A579: 69%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(5A); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: 84
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB AD04: 44%  F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RILB A55F: PassRush; // 
+LILB A56C: PassRush; // 
+LOLB AD19: 44% 69%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RCB AC9C: 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+LCB ACB0: 44% 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+FS AB48: Mirror Ball Carrier; // 
+SS AC90: F4-Pause(3C); PassRush // 
+
+
+Defense: 85
+
+RE A546: PassRush; // 
+NT AD2E: F4-Pause(14); Mirror Ball Carrier; // 
+LE BED2: PassRush; // 
+ROLB AD04: 44%  F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RILB A55F: PassRush; // 
+LILB A56C: PassRush; // 
+LOLB AD19: 44% 69%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RCB AC67: F3-Pause(1E); F4-Pause(28); PassRush // 
+LCB AC75: 63%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F3-Pause(14); F4-Pause(28); PassRush // 
+FS AB48: Mirror Ball Carrier; // 
+SS AC90: F4-Pause(3C); PassRush // 
+
+
+Defense: 86
+
+RE A546: PassRush; // 
+NT A60A: PassRush; // 
+LE A617: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A621: F3-Pause(3C); F4-Pause(14); PassRush; // 
+LILB A3C0: PassRush; // 
+LOLB A62F: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A7DE: 38%  F4-Pause(00); // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 87
+
+RE A546: PassRush; // 
+NT A60A: PassRush; // 
+LE A617: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A7CE: PassRush // 
+LILB AB4F: 56%  PassRush; // 56%  F4-Pause(00); // F4-Pause(32); PassRush // 
+LOLB A62F: PassRush; // 
+RCB BD69: 75%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // 25% F4-Pause(00); // 69% 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // PassRush // 
+LCB A1FD: F4-Pause(50); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A216: 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // 
+
+
+Defense: 88
+
+RE A546: PassRush; // 
+NT A60A: PassRush; // 
+LE A617: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB A85D: 38%  PassRush // PassRush // 
+LILB A867: 38%  F4-Pause(28); Mirror Ball Carrier; // Mirror Ball Carrier; // 
+LOLB A62F: PassRush; // 
+RCB BD69: 75%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // 25% F4-Pause(00); // 69% 44% F4-Pause(00); // 56%  PassRush // Boost-MS(04); PassRush // PassRush // 
+LCB A871: 56%  F5-Pause(01 28); PassRush // F5-Pause(50 78); PassRush // 
+FS A853: 24%  PassRush // PassRush // 
+SS A87E: 25% 88%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(78); PassRush // F3-Pause(01); FaceDirection(00); F5-Pause(01 28); PassRush // 
+
+
+Defense: 89
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A44B: F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // 
+LILB A5B9: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 8A
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A44B: F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 8B
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB AD44: 31%  F4-Pause(3C); PassRush; // F4-Pause(46); PassRush // 
+LILB AD53: 63% 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 8C
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB BD9C: 31% F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AD62: F4-Pause(00); // 
+
+
+Defense: 8D
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB BD9C: 31% F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 8E
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB AA7C: PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB AA61: 56%  PassRush // PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 8F
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT A714: Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB AB8C: Boost-HP(30); Boost-RP(08); Boost-MS(08); ; PassRush // 
+RCB A773: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS A793: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 90
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB AD7C: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 31% F4-Pause(00); // F4-Pause(3C); PassRush // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AD62: F4-Pause(00); // 
+
+
+Defense: 91
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB AD7C: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 31% F4-Pause(00); // F4-Pause(3C); PassRush // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 92
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB BDAA: 31%  PassRush; // 69%CPUTeamJumpsTo: Boost-HP(30); ; PassRush // PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AA83: 44% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // Mirror Ball Carrier; // 
+SS AA04: PassRush // 
+
+
+Defense: 93
+
+RE A110: PassRush; // 
+NT A63C: F4-Pause(3C); PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A648: PassRush; // 
+LILB A5B9: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS A39B: F4-Pause(14); F4-Pause(00); // 
+
+
+Defense: 94
+
+RE A110: PassRush; // 
+NT A63C: F4-Pause(3C); PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A648: PassRush; // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 95
+
+RE A110: PassRush; // 
+NT A63C: F4-Pause(3C); PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB AD44: 31%  F4-Pause(3C); PassRush; // F4-Pause(46); PassRush // 
+LILB AD53: 63% 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB BDBE: 31%  PassRush // 50%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 96
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A481: F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB A492: F3-Pause(3C); F4-Pause(3C); PassRush; // 
+LOLB A4A3: CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB AD8F: F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AA04: PassRush // 
+
+
+Defense: 97
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB ADDB: 56% F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB A492: F3-Pause(3C); F4-Pause(3C); PassRush; // 
+LOLB ADE5: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // F4-Pause(3C); F4-Pause(1E); PassRush // 
+RCB ADF9: 56% 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+LCB AD8F: F4-Pause(00); // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 98
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB ADDB: 56% F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB ADE5: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // F4-Pause(3C); F4-Pause(1E); PassRush // 
+RCB AE0F: F4-Pause(3C); PassRush // 
+LCB AE03: F4-Pause(64); PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AAA6: Mirror Ball Carrier; // 
+
+
+Defense: 99
+
+RE AA11: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT AA1A: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE AA23: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB AE1B: F4-Pause(8C); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB AA35: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB AA3E: F3-Pause(1E); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A9A9: F5-Pause(14 5A); PassRush; // 
+RCB AE24: F4-Pause(96); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+LCB A783: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+FS AE2D: F4-Pause(A0); Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+SS A7A3: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+
+
+Defense: 9A
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A4EC: CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(0A); F4-Pause(3C); PassRush; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A3CA: PassRush; // 
+RCB AE36: 25% F4-Pause(3C); F4-Pause(00); // 63%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(3C); F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS AE4C: F4-Pause(50); F4-Pause(00); // 
+SS AE58: F4-Pause(3C); F4-Pause(00); // 
+
+
+Defense: 9B
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB AE64: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(0A); F4-Pause(3C); PassRush; // F4-Pause(0A); F4-Pause(3C); Mirror Ball Carrier; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A3CA: PassRush; // 
+RCB AE36: 25% F4-Pause(3C); F4-Pause(00); // 63%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(3C); F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS AE78: 56% F4-Pause(50); F4-Pause(00); // 56%  F4-Pause(00); // F4-Pause(00); // 
+SS AE58: F4-Pause(3C); F4-Pause(00); // 
+
+
+Defense: 9C
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB AE64: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(0A); F4-Pause(3C); PassRush; // F4-Pause(0A); F4-Pause(3C); Mirror Ball Carrier; // 
+RILB ADDB: 56% F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB A3CA: PassRush; // 
+RCB A36F: F4-Pause(0A); F4-Pause(00); // 
+LCB AEA1: F4-Pause(50); PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS BD8E: 44%  F4-Pause(3C); PassRush // 31%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(3C); PassRush // 
+
+
+Defense: 9D
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A141: PassRush; // 
+LILB A5B9: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AE58: F4-Pause(3C); F4-Pause(00); // 
+
+
+Defense: 9E
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A141: PassRush; // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: 9F
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A58C: F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB AD44: 31%  F4-Pause(3C); PassRush; // F4-Pause(46); PassRush // 
+LILB AD53: 63% 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+LOLB ACE4: 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: A0
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6CD: PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A6DA: F4-Pause(32); PassRush; // 
+LILB A6E3: PassRush; // 
+LOLB A579: 69%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(5A); PassRush; // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS A38A: 24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AE58: F4-Pause(3C); F4-Pause(00); // 
+
+
+Defense: A1
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6CD: PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A6DA: F4-Pause(32); PassRush; // 
+LILB ABA4: 31% F4-Pause(3C); PassRush; // F4-Pause(3C); PassRush // 
+LOLB ACCB: 44% F3-Pause(1E); PassRush; // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(1E); PassRush // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB AE8E: 56%  PassRush // PassRush // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AEAA: 24% F4-Pause(3C); F4-Pause(00); // Mirror Ball Carrier; // 
+
+
+Defense: A2
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6CD: PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB AD44: 31%  F4-Pause(3C); PassRush; // F4-Pause(46); PassRush // 
+LILB AD53: 63% 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // F4-Pause(3C); PassRush // 
+LOLB AEB4: Mirror Ball Carrier; // 
+RCB AB93: 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB A8EF: F4-Pause(14); CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(14); PassRush; // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AAA6: Mirror Ball Carrier; // 
+
+
+Defense: A3
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB BD48: 31%  F4-Pause(19); PassRush // 44%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(19); PassRush // 
+RILB ADA6: F4-Pause(00); // 
+LILB A14B: PassRush; // 
+LOLB A2E1: 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: A4
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A695: 44%  F4-Pause(19); PassRush // F4-Pause(1E); PassRush; // 
+RILB ADA6: F4-Pause(00); // 
+LILB A14B: PassRush; // 
+LOLB A6A4: 44% 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // F4-Pause(1E); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS A6B3: 44% F4-Pause(00); // F4-Pause(00); // 
+SS A6C0: 44% F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: A5
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A32A: PassRush; // 
+ROLB A695: 44%  F4-Pause(19); PassRush // F4-Pause(1E); PassRush; // 
+RILB ADA6: F4-Pause(00); // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB A6A4: 44% 31%  F4-Pause(14); PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(14); PassRush // F4-Pause(1E); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS A6B3: 44% F4-Pause(00); // F4-Pause(00); // 
+SS A6C0: 44% F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: A6
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BDCC: 44%  PassRush; // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: A7
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BDCC: 44%  PassRush; // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush; // 
+RCB ABCD: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+LCB ABE3: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+FS ABF9: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+SS AC16: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: A8
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A15B: F4-Pause(14); F4-Pause(00); // 
+RCB AC33: 31% 56%  PassRush // PassRush // PassRush // 
+LCB A176: F3-Pause(0A); F3-Pause(00); // 
+FS AC3D: 31% 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 
+SS AC47: 31% 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 
+
+
+Defense: A9
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AB21: CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56% 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+
+
+Defense: AA
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A137: PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB ABCD: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+LCB ABE3: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AC16: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: AB
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BD19: 44%  PassRush // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB AEBE: 44% F4-Pause(14); F4-Pause(00); // F4-Pause(00); // 
+RCB AEC8: 44% 31% 56%  PassRush // PassRush // PassRush // F4-Pause(00); // 
+LCB AED2: 44% F3-Pause(0A); F3-Pause(00); // F4-Pause(00); // 
+FS AEDC: 50% 31% 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+SS AEE6: 50% 31% 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: AC
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BDCC: 44%  PassRush; // 63%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // PassRush; // 
+RCB BD9C: 31% F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: AD
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BDDA: 44% 56% F4-Pause(00); // PassRush // 38%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // 56% F4-Pause(00); // PassRush // 
+RCB ABCD: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+LCB ABE3: F5-Pause(0A 5A); 56%  PassRush // PassRush // 
+FS ABF9: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+SS AC16: F5-Pause(0A 5A); 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: AE
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A15B: F4-Pause(14); F4-Pause(00); // 
+RCB AEC8: 44% 31% 56%  PassRush // PassRush // PassRush // F4-Pause(00); // 
+LCB AED2: 44% F3-Pause(0A); F3-Pause(00); // F4-Pause(00); // 
+FS AEDC: 50% 31% 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 56% 56%  PassRush // PassRush // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+SS AEE6: 50% 31% 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // PassRush // 56% 56%  PassRush // PassRush // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // 56%  PassRush // PassRush // 
+
+
+Defense: AF
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A65F: 24%  F4-Pause(08); F4-Pause(50); PassRush; // 63%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(08); F4-Pause(50); PassRush; // 
+LILB A67A: 24%  F4-Pause(0A); F4-Pause(3C); PassRush; // 38%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(0A); F4-Pause(3C); PassRush; // 
+LOLB BF03: PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS BD27: 44% F4-Pause(00); // 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+
+
+Defense: B0
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB A65F: 24%  F4-Pause(08); F4-Pause(50); PassRush; // 63%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(08); F4-Pause(50); PassRush; // 
+LILB A67A: 24%  F4-Pause(0A); F4-Pause(3C); PassRush; // 38%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(0A); F4-Pause(3C); PassRush; // 
+LOLB BF03: PassRush; // 
+RCB AC9C: 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+LCB ACB0: 44% 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+FS BD80: 44% Mirror Ball Carrier; // 44%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // Mirror Ball Carrier; // 
+SS BD8E: 44%  F4-Pause(3C); PassRush // 31%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(3C); PassRush // 
+
+
+Defense: B1
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB AD04: 44%  F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RILB A65F: 24%  F4-Pause(08); F4-Pause(50); PassRush; // 63%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(08); F4-Pause(50); PassRush; // 
+LILB A67A: 24%  F4-Pause(0A); F4-Pause(3C); PassRush; // 38%CPUTeamJumpsTo:F4-Pause(46); Boost-HP(30); ; PassRush // F4-Pause(0A); F4-Pause(3C); PassRush; // 
+LOLB AD19: 44% 69%CPUTeamJumpsTo:Boost-HP(30); ; Mirror Ball Carrier; // F4-Pause(5A); PassRush; // F4-Pause(0A); F5-Pause(0A 2D); PassRush // 
+RCB AC9C: 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+LCB ACB0: 44% 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // 44% F4-Pause(5A); 56%  PassRush // PassRush // F4-Pause(28); F4-Pause(00); // 
+FS BD80: 44% Mirror Ball Carrier; // 44%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // Mirror Ball Carrier; // 
+SS BD8E: 44%  F4-Pause(3C); PassRush // 31%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(3C); PassRush // 
+
+
+Defense: B2
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6F0: F4-Pause(32); F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB A481: F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB A492: F3-Pause(3C); F4-Pause(3C); PassRush; // 
+LOLB A4A3: CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // 
+RCB ADBB: F4-Pause(00); // 
+LCB AD8F: F4-Pause(00); // 
+FS BD35: 44% F4-Pause(00); // ; 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // 
+SS AA04: PassRush // 
+
+
+Defense: B3
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6F0: F4-Pause(32); F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB ADDB: 56% F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB A492: F3-Pause(3C); F4-Pause(3C); PassRush; // 
+LOLB ADE5: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // F4-Pause(3C); F4-Pause(1E); PassRush // 
+RCB ADF9: 56% 31%  F4-Pause(00); // CPUTeamJumpsTo AAD8-01:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+LCB AD8F: F4-Pause(00); // 
+FS AD6C: 56% F4-Pause(00); // 56%  24%  F4-Pause(00); // 75%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F4-Pause(00); // F4-Pause(00); // 
+SS AD3A: 56% F4-Pause(14); F4-Pause(00); // PassRush // 
+
+
+Defense: B4
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A6F0: F4-Pause(32); F4-Pause(64); PassRush; // 
+ROLB A5A1: PassRush; // 
+RILB ADDB: 56% F3-Pause(14); 56%  F4-Pause(00); // F4-Pause(5A); PassRush // F3-Pause(32); F4-Pause(C8); PassRush; // 
+LILB AAE0: 44% 63% 56% F4-Pause(3C); F4-Pause(00); // F4-Pause(14); F4-Pause(00); // F4-Pause(14); PassRush // Mirror Ball Carrier; // 
+LOLB ADE5: 63% CPUTeamJumpsTo AADC-01:Boost-HP(30); ; Mirror Ball Carrier; // F3-Pause(3C); F4-Pause(50); PassRush; // F4-Pause(3C); F4-Pause(1E); PassRush // 
+RCB AE0F: F4-Pause(3C); PassRush // 
+LCB AE03: F4-Pause(64); PassRush // 
+FS AA6B: 81%CPUTeamJumpsTo:Boost-HP(30); ; PassRush // F5-Pause(0A 46); PassRush; // 
+SS AAA6: Mirror Ball Carrier; // 
+
+
+Defense: B5
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB AEF0: F4-Pause(14); F4-Pause(50); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB AF16: 56%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LOLB A1ED: PassRush; // 
+RCB AF2B: 88%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F3-Pause(00); // 
+LCB AF3F: F4-Pause(14); F4-Pause(64); PassRush // 
+FS AF4D: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 
+SS AF95: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: B6
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB AF78: 56% F4-Pause(14); F4-Pause(50); PassRush // F4-Pause(14); F4-Pause(1E); F5-Pause(28 64); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB AF16: 56%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LOLB A1ED: PassRush; // 
+RCB AF66: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% m2m-FB; // F4-Pause(64); m2m-WR2; // 
+LCB AF3F: F4-Pause(14); F4-Pause(64); PassRush // 
+FS AF4D: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 
+SS AF95: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: B7
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB AFCD: 25% F4-Pause(14); F4-Pause(50); PassRush // F4-Pause(14); F4-Pause(1E); F5-Pause(28 64); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB AF16: 56%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LOLB A1ED: PassRush; // 
+RCB AF66: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% m2m-FB; // F4-Pause(64); m2m-WR2; // 
+LCB AFA6: 44% 14-m2m-WR2; ; m2m-WR2; // F4-Pause(14); F4-Pause(64); PassRush // 
+FS AFB0: 38%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 44% 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 12-m2m-FB; ; m2m-FB; // 
+SS AFC0: 63% 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(00); // 
+
+
+Defense: B8
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B01F: 75%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // 56%  56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(3C A0); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: B9
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B05E: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% m2m-HB; // 56% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B071: 56% 19% m2m-WR2; // m2m-WR2; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B01F: 75%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // 56%  56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(3C A0); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: BA
+
+RE A546: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB B090: 93% 12-m2m-FB; ; m2m-FB; // 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B05E: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44% m2m-HB; // 56% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B071: 56% 19% m2m-WR2; // m2m-WR2; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B09A: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 50% 11-m2m-HB; ; m2m-HB; // F4-Pause(00); // 
+SS B0AA: 56% F4-Pause(14); 06% 14-m2m-WR2; ; m2m-WR2; // F4-Pause(1E); 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: BB
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT A714: Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A763: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RCB B0B9: m2m-WR1; // 
+LCB B0C3: F4-Pause(00); // 
+FS B09A: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 50% 11-m2m-HB; ; m2m-HB; // F4-Pause(00); // 
+SS B0AA: 56% F4-Pause(14); 06% 14-m2m-WR2; ; m2m-WR2; // F4-Pause(1E); 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: BC
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A5C3: F4-Pause(0A); F4-Pause(50); PassRush // 
+ROLB A5A1: PassRush; // 
+RILB A5D7: 63%CPUTeamJumpsTo:56% m2m-WR2; // m2m-HB; // F4-Pause(1E); PassRush; // 
+LILB A5B9: PassRush; // 
+LOLB A5F6: F4-Pause(0A); F4-Pause(50); PassRush // 
+RCB ADBB: F4-Pause(00); // 
+LCB B0CD: 81%CPUTeamJumpsTo:31% m2m-HB; // 38% m2m-WR1; // 38% m2m-WR2; // // // 
+FS B0D8: 75%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // F4-Pause(00); // 
+SS B0E6: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // // 
+
+
+Defense: BD
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A5C3: F4-Pause(0A); F4-Pause(50); PassRush // 
+ROLB A5A1: PassRush; // 
+RILB A5D7: 63%CPUTeamJumpsTo:56% m2m-WR2; // m2m-HB; // F4-Pause(1E); PassRush; // 
+LILB A5B9: PassRush; // 
+LOLB B10A: 56% F4-Pause(0A); F4-Pause(50); PassRush // F4-Pause(0A); F4-Pause(14); F5-Pause(28 64); PassRush // 
+RCB ADBB: F4-Pause(00); // 
+LCB B0F4: 44% m2m-WR2; // 44%  m2m-HB; // m2m-WR1; // 
+FS B0D8: 75%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // F4-Pause(00); // 
+SS B0E6: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // // 
+
+
+Defense: BE
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A5C3: F4-Pause(0A); F4-Pause(50); PassRush // 
+ROLB A5A1: PassRush; // 
+RILB A5D7: 63%CPUTeamJumpsTo:56% m2m-WR2; // m2m-HB; // F4-Pause(1E); PassRush; // 
+LILB A5B9: PassRush; // 
+LOLB B127: 25% F4-Pause(0A); F4-Pause(50); PassRush // ; F4-Pause(0A); F4-Pause(14); F5-Pause(28 64); PassRush // 
+RCB B130: 44% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(00); // 
+LCB B0F4: 44% m2m-WR2; // 44%  m2m-HB; // m2m-WR1; // 
+FS B13A: 44%  // F4-Pause(00); // 
+SS B14D: 44% 14-m2m-WR2; ; m2m-WR2; // 63% 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // // 11-m2m-HB; ; m2m-HB; // 
+
+
+Defense: BF
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB B15D: 63%CPUTeamJumpsTo:31% m2m-WR1; // 31% m2m-HB; // 31% m2m-TE; // // F4-Pause(00); // 
+LILB B16B: 56%CPUTeamJumpsTo:31% m2m-WR2; // 31% m2m-TE; // 31% m2m-WR1; // // F4-Pause(0A); F4-Pause(6E); PassRush // 
+LOLB BF03: PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B180: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS B1DD: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(78); PassRush // 
+SS B18E: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(78); PassRush // F4-Pause(14); F5-Pause(5A B4); // 
+
+
+Defense: C0
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB B15D: 63%CPUTeamJumpsTo:31% m2m-WR1; // 31% m2m-HB; // 31% m2m-TE; // // F4-Pause(00); // 
+LILB B1AC: 56% 56%CPUTeamJumpsTo:31% m2m-WR2; // 31% m2m-TE; // 31% m2m-WR1; // // F4-Pause(0A); F4-Pause(6E); PassRush // F4-Pause(1E); F5-Pause(28 64); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B1C4: 44% m2m-WR1; // 44% m2m-HB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B1D1: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-TE; // ; 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS B1DD: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(78); PassRush // 
+SS B18E: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(78); PassRush // F4-Pause(14); F5-Pause(5A B4); // 
+
+
+Defense: C1
+
+RE A29B: PassRush; // 
+NT A243: PassRush; // 
+LE BED2: PassRush; // 
+ROLB A3D4: PassRush; // 
+RILB B15D: 63%CPUTeamJumpsTo:31% m2m-WR1; // 31% m2m-HB; // 31% m2m-TE; // // F4-Pause(00); // 
+LILB B1F0: 25% 56%CPUTeamJumpsTo:31% m2m-WR2; // 31% m2m-TE; // 31% m2m-WR1; // // F4-Pause(0A); F4-Pause(6E); PassRush // F4-Pause(1E); F5-Pause(28 64); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B1C4: 44% m2m-WR1; // 44% m2m-HB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B1D1: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-TE; // ; 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS B1FA: 44%  11-m2m-HB; ; m2m-HB; // 69% 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(78); PassRush // 13-m2m-WR1; ; m2m-WR1; // 
+SS B210: 50% 14-m2m-WR2; ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(78); PassRush // F4-Pause(14); F5-Pause(5A B4); // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: C2
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB AEF0: F4-Pause(14); F4-Pause(50); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB AF2B: 88%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F3-Pause(00); // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS AF4D: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 
+SS AF95: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: C3
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB AF78: 56% F4-Pause(14); F4-Pause(50); PassRush // F4-Pause(14); F4-Pause(1E); F5-Pause(28 64); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB B220: 38% m2m-WR1; // 38%  m2m-FB; // 38%  m2m-TE; // m2m-WR2; // 
+LCB ADC2: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(00); // 
+FS AF4D: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 
+SS AF95: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: C4
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB AFCD: 25% F4-Pause(14); F4-Pause(50); PassRush // F4-Pause(14); F4-Pause(1E); F5-Pause(28 64); PassRush // 
+RILB AF01: 63%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(0A); F4-Pause(50); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB B220: 38% m2m-WR1; // 38%  m2m-FB; // 38%  m2m-TE; // m2m-WR2; // 
+LCB B23F: 25% 14-m2m-WR2; ; m2m-WR2; // F5-Pause(3C 78); // 
+FS AFB0: 38%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 44% 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(78); // 12-m2m-FB; ; m2m-FB; // 
+SS B252: 25% 14-m2m-WR2; ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: C5
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A137: PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BC4B: 25%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // F4-Pause(00); // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B29B: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(14); F4-Pause(8C); PassRush // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: C6
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A137: PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BC4B: 25%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // F4-Pause(00); // 
+RCB B27E: 44% m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B28E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-HB; // 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B29B: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(14); F4-Pause(8C); PassRush // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: C7
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A137: PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB BC4B: 25%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // F4-Pause(00); // 
+RCB B27E: 44% m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B28E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% m2m-HB; // 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2AF: 44% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B2BC: 24%  56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 11-m2m-HB; ; m2m-HB; // 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(14); F4-Pause(8C); PassRush // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: C8
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B2D2: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(0A); F4-Pause(00); // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2E5: 75%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR1; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: C9
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B2F3: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44%  m2m-HB; // 44% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(0A); F4-Pause(00); // m2m-TE; // 
+LCB BC77: 56% m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2E5: 75%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR1; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: CA
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC61: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B2F3: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 44%  m2m-HB; // 44% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(0A); F4-Pause(00); // m2m-TE; // 
+LCB BC77: 56% m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B30F: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 11-m2m-HB; ; m2m-HB; // 
+SS B31F: 44% m2m-WR2; // 56%  // m2m-TE; // 
+
+
+Defense: CB
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2E5: 75%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR1; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B335: 69%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(00); // 
+
+
+Defense: CC
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB B343: 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC77: 56% m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B357: 63% 75%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR1; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // m2m-FB; // 
+SS B335: 69%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(00); // 
+
+
+Defense: CD
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB A550: F4-Pause(5A); PassRush; // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB B343: 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC77: 56% m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B357: 63% 75%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR1; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // m2m-FB; // 
+SS B364: 63%  12-m2m-FB; ; m2m-FB; // 56%  13-m2m-WR1; ; m2m-WR1; // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: CE
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB B380: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B393: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B3A6: 69%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // 44%  // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: CF
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB B3C2: 44% m2m-HB; // 44% m2m-WR1; // 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B393: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B3A6: 69%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // 44%  // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: D0
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A3FB: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB ADB4: F4-Pause(00); // 
+RCB B3C2: 44% m2m-HB; // 44% m2m-WR1; // 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B3CF: 44%  13-m2m-WR1; ; m2m-WR1; // 56%  11-m2m-HB; ; m2m-HB; // 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B3E8: 44% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 69%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // 44%  // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: D1
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A236: PassRush; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB B3F5: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(32); F4-Pause(32); 56% F5-Pause(01 1E); // PassRush // 
+LCB B413: 81%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // F4-Pause(46); F4-Pause(46); 56% F5-Pause(01 1E); // PassRush // 
+FS B42E: F5-Pause(01 14); F4-Pause(32); 24% F5-Pause(0A 50); // PassRush // 
+SS B470: 56% F4-Pause(46); F4-Pause(3C); 56% F5-Pause(01 1E); // PassRush // F5-Pause(0A 1E); F4-Pause(14); F5-Pause(01 64); // 
+
+
+Defense: D2
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A236: PassRush; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB B45C: 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(32); F4-Pause(32); 56% F5-Pause(01 1E); // PassRush // m2m-WR1; // 
+LCB B466: 44% m2m-WR2; // 81%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // F4-Pause(46); F4-Pause(46); 56% F5-Pause(01 1E); // PassRush // 
+FS B42E: F5-Pause(01 14); F4-Pause(32); 24% F5-Pause(0A 50); // PassRush // 
+SS B470: 56% F4-Pause(46); F4-Pause(3C); 56% F5-Pause(01 1E); // PassRush // F5-Pause(0A 1E); F4-Pause(14); F5-Pause(01 64); // 
+
+
+Defense: D3
+
+RE A110: PassRush; // 
+NT A243: PassRush; // 
+LE A226: PassRush; // 
+ROLB A236: PassRush; // 
+RILB A141: PassRush; // 
+LILB A24A: PassRush; // 
+LOLB A254: PassRush; // 
+RCB B45C: 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(32); F4-Pause(32); 56% F5-Pause(01 1E); // PassRush // m2m-WR1; // 
+LCB B466: 44% m2m-WR2; // 81%CPUTeamJumpsTo:38% m2m-WR2; // m2m-WR1; // F4-Pause(46); F4-Pause(46); 56% F5-Pause(01 1E); // PassRush // 
+FS B485: 56% F5-Pause(01 14); F4-Pause(32); 24% F5-Pause(0A 50); // PassRush // 13-m2m-WR1; ; m2m-WR1; // 
+SS B48F: 56% 56% F4-Pause(46); F4-Pause(3C); 56% F5-Pause(01 1E); // PassRush // F5-Pause(0A 1E); F4-Pause(14); F5-Pause(01 64); // 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 
+
+
+Defense: D4
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB B4DA: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B499: 88%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); // 
+LCB B4A6: 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(1E); // 
+FS B4B3: 75%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // // 
+SS B4C1: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(3C); 56%  // F4-Pause(00); // 
+
+
+Defense: D5
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB B4DA: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B504: 44% m2m-WR1; // 56% m2m-FB; // m2m-HB; // 
+LCB B514: 44% m2m-WR2; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(1E); // 
+FS B4B3: 75%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // // 
+SS B4C1: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(3C); 56%  // F4-Pause(00); // 
+
+
+Defense: D6
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB B521: 56% 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 11-m2m-HB; ; m2m-HB; // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B504: 44% m2m-WR1; // 56% m2m-FB; // m2m-HB; // 
+LCB B514: 44% m2m-WR2; // 44% m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(1E); // 
+FS B531: 56% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B53B: 56% 15-m2m-TE; ; m2m-TE; // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: D7
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B545: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); // 
+SS B558: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(6E); // 
+
+
+Defense: D8
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B571: 44% m2m-WR1; // 44% 06% m2m-FB; // F4-Pause(1E); m2m-FB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B57E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44%  m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B545: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); // 
+SS B558: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(6E); // 
+
+
+Defense: D9
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B571: 44% m2m-WR1; // 44% 06% m2m-FB; // F4-Pause(1E); m2m-FB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B57E: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44%  m2m-TE; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B591: 56% 06% 12-m2m-FB; ; m2m-FB; // F4-Pause(64); 12-m2m-FB; ; m2m-FB; // 13-m2m-WR1; ; m2m-WR1; // 
+SS B59E: 56% 15-m2m-TE; ; m2m-TE; // 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: DA
+
+RE A704: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+NT A714: Boost-RS(0F); Boost-MS(30); Boost-HP(20); F3-Pause(28); PassRush; // 
+LE A723: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+ROLB A733: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RILB A743: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LILB A753: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush; // 
+LOLB A763: Boost-RS(0F); Boost-MS(30); Boost-HP(30); PassRush // 
+RCB B5AB: // 
+LCB B5B2: // 
+FS B5B9: // 
+SS B5C0: // 
+
+
+Defense: DB
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB B4DA: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B5C7: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LCB B5DB: 81%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F5-Pause(5A C8); PassRush // 
+FS B5EF: 75%CPUTeamJumpsTo:31% m2m-WR1; // 31% m2m-HB; // 31% m2m-TE; // // F4-Pause(C8); F4-Pause(64); // 
+SS B601: 69%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: DC
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB B4DA: 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B628: 63% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63%  m2m-TE; // 44% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F5-Pause(5A C8); PassRush // m2m-HB; // 
+LCB B644: 56% F4-Pause(14); m2m-WR2; // 44% 81%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F5-Pause(5A C8); PassRush // m2m-FB; // 
+FS B5EF: 75%CPUTeamJumpsTo:31% m2m-WR1; // 31% m2m-HB; // 31% m2m-TE; // // F4-Pause(C8); F4-Pause(64); // 
+SS B601: 69%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: DD
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB B665: 56% 15-m2m-TE; ; m2m-TE; // 63%CPUTeamJumpsTo:56% m2m-TE; // m2m-HB; // F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B628: 63% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63%  m2m-TE; // 44% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F5-Pause(5A C8); PassRush // m2m-HB; // 
+LCB B644: 56% F4-Pause(14); m2m-WR2; // 44% 81%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // F5-Pause(5A C8); PassRush // m2m-FB; // 
+FS B30F: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 11-m2m-HB; ; m2m-HB; // 
+SS B66F: 56% 06% 14-m2m-WR2; ; m2m-WR2; // F4-Pause(1E); 14-m2m-WR2; ; m2m-WR2; // 44% 69%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 12-m2m-FB; ; m2m-FB; // 
+
+
+Defense: DE
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B682: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: DF
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB B690: 44% m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B69A: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 56% m2m-HB; // m2m-FB; // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B682: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: E0
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B6AD: 56% 11-m2m-HB; ; m2m-HB; // 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB B690: 44% m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B69A: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 44% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 56% m2m-HB; // m2m-FB; // 
+FS B6B7: 56% 13-m2m-WR1; ; m2m-WR1; // 56% 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // // 
+SS B6C7: 44% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 12-m2m-FB; ; m2m-FB; // 
+
+
+Defense: E1
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B6E7: 69%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: E2
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BAB5: 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR1; // 
+LCB B6F5: Motion(A0); 63% m2m-WR2; // 56% m2m-HB; // m2m-FB; // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B6E7: 69%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: E3
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB B6AD: 56% 11-m2m-HB; ; m2m-HB; // 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BAB5: 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR1; // 
+LCB B6F5: Motion(A0); 63% m2m-WR2; // 56% m2m-HB; // m2m-FB; // 
+FS B70A: 56% 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // F4-Pause(64); 13-m2m-WR1; ; m2m-WR1; // 
+SS B71C: 63% 06% 12-m2m-FB; ; m2m-FB; // F4-Pause(50); 12-m2m-FB; ; m2m-FB; // 56% 69%CPUTeamJumpsTo:31% m2m-HB; // 31% m2m-FB; // 31% m2m-WR2; // // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: E4
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B72C: 56% F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: E5
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B27E: 44% m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B72C: 56% F4-Pause(00); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: E6
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB BF03: PassRush; // 
+RCB B27E: 44% m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B34D: 56% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B2AF: 44% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: E7
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB B74A: F4-Pause(46); F4-Pause(14); F5-Pause(28 5A); 56%  // PassRush // 
+LOLB A1ED: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B761: F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS B773: 75%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 06%  F4-Pause(28); 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: E8
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB B74A: F4-Pause(46); F4-Pause(14); F5-Pause(28 5A); 56%  // PassRush // 
+LOLB A1ED: PassRush; // 
+RCB B571: 44% m2m-WR1; // 44% 06% m2m-FB; // F4-Pause(1E); m2m-FB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B7B7: 63% m2m-WR2; // F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS B773: 75%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 06%  F4-Pause(28); 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: E9
+
+RE A19B: F3-Pause(0A); PassRush; // 
+NT A1A7: F3-Pause(0A); PassRush; // 
+LE A1B3: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB B74A: F4-Pause(46); F4-Pause(14); F5-Pause(28 5A); 56%  // PassRush // 
+LOLB A1ED: PassRush; // 
+RCB B571: 44% m2m-WR1; // 44% 06% m2m-FB; // F4-Pause(1E); m2m-FB; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B7B7: 63% m2m-WR2; // F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS B7C1: 44% 13-m2m-WR1; ; m2m-WR1; // 56% 75%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 06%  F4-Pause(28); 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 12-m2m-FB; ; m2m-FB; // 
+SS B7D1: 56% 56% 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 
+
+
+Defense: EA
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB B826: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RCB B380: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B7E4: 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(14); 31% 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(64 C8); PassRush // 
+FS B393: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B7FA: 69%CPUTeamJumpsTo:31% m2m-WR2; // 31% m2m-TE; // 31% m2m-WR1; // // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: EB
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB B826: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RCB B3C2: 44% m2m-HB; // 44% m2m-WR1; // 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B816: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(14); 31% 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(64 C8); PassRush // m2m-TE; // 
+FS B393: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B7FA: 69%CPUTeamJumpsTo:31% m2m-WR2; // 31% m2m-TE; // 31% m2m-WR1; // // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: EC
+
+RE A29B: PassRush; // 
+NT A2A5: PassRush; // 
+LE A226: PassRush; // 
+ROLB A2B2: PassRush; // 
+RILB A2BF: PassRush; // 
+LILB B4EE: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F4-Pause(3C); F5-Pause(1E 8C); PassRush // 
+LOLB B826: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RCB B3C2: 44% m2m-HB; // 44% m2m-WR1; // 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+LCB B816: 44% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // F4-Pause(14); 31% 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F5-Pause(64 C8); PassRush // m2m-TE; // 
+FS B3CF: 44%  13-m2m-WR1; ; m2m-WR1; // 56%  11-m2m-HB; ; m2m-HB; // 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+SS B838: 56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: ED
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB AFF9: 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B845: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: EE
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEE5: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B861: 44% m2m-FB; // 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // F4-Pause(64); m2m-HB; // 
+LCB B876: 44% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR2; // 
+FS B845: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B042: 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: EF
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB B886: 56% 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // PassRush; // 12-m2m-FB; ; m2m-FB; // 
+RILB AFD7: 63%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B861: 44% m2m-FB; // 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // F4-Pause(64); m2m-HB; // 
+LCB B876: 44% 06% m2m-TE; // F4-Pause(1E); m2m-TE; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR2; // 
+FS B890: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // F4-Pause(64); 11-m2m-HB; ; m2m-HB; // 
+SS B8A2: 56% 06% 15-m2m-TE; ; m2m-TE; // 15-m2m-TE; ; m2m-TE; // 14-m2m-WR2; ; m2m-WR2; // 
+
+
+Defense: F0
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: F1
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B343: 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B8BD: 63% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 56%  m2m-TE; // m2m-FB; // 
+FS B262: 75%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F4-Pause(AA); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: F2
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC81: F5-Pause(5A C8); PassRush // 
+LILB B617: 56%CPUTeamJumpsTo:[56%Jump B9D8; m2m-FB; 56%Jump B9DD; m2m-WR1; 56%Jump B9E2; m2m-WR2; 56%Jump B9CE; m2m-TE; 56%Jump B9D3; m2m-HB; // Circular Randoms]// F5-Pause(5A C8); PassRush // 
+LOLB BF09: 44%  PassRush; // 25%CPUTeamJumpsTo:m2m-TE; // PassRush; // 
+RCB B343: 56% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B8BD: 63% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 56%  m2m-TE; // m2m-FB; // 
+FS B8D3: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // F4-Pause(50); // 
+SS B8DF: 56% 06% 14-m2m-WR2; ; m2m-WR2; // 14-m2m-WR2; ; m2m-WR2; // 15-m2m-TE; ; m2m-TE; // 
+
+
+Defense: F3
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BC88: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B90A: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(50 82); PassRush // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B91D: 69%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F5-Pause(50 82); PassRush // 
+
+
+Defense: F4
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BC88: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB B930: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B9FA: 44% m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(50 82); PassRush // 06% m2m-HB; // F4-Pause(1E); m2m-HB; // 
+FS B8E9: 75%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR1; // 56%  56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // F4-Pause(14); F4-Pause(14); F5-Pause(50 82); PassRush // 
+SS B91D: 69%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 38% m2m-WR2; // // F4-Pause(14); F5-Pause(50 82); PassRush // 
+
+
+Defense: F5
+
+RE A110: PassRush; // 
+NT A11D: PassRush; // 
+LE A12A: PassRush; // 
+ROLB BC88: 44%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB A141: PassRush; // 
+LILB A14B: PassRush; // 
+LOLB A655: PassRush; // 
+RCB B930: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-WR1; // m2m-HB; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+LCB B9FA: 44% m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(50 82); PassRush // 06% m2m-HB; // F4-Pause(1E); m2m-HB; // 
+FS BA0D: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS BA1A: 56%  14-m2m-WR2; ; m2m-WR2; // F4-Pause(32); 06% 11-m2m-HB; ; m2m-HB; // F4-Pause(1E); 11-m2m-HB; ; m2m-HB; // 
+
+
+Defense: F6
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B761: F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS B773: 75%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 06%  F4-Pause(28); 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: F7
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB BA2F: 63%  56% m2m-WR1; // m2m-FB; // Motion(14); MotionTo-WR2; F4-Pause(28); 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 
+LCB B761: F4-Pause(3C); F5-Pause(46 78); PassRush // 
+FS B773: 75%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 06%  F4-Pause(28); 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+SS B78F: 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // 
+
+
+Defense: F8
+
+RE A110: PassRush; // 
+NT A3A7: PassRush; // 
+LE A501: PassRush; // 
+ROLB B7A5: F4-Pause(14); F5-Pause(50 82); PassRush // 
+RILB B739: F4-Pause(50); F4-Pause(14); F5-Pause(3C 8C); PassRush // 
+LILB A3C0: PassRush; // 
+LOLB A1ED: PassRush; // 
+RCB BA2F: 63%  56% m2m-WR1; // m2m-FB; // Motion(14); MotionTo-WR2; F4-Pause(28); 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 
+LCB BA47: 56% F4-Pause(3C); F5-Pause(46 78); PassRush // F4-Pause(14); F5-Pause(1E 50); // 
+FS BA59: 56% 13-m2m-WR1; ; m2m-WR1; // 12-m2m-FB; ; m2m-FB; // 
+SS BA66: 56% 69%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(14); F5-Pause(64 96); PassRush // F4-Pause(14); F5-Pause(1E 50); // 
+
+
+Defense: F9
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB B00C: 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: FA
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BA78: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-TE; // 
+LCB BA88: 44% m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B8AF: 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% 69%CPUTeamJumpsTo:56% m2m-FB; // ; m2m-WR2; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 69%CPUTeamJumpsTo:56% m2m-TE; // m2m-WR2; // 56%  F4-Pause(6E); // F5-Pause(3C A0); // 
+
+
+Defense: FB
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BC6C: 56%CPUTeamJumpsTo:56% m2m-WR1; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BA78: 44% 06% m2m-WR1; // F4-Pause(1E); m2m-WR1; // 63% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-TE; // 
+LCB BA88: 44% m2m-WR2; // 63% 81%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-FB; // 
+FS BA98: 56%  06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 15-m2m-TE; ; m2m-TE; // 
+SS BAA2: 56%  14-m2m-WR2; ; m2m-WR2; // F4-Pause(00); // 
+
+
+Defense: FC
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF20: 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 
+RCB BC56: 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+LCB BC40: 81%CPUTeamJumpsTo:56% m2m-HB; // ; m2m-WR2; // F4-Pause(14); F5-Pause(3C 78); PassRush // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B601: 69%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: FD
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB AFE8: 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 
+LOLB BF03: PassRush; // 
+RCB BAB5: 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR1; // 
+LCB BAC2: 63% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 63% m2m-HB; // 63%  m2m-FB; // m2m-TE; // 
+FS B6D7: 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 
+SS B601: 69%CPUTeamJumpsTo:56% m2m-WR2; // m2m-TE; // 56% F4-Pause(00); // F4-Pause(14); F5-Pause(01 8C); // 
+
+
+Defense: FE
+
+RE BEBB: PassRush; // 
+NT BEC8: PassRush; // 
+LE BED2: PassRush; // 
+ROLB BEDF: PassRush; // 
+RILB BC93: 63%CPUTeamJumpsTo:31% m2m-FB; // 38% m2m-WR1; // 31% m2m-TE; // // F5-Pause(5A C8); PassRush // 
+LILB BADB: 56% 56%CPUTeamJumpsTo:56% m2m-HB; // m2m-TE; // F5-Pause(5A C8); PassRush // 15-m2m-TE; ; m2m-TE; // 
+LOLB BAE5: 56% 25%CPUTeamJumpsTo:56% m2m-HB; // m2m-FB; // ; PassRush; // 11-m2m-HB; ; m2m-HB; // 
+RCB BAB5: 56% 88%CPUTeamJumpsTo:56% m2m-FB; // m2m-WR1; // F4-Pause(14); F5-Pause(3C 78); PassRush // m2m-WR1; // 
+LCB BAC2: 63% 06% m2m-WR2; // F4-Pause(1E); m2m-WR2; // 63% m2m-HB; // 63%  m2m-FB; // m2m-TE; // 
+FS BAEF: 56% 75%CPUTeamJumpsTo:56% m2m-WR1; // m2m-WR2; // F4-Pause(C8); PassRush // 06% 13-m2m-WR1; ; m2m-WR1; // F4-Pause(32); 13-m2m-WR1; ; m2m-WR1; // 
+SS BAF9: 56% 12-m2m-FB; ; m2m-FB; // 06% 14-m2m-WR2; ; m2m-WR2; // F4-Pause(1E); 14-m2m-WR2; ; m2m-WR2; // 

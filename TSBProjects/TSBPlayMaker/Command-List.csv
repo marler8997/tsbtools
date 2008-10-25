@@ -1,0 +1,153 @@
+0x01, m2m-HB; , 1 , u
+0x02, m2m-FB; , 1 , u
+0x03, m2m-WR1; , 1 , u 
+0x04, m2m-WR2; , 1 , u
+0x05, m2m-TE; , 1 , u
+0x11, m2m-HB; , 1 , u
+0x12, m2m-FB; , 1 , u
+0x13, m2m-WR1; , 1 , u
+0x14, m2m-WR2; , 1 , u
+0x15, m2m-TE; , 1 , u
+0x20, JumpTo , 2 , hi , lo
+0x21, JumpTo , 2 , hi , lo
+0x22, JumpTo , 2 , hi , lo
+0x23, JumpTo , 2 , hi , lo
+0x24, JumpTo , 2 , hi , lo
+0x25, JumpTo , 2 , hi , lo
+0x26, JumpTo , 2 , hi , lo
+0x27, JumpTo , 2 , hi , lo
+0x28, JumpTo , 2 , hi , lo
+0x29, JumpTo , 2 , hi , lo
+0x2A, JumpTo , 2 , hi , lo
+0x2B, JumpTo , 2 , hi , lo
+0x2C, JumpTo , 2 , hi , lo
+0x2D, JumpTo , 2 , hi , lo
+0x2E, JumpTo , 2 , hi , lo
+0x2F, JumpTo , 2 , hi , lo
+0x30, Block-RE; , 0 
+0x31, Block-NT; , 0 
+0x32, Block-LE; , 0 
+0x33, Block-ROLB; , 0 
+0x34, Block-RILB; , 0 
+0x35, Block-LILB; , 0 
+0x36, Block-LOLB; , 0 
+0x37, Block-RCB; , 0 
+0x38, Block-LCB; , 0 
+0x39, Block-FS; , 0 
+0x3A, Block-SS; , 0 
+0x40, ChopBlock-RE; , 0 
+0x41, ChopBlock-NT; , 0 
+0x42, ChopBlock-LE; , 0 
+0x43, ChopBlock-ROLB; , 0 
+0x44, ChopBlock-RILB; , 0 
+0x45, ChopBlock-LILB; , 0 
+0x46, ChopBlock-LOLB; , 0 
+0x47, ChopBlock-RCB; , 0 
+0x48, ChopBlock-LCB; , 0 
+0x49, ChopBlock-FS; , 0 
+0x4A, ChopBlock-SS; , 0 
+0x50, Handoff-QB; , 0 
+0x51, Handoff-HB; , 0 
+0x52, Handoff-FB; , 0 
+0x53, Handoff-WR1; , 0 
+0x54, Handoff-WR2; , 0 
+0x55, Handoff-TE; , 0 
+0x56, Handoff-C; , 0 
+0x57, Handoff-LG; , 0 
+0x58, Handoff-RG; , 0 
+0x59, Handoff-LT; , 0 
+0x5A, Handoff-RT; , 0 
+0x60, Fake-QB; , 0 
+0x61, Fake-HB; , 0 
+0x62, Fake-FB; , 0 
+0x63, Fake-WR1; , 0 
+0x64, Fake-WR2; , 0 
+0x65, Fake-TE; , 0 
+0x66, Fake-C; , 0 
+0x67, Fake-LG; , 0 
+0x68, Fake-RG; , 0 
+0x69, Fake-LT; , 0 
+0x6A, Fake-RT; , 0 
+0x70, Pitch-QB; , 0 
+0x71, Pitch-HB; , 0 
+0x72, Pitch-FB; , 0 
+0x73, Pitch-WR1; , 0 
+0x74, Pitch-WR2; , 0 
+0x75, Pitch-TE; , 0 
+0x76, Pitch-C; , 0 
+0x77, Pitch-LG; , 0 
+0x78, Pitch-RG; , 0 
+0x79, Pitch-LT; , 0 
+0x7A, Pitch-RT; , 0 
+0x80, MotionTo-QB; , 0 
+0x81, MotionTo-HB; , 0 
+0x82, MotionTo-FB; , 0 
+0x83, MotionTo-WR1; , 0 
+0x84, MotionTo-WR2; , 0 
+0x85, MotionTo-TE; , 0 
+0x86, MotionTo-C; , 0 
+0x87, MotionTo-LG; , 0 
+0x88, MotionTo-RG; , 0 
+0x89, MotionTo-LT; , 0 
+0x8A, MotionTo-RT; , 0 
+0x91, Pass , 4 , a , a , lo, hi
+0x92, Pass , 5 , a , a , a , lo, hi
+0x93, Pass , 6 , a, a , a , a , lo, hi
+0x94, Pass , 7 , a, a, a , a , a , lo, hi
+0xA0, Route#1; , 0 
+0xA1, Route#2; , 0 
+0xA2, Route#3; , 0 
+0xA3, Route#4; , 0 
+0xA4, Route#5; , 0 
+0xB0, SetPosFromKick , 2 , a , a
+0xB1, SetPosFromKick , 2 , a , a
+0xB4, MoveAbsolute , 2 , a , a
+0xC0, DropBack , 2 , a , a
+0xC1, Unknown, 3, u,u,u
+0xC4, Celebrate, 1 , u
+0xC5, Cry , 1, u
+0xC7, JumpTo , 2, lo, hi
+0xC8, JumpTo , 3 , lo , hi , a
+0xCC, PassBlock; , 0
+0xCD, Unknown, 2 
+0xCE, MoveAbsolute , 2, a , a
+0xCF, Unknown, 2
+0xD0, SetPosFromHike , 2 , a , a 
+0xD1, SetPosFromMid , 2 , a , a 
+0xD2, Hike; , 0
+0xD3, ShotgunHike; , 0
+0xD4, TakeSnap; , 0
+0xD5, ShotgunTakeSnap; , 0
+0xD6, FieldGoalTakeSnap; , 0
+0xD7, MoveRelative , 2 , a, a
+0xD8, MoveAbsolute , 2 , a, a
+0xD9, MoveAbsolute , 2 , a, a
+0xDA, PassRush; , 0
+0xDB, VertMirror; , 0
+0xDD, PassRush; , 0
+0xDF, ComputerTakeControl; , 0
+0xE0, Boost-RS , 1 , a
+0xE1, Boost-MS , 1 , a
+0xE2, Boost-RP , 1 , a
+0xE3, Boost-MS , 1 , a
+0xE4, TakeControl; , 0
+0xE5, Kickoff; , 0
+0xE6, Punt; , 0
+0xE7, FieldGoal; , 0
+0xE8, ExtraPoint; , 0
+0xEA, 3pt; , 0
+0xEB, Shift , 1, a
+0xEC, 2pt; , 0
+0xED, Motion , 1 ,a 
+0xEE, QB-Stance; , 0
+0xEF, SwitchIcon; , 0
+0xF0, FaceDirection , 1 , a
+0xF3, Pause , 1 , a
+0xF4, Pause , 1 , a
+0xF5, Pause , 2 , a , a
+0xF7, Boost-HP, 1, a
+0xFA, Unknown, 0
+0xFC, Unknown, 2 , a , a 
+0xFD, SetToBlock , 2 , u , u
+0xFE, LoopForward, 1 
+0xFF, JumpTo , 2, p
