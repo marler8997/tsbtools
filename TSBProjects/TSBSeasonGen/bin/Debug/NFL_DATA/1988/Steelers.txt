@@ -1,0 +1,54 @@
+Steelers,Offense=12,O_Rushing=6,O_Passing=19,PF=336, Defense=27,D_Rushing=14,D_Passing=27,PA=421
+C,Dawson,Dermontti,skinColor=4,HOF=False,#63,description='Turbo Star',seasons=13
+C,Lanza,Chuck,skinColor=0,HOF=False,#0,description='',seasons=2
+C,Webster,Mike,skinColor=1,HOF=True,#52,description='Turbo Star',seasons=17
+CB,Woodson,Rod,skinColor=1,HOF=False,#26,speed='',ranking=9,description='Turbo Star',seasons=17,sacks=0.5,intTD=0,fumbleTD=0,fumblesforced=3,ints=4
+DB,Woodruff,Dwayne,skinColor=4,HOF=False,#49,speed='',ranking=18,description='Solid',seasons=11,sacks=0,intTD=1,fumbleTD=0,fumblesforced=0,ints=4
+DB,Gowdy,Cornell,skinColor=0,HOF=False,#0,speed='',ranking=140,description='',seasons=3,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+DB,Sanchez,Lupe,skinColor=0,HOF=False,#0,speed='',ranking=140,description='',seasons=3,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+DB,Lee,Greg,skinColor=0,HOF=False,#0,speed='',ranking=194,description='',seasons=1,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Williams,Gerald,skinColor=4,HOF=False,#98,speed='',ranking=70,description='',seasons=12,sacks=3.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Gary,Keith,skinColor=4,HOF=False,#92,speed='',ranking=151,description='',seasons=6,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Reese,Jerry,skinColor=0,HOF=False,#0,speed='',ranking=127,description='',seasons=1,sacks=1,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Jones,Aaron,skinColor=0,HOF=False,#0,speed='',ranking=122,description='',seasons=9,sacks=1.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Thomas,Ben,skinColor=0,HOF=False,#0,speed='',ranking=146,description='',seasons=5,sacks=0.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DT,Johnson,Tim,skinColor=0,HOF=False,#0,speed='',ranking=59,description='',seasons=10,sacks=4,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DT,Putzier,Rollin,skinColor=0,HOF=False,#0,speed='',ranking=151,description='',seasons=2,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+FB,Hoge,Merril,skinColor=1,HOF=False,#33,speed='',ranking=3,description='',seasons=8,fumblepercent=3.64,rec=50,rushes=170,rushYards=705,recYards=487,td=6,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+G,Long,Terry,skinColor=4,HOF=False,#74,description='',seasons=8
+G,Blankenship,Brian,skinColor=0,HOF=False,#0,description='',seasons=5
+G,Rienstra,John,skinColor=0,HOF=False,#0,description='',seasons=7
+G,Wolfley,Craig,skinColor=1,HOF=False,#73,description='Turbo Star',seasons=12
+K,Anderson,Gary,skinColor=1,HOF=False,#1,ranking=12,fga=36,fgm=28
+LB,Lloyd,Greg,skinColor=4,HOF=False,#95,speed='',ranking=123,description='',seasons=11,sacks=0.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+LB,Carr,Gregg,skinColor=4,HOF=False,#91,speed='',ranking=28,description='Solid',seasons=4,sacks=3.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+LB,Nickerson,Hardy,skinColor=4,HOF=False,#54,speed='',ranking=28,description='Solid',seasons=16,sacks=3.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+LB,Hinkle,Bryan,skinColor=1,HOF=False,#53,speed='',ranking=83,description='',seasons=12,sacks=0.5,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+LB,Little,David,skinColor=4,HOF=False,#50,speed='',ranking=87,description='',seasons=12,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+LB,Stowe,Tyronne,skinColor=0,HOF=False,#0,speed='',ranking=126,description='',seasons=9,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+LB,Jordan,Darin,skinColor=0,HOF=False,#0,speed='',ranking=87,description='',seasons=4,sacks=0,intTD=1,fumbleTD=0,fumblesforced=0,ints=1
+LB,Henton,Anthony,skinColor=0,HOF=False,#0,speed='',ranking=126,description='',seasons=2,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+NT,Freeman,Lorenzo,skinColor=0,HOF=False,#0,speed='',ranking=151,description='',seasons=5,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+P,Newsome,Harry,skinColor=1,HOF=False,#18,ranking=1,punts=65,puntYards=2950
+QB,Blackledge,Todd,skinColor=1,HOF=False,#14,speed='',ranking=49,description='',seasons=7,passRat=60.8,passYards=494,passAtt=79,passComp=38,td=2,int=3
+QB,Bono,Steve,skinColor=1,HOF=False,#13,speed='',ranking=64,description='',seasons=14,passRat=25.9,passYards=110,passAtt=35,passComp=10,td=1,int=2
+QB,Brister,Bubby,skinColor=1,HOF=False,#6,speed='',ranking=15,description='',seasons=14,passRat=65.3,passYards=2634,passAtt=370,passComp=175,td=11,int=14
+RB,Jackson,Earnest,skinColor=4,HOF=False,#43,speed='',ranking=65,description='',seasons=6,fumblepercent=3.61,rec=9,rushes=74,rushYards=315,recYards=84,td=3,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+RB,Williams,Warren,skinColor=4,HOF=False,#42,speed='',ranking=58,description='',seasons=6,fumblepercent=3.06,rec=11,rushes=87,rushYards=409,recYards=66,td=1,puntRet=0,puntRetYards=0,kickRet=1,kickRetYards=10
+RB,Pollard,Frank,skinColor=4,HOF=False,#30,speed='',ranking=103,description='',seasons=9,fumblepercent=3.03,rec=2,rushes=31,rushYards=93,recYards=22,td=0,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+RB,Carter,Rodney,skinColor=0,HOF=False,#0,speed='',ranking=45,description='',seasons=3,fumblepercent=0.00,rec=32,rushes=36,rushYards=216,recYards=363,td=5,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+S,Hall,Delton,skinColor=4,HOF=False,#35,speed='',ranking=194,description='',seasons=6,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+S,Everett,Thomas,skinColor=1,HOF=False,#27,speed='',ranking=65,description='',seasons=9,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=3
+S,Griffin,Larry,skinColor=0,HOF=False,#0,speed='',ranking=65,description='',seasons=8,sacks=0,intTD=0,fumbleTD=0,fumblesforced=1,ints=2
+T,Jackson,John,skinColor=4,HOF=False,#65,description='Turbo Star',seasons=14
+T,Ilkin,Tunch,skinColor=1,HOF=False,#62,description='Turbo Star',seasons=14
+T,Boyle,Jim,skinColor=0,HOF=False,#0,description='',seasons=2
+TE,Gothard,Preston,skinColor=0,HOF=False,#0,speed='',ranking=34,description='',seasons=4,fumblepercent=0.00,rec=12,rushes=0,rushYards=0,recYards=121,td=1
+TE,Markland,Jeff,skinColor=0,HOF=False,#0,speed='',ranking=75,description='',seasons=1,fumblepercent=NaN,rec=0,rushes=0,rushYards=0,recYards=0,td=0
+TE,Hinnant,Mike,skinColor=0,HOF=False,#0,speed='',ranking=64,description='',seasons=3,fumblepercent=0.00,rec=1,rushes=0,rushYards=0,recYards=23,td=0
+WR,Thompson,Weegie,skinColor=1,HOF=False,#87,speed='',ranking=86,description='',seasons=6,fumblepercent=0.00,rec=16,rushes=0,rushYards=0,recYards=370,td=1,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+WR,Johnson,Troy,skinColor=4,HOF=False,#85,speed='',ranking=104,description='',seasons=4,fumblepercent=0.00,rec=10,rushes=0,rushYards=0,recYards=237,td=0,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+WR,Lipps,Louis,skinColor=4,HOF=False,#83,speed='',ranking=27,description='Star',seasons=9,fumblepercent=0.04,rec=50,rushes=6,rushYards=129,recYards=973,td=6,puntRet=4,puntRetYards=30,kickRet=0,kickRetYards=0
+WR,Stone,Dwight,skinColor=4,HOF=False,#20,speed='Fast',ranking=79,description='',seasons=14,fumblepercent=0.10,rec=11,rushes=40,rushYards=127,recYards=196,td=2,puntRet=0,puntRetYards=0,kickRet=29,kickRetYards=610
+WR,Lockett,Charles,skinColor=0,HOF=False,#0,speed='',ranking=70,description='',seasons=2,fumblepercent=0.00,rec=22,rushes=0,rushYards=0,recYards=365,td=1,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+WR,Clinkscales,Joey,skinColor=0,HOF=False,#0,speed='',ranking=145,description='',seasons=2,fumblepercent=NaN,rec=0,rushes=0,rushYards=0,recYards=0,td=0,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0

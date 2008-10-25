@@ -1,0 +1,54 @@
+# This is the format for the Config file
+# Specify a schedule by year
+SCHEDULE=1990
+
+# Specify the Teams
+
+1990 bills 
+
+# this team was 1-15
+1991 colts
+
+
+1983 dolphins
+
+1991 patriots
+
+1993 jets
+1988 bengals
+1980 browns
+1988 Homos
+
+# 1999 titans will play as the oilers
+1999 titans
+
+2004 steelers
+1998 broncos
+1990 chiefs
+2002 raiders
+1994 chargers
+
+# this Seahawhs team was 4-12, But the players aren't that bad.
+1976 seahawks
+
+# This is the Redskins superbowl team with Riggins
+1983 redskins
+
+1990 giants
+2004 eagles
+
+# You can also assign a specified team to another team's slot
+cardinals = 2001 Ravens
+
+1993 cowboys
+1985 bears
+1991 lions
+1996 packers
+1988 vikings
+1977 buccaneers
+1989 49ers
+1999 rams
+1989 saints
+1998 falcons
+
+
