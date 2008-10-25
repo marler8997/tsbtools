@@ -1,0 +1,19 @@
+Hello, attached are my program files.  The code is in C and I made just a simple main dialog box instead of a window.  The compiler I use is the Digital Mars C/C++ Compiler 8.49 from http://www.digitalmars.com/ .  I didn’t merge any of my functions due to my ease but it could be done with offensive and defensive parameters to set locations and the like.  My program is built to follow all the pointers through until the end (// marker) even in mid-sequence and then start back where the next byte normally is.
+
+ 
+
+There isn’t really a doc to explain what to do since it was intended mostly for my usage so I’ll explain it here.  Open the program and there will be a list of buttons with each extracting a different section.  Upon selecting the button, you will need to select and open the original TSB NES rom (any TSB NES rom may due as long as the editor didn’t cause a never-ending sequence in the play design).  Then it will immediately ask to save a text file with a name and to a location of your choice.  This text file will be the extracted data.  When finished, close the dialog box.
+
+ 
+
+If you need any comments or help from my stuff, then go ahead and ask.
+
+ 
+
+Thanks
+
+ 
+
+Jeffrey Stout
+
+ 

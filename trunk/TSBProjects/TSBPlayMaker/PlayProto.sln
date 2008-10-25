@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayProto", "PlayProto.csproj", "{74E99441-F541-4B61-A0CD-14AF630F5002}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{74E99441-F541-4B61-A0CD-14AF630F5002}.Debug.ActiveCfg = Debug|.NET
+		{74E99441-F541-4B61-A0CD-14AF630F5002}.Debug.Build.0 = Debug|.NET
+		{74E99441-F541-4B61-A0CD-14AF630F5002}.Release.ActiveCfg = Release|.NET
+		{74E99441-F541-4B61-A0CD-14AF630F5002}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+Play name,QB,HB,FB,WR1,WR2,TE,C,LG,RG,LT,RT
+PRO T WAGGLE R 32,ada0,b8e9,adea,b872,b8f6,ad5f,be30,ad67,ad76,be2a,ad9a
+ROLL OUT R          33,a808,b85a,a7e1,bd92,b87c,b88f,be30,a683,bebb,a7f0,bed9
+ROLL OUT L           34,ab6e,abb4,b8c8,bd9c,b8dc,b8d2,a786,be30,be36,be2a,be4e
+T PLAYACTION D   35,b2bf,b9d7,b9bb,bdde,bda0,a3b7,a3bf,a3c8,a3ce,a3d7,a3dd
+PRO T SCREEN L  36,b2ef,b9f3,be7b,bda4,ba0b,ba21,be99,beac,bebb,beca,bed9
+PLAY ACTION        37,b0c2,b08d,b936,bda0,b94f,afd8,a3bf,a3c8,a3ce,a3d7,a3dd
+PRO T WAGGLE L 30,a4ed,a531,a542,b83c,a552,a4ab,a4b4,a4bd,a4cf,a4e4,be4e
+R AND S FLARE C 31,b287,b962,b97b,b987,b996,b9a6,be99,acdb,bebb,beca,bed9
+SHOTGUN X CURL  3A,b32b,bda8,ba2b,ba51,ba67,ba3e,be99,beac,bebb,beca,bed9
+SHOTGUN X CURL  5B,b7f4,bda8,ba2b,ba51,ba67,ba3e,be99,beac,bebb,beca,bed9
+R AND S Z FLY       3B,b363,be6c,b83c,bdb8,bda0,ba7d,be99,beac,bebb,beca,bed9
+PRO T FLARE D      3C,b39f,bdc2,ba87,baa8,bab5,bdc6,be99,beac,bebb,beca,bed9
+OFFSET FLARE E   3D,b3c1,bac4,bada,bdca,bda0,be8a,be99,beac,bebb,beca,bed9
+ONEBACK Z CROSS 3E,b3f5,baec,bb08,bb11,bb1e,b429,be99,beac,bebb,beca,bed9
+ONEBACK FLARE A  3F,b436,be6c,bb2b,bdca,bb35,be8a,be99,beac,bebb,beca,bed9
+PWR FAKE Z POST 38,b7ff,a6b8,a65f,b89b,b87c,be36,a67e,a683,a689,be3c,be48
+WTE F-FLICKER      39,a5de,a5fe,a59d,bda0,b846,a5b7,be30,be42,be48,be2a,a5ca
+SHOTGUN X DRIVE  42,b4ac,bb54,bb69,b83c,bb73,bda4,be99,beac,bebb,beca,bed9
+R AND S 3-WING     43,b4f5,b531,bb7d,bda0,bd9c,bb9b,be99,beac,bebb,beca,bed9
+PLAYACTION Z IN    44,afe1,b90f,b919,bda0,bdce,afd8,a3bf,a3c8,a3ce,a3d7,a3dd
+FLEAFLICKER         45,b53c,b56e,bba5,bbaf,bbb9,ab5b,a786,be30,be36,be2a,be4e
+PRO T FLARE C      46,b582,be6c,bbc6,bda0,ba67,bbdc,be99,beac,bebb,beca,bed9
+SHOTGUN 3-WING   47,b5bd,bbe6,bbf9,bc0f,bc19,bc23,be99,beac,bebb,beca,bed9
+T FLEAFLICKER        40,b471,b498,bb3f,baa8,b92c,a4ab,a4b4,a4bd,a4cf,a4e4,be4e
+PWR FAKE X FLY     41,a68f,a6b8,a65f,bda4,bda0,b850,a67e,a683,a689,be3c,a5ca
+X OUT AND FLY        4A,b666,bc81,bdda,bc9a,b87c,bcaa,be99,beac,bebb,beca,bed9
+REV FAKE Z POST   4B,aa26,b8a5,a978,aa52,b87c,be8a,be99,beac,bebb,beca,bed9
+SLOT L Z DRIVE        4C,b69b,bcb4,bcc4,bcce,bcd8,bce8,be99,beac,bebb,beca,bed9
+NO BACK X DEEP     4D,b6df,bcf2,bd08,bdca,bda0,be8a,be99,beac,bebb,beca,bed9
+SHOTGUN Z S-IN       4E,b715,bd15,bd28,bd32,bd47,bda4,be99,beac,bebb,beca,bed9
+REDGUN Z SLANT     4F,b743,bd51,bd6c,bd7f,bda4,b83c,be99,beac,bebb,beca,bed9
+SHOTGUN XY BOMB 48,b5ef,b83c,bc2d,bda4,bda0,bc3a,be99,beac,bebb,beca,bed9
+R AND S Y UP          49,b629,bc52,bc6d,bdd6,bc77,bdd2,be99,beac,bebb,beca,bed9
+10,a33a,a34c,a386,a39d,a3ae,a3b7,a3bf,a3c8,a3ce,a3d7,a3dd
+50,a33a,a34c,a386,a39d,a3ae,b82e,a3bf,a3c8,b775,a3d7,a3dd
+11,a43d,a44b,a487,a49d,a4a0,a4ab,a4b4,a4bd,a4cf,a4e4,be4e
+12,a55c,a567,a59d,a49d,a5ac,a5b7,be30,be42,be48,be2a,a5ca
+13,a615,a626,a65f,a49d,a66d,a678,a67e,a683,a689,be3c,a5ca
+14,a6cd,a6d8,be3c,b781,a714,a720,a67e,a683,a689,a726,be36
+52,a6cd,a6d8,be3c,be54,a714,b77b,a67e,a683,a689,a726,be36
+51,a6cd,a6d8,be3c,b781,a714,b77b,a67e,a683,a689,a726,be36
+53,ab3e,abc9,b77b,aacc,be66,ac05,b832,be30,be36,be2a,ac10
+16,ab3e,abc9,ab55,aacc,bf2a,ac05,a786,be30,be36,be2a,ac10
+54,a78b,a79f,a7e1,be54,a7f9,a7e7,be30,a683,bebb,a7f0,bed9
+17,a78b,a79f,a7e1,b786,a7f9,a7e7,be30,a683,bebb,a7f0,bed9
+55,a72f,a739,a74d,a39d,be5a,be4e,a786,be30,a4cf,a3d7,be36
+15,a72f,a739,a74d,a39d,b78e,be4e,a786,be30,a4cf,a3d7,be36
+18,a849,a85a,a88e,a39d,a3ae,a3b7,a3bf,a3c8,a3ce,a3d7,a3dd
+56,a615,a626,a65f,be54,a8a2,be36,a67e,a683,a689,be3c,b832
+19,a615,a626,a65f,b786,a8a2,be36,a67e,a683,a689,be3c,be48
+1A,a8b4,a8bf,a8f5,a8fb,a901,a907,be99,beac,a90d,beca,a91d
+1B,a930,a93b,a978,a984,a998,be8a,be99,beac,bebb,beca,bed9
+1,aa6a,aa87,aac6,aacc,b78e,be4e,be30,b82e,b79c,be2a,be36
+1C,aa6a,aa87,aac6,aacc,b78e,be4e,be30,be42,be48,be2a,be36
+0,aa6a,aa87,aac6,aacc,b78e,be4e,be30,b82e,b793,be2a,be36
+2,ab3e,aa87,ab55,aacc,be66,ab5b,b79c,be30,be36,be2a,be4e
+1D,ab3e,aa87,ab55,aacc,bf2a,ab5b,a786,be30,be36,be2a,be4e
+3,ac16,ac21,ac58,a39d,be66,be3c,be30,be42,b79c,be2a,be36
+1E,ac16,ac21,ac58,a39d,ac64,be3c,be30,be42,be48,be2a,be36
+1F,a43d,a44b,ac6d,a49d,a4a0,a4ab,a4b4,a4bd,a4cf,a4e4,be4e
+4,ac7e,ac81,b7a5,b7b4,b7b9,b7be,be99,acdb,bebb,ace8,acee
+20,ac7e,ac81,acc3,acc9,accf,acd5,be99,acdb,bebb,ace8,acee
+5,adff,ae0a,ae44,a39d,ae4a,ae53,b79c,b7c3,ae77,ae89,ae8f
+22,adff,ae0a,ae44,a39d,ae4a,ae53,a786,ae5c,ae77,ae89,ae8f
+7,acf4,ad0b,ad17,ad59,a901,b7e8,be30,ad67,b82e,be2a,b79c
+21,acf4,ad0b,ad17,b7c9,a901,ad5f,be30,ad67,ad76,be2a,ad9a
+6,acf4,ad0b,ad17,ad59,a901,ad5f,be30,ad67,ad76,be2a,b79c
+8,ae95,aea3,aeb5,be54,a65f,be36,a67e,a683,a689,be3c,b79c
+24,ae95,aea3,aeb5,b786,a65f,be36,a67e,a683,a689,be3c,be48
+9,acf4,ad0b,aef1,ad59,a901,a65f,a67e,a683,a689,be3c,b79c
+26,acf4,ad0b,aef1,b7c9,a901,a65f,a67e,a683,a689,be3c,be48
+B,b826,af66,af2a,ad59,a901,af6c,be42,ad67,b82e,be2a,b79c
+27,b826,af66,af2a,b7c9,a901,af6c,be42,ad67,ad76,be2a,ad9a
+A,b826,af66,af2a,ad59,a901,af6c,be42,ad67,ad76,be2a,b79c
+C,a930,a99e,a9b0,a9bb,aa00,b7d1,be99,beac,bebb,beca,b7d7
+23,a930,a99e,a9b0,a9bb,aa00,aa0e,be99,beac,bebb,beca,aa1a
+D,aa6a,aad4,aaee,be60,aaf6,be4e,be30,be42,b79c,be2a,be36
+25,aa6a,aad4,aaee,aacc,aaf6,be4e,be30,be42,be48,be2a,be36
+E,b008,b04f,be3c,ad59,b076,b061,be30,a3c8,b067,be2a,b79c
+2A,b008,b04f,be3c,b7c9,b076,b061,be30,a3c8,b067,be2a,be48
+2D,b17b,b1b9,be4e,b7dd,b076,b1c6,be30,ad67,b1ce,be2a,b1f2
+F,b17b,b1b9,b7e2,b7dd,b076,b1c6,be30,ad67,b1ce,be2a,b1f2
+2E,b128,b832,b15d,be54,be5a,b163,be30,be42,b16f,be2a,be48
+57,b128,b832,b15d,be54,be5a,b163,be30,b169,b16f,be2a,b175
+29,af78,af86,afba,a39d,afcc,afd8,a3bf,a3c8,a3ce,a3d7,a3dd
+28,a3e6,a3f7,a409,a39d,a3ae,a3b7,a3bf,a3c8,a3ce,a3d7,a3dd
+2B,b0b4,b08d,af86,a39d,b0a2,afd8,a3bf,a3c8,a3ce,a3d7,a3dd
+58,b0eb,b7a5,b0f2,b7b4,b7b9,b7be,be99,acdb,bebb,beca,bed9
+2C,b0eb,acc3,b0f2,acc9,accf,acd5,be99,acdb,bebb,beca,bed9
+59,b1fb,b21b,b22d,b245,a901,b7e8,be30,ad67,b82e,be2a,b79c
+2F,b1fb,b21b,b22d,b245,a901,ad5f,be30,ad67,ad76,be2a,ad9a

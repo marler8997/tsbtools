@@ -1,0 +1,152 @@
+To use the program, you must first open up a ROM.
+then, select either the offensive, defensive or general tab.
+
+Play calling background:
+One thing that you must understand when editing plays is the way play calling works in 
+Tecmo Super Bowl. 
+
+During gameplay you choose a play based on it's picture. 
+This is obvious. What is not obvious is that the actual play that is run is also based 
+on what play the defender chooses. There are 8 possible offensive 'plays' that could be 
+run when when you choose your play. The offensive 'plays' that can be run are normally 
+quite similar in the original ROM. For defense the same rule applies.
+
+For example let't look at the offensive play "T FAKE SWEEP R " from the original ROM.
+(Open up the original ROM with the program and go to the 'General' tab. )
+On the general tab have a look at the 'Offensive Play' text box.
+It shows the following                  "10, 10, 50, 10, 10, 50, 10, 10". 
+The 'Defensive Reaction' text box shows "5B, 5A, 5A, 58, 58, 59, 59, 59".
+These numbers correspond to the actual plays that will be run.
+
+When the user chooses the "T FAKE SWEEP R" play in the game and the opponent 
+chooses that play also, the offensive play that will be run is offensive play #10.
+The defensive play that will be run is defensive play #5B. If we look on the Defense 
+tab at the player assignments we see stuff like: 
+  "Boost-RS(0f); Boost-MS(30); Boost-HP(30); PassRush"
+This is a steriod blitz, your play got called, good luck getting any yards.
+
+If the defender were to have chosen the #4 Passing play, the offensive play would
+be the #10 offensive play and the defensive paly would be the #59 defensive play.
+
+Breakdown of every possibliliy for this play:
+__________________________________________________________________________________
+Defender chooses   |   offensive play that is run |   defensive play that is run |
+#1 run             |        10                    |           5B                 |
+#2 run             |        10                    |           5A                 |
+#3 run             |        50                    |           5A                 |
+#4 run             |        10                    |           58                 |
+#1 pass            |        10                    |           58                 |
+#2 pass            |        50                    |           59                 |
+#3 pass            |        10                    |           59                 |
+#4 pass            |        10                    |           59                 |
+___________________|______________________________|______________________________|
+
+
+Play group box:
+The play group box is located at the bottom of the form. Here you can change the 
+current play. 
+
+
+
+OFFENSE Tab:
+On the offensive tab you can re-name the play, choose an existing formation,
+and change the assignment of an offensive player.
+
+To change the offensive play you are currently editing you can press the green button.
+NOTE: The green button will only select the offensive plays that are currently assigned.
+
+A tooltip will appear over a combo box if you hover the mouse over it.
+The tooltip will show [pointer], Name of the pattern and the plays the pattern occurs in
+in the original ROM.
+
+For any of your changes to take affect, you need to click the 'Update' button.
+
+
+
+DEFENSE Tab:
+On the 'Defense' tab you can change the assignments for the defensive players on a
+defensive play. 
+
+To change the defensive play you are currently editing you can press the green button.
+NOTE: The green button will only select the defensive plays that are currently assigned.
+
+For any of your changes to take affect, you need to click the 'Update' button.
+
+	Percentage plays. In many defensive patterns you will see text like:
+	56% F4-Pause(00); // PassRush;
+	This means that there is a 56% chance that the guy on that play will just sit there.
+	If he doesn't just sit there, hell rush the passer. The '//' indicates end of a
+	particular sequence.
+
+
+
+GENERAL Tab:
+You can use the General Tab to change the associated offensive and defensive play numbers.
+
+With the "Copy playbook to..." button you can Copy the current playbook to another ROM.
+With the "Copy playbook from..." button you can Copy a playbook from another ROM to the 
+ROM buffer currently in the program's memory.
+
+For any of your changes (to the offensive and defensive plays) to take affect, you need 
+to click the 'Update' button.
+
+
+
+PLAY GRAPHIC Tab:
+This tab will help you to re-arrange the graphic associated with the current play.
+In it's simple usage scenatio, you would just click a tile at the right (making it
+the current tile) and then click on a square at the left to place it.
+
+A more advanced use scenario would be to edit the pattern using the 'Tile Pattern' text box.
+The 'Tile Pattern' text box shows the tile pattern in textual form. You can copy the contents 
+(with ctrl+C), paste (with ctrl+V) and type numbers into the text box to change the tile 
+pattern. Press the enter key to update the pattern.
+
+You may find it useful to have another instance of the program open to the 'Play Graphic' tab
+to get look at the tile patterns of existing plays so that you can use portions of that pattern
+in your pattern.
+
+
+TEXT COMMANDS Tab:
+This tab is not yet very useful. 
+The goal of this tab is to textually represent the current playbook. It should be updated in 
+future revisions of the program.
+
+
+=================================== Data Files: ============================================
+The program uses several data files that can be edited by the user. They are located in 
+the 'DataFiles' directory.
+These files are:
+
+1. Command-List.csv
+   Do not edit this file.
+
+2. OffensivePatternNames.csv
+   This file contains the 'names' for the offensive patterns in the program.
+   If you feel like I've mis-named a pattern, feel free to change the name in this file.
+
+3. OffensivePointers.csv
+   This file contains the 'pointers' that correspond to the 'patterns names' in the 
+   OffensivePatternNames.csv file. Cell B2 in the OffensivePatternNames.csv file keys to
+   cell B2 in the OffensivePointers.csv file.
+   When you choose a pattern in the offense tab, the correspoing pointer value is updated in 
+   the ROM.
+
+4. DefensivePatterns.csv
+   These are the names that you select on the defense panel.
+   If you would like to re-name the pattern, go ahead.
+   
+5. DefensivePointers.csv
+   This file contains the 'pointers' that correspond to the 'patterns names' in the 
+   DefensivePatterns.csv file. Cell B2 in the DefensivePatterns.csv file keys to
+   cell B2 in the DefensivePointers.csv file.
+   When you choose a pattern in the offense tab, the correspoing pointer value is updated in 
+   the ROM.
+
+
+====================================== Test Form ============================================
+The test form is brought up by going to File-> test form.
+If you can fiure it out, you might find it useful.
+Notice that it is called 'TestForm'. Keep in mind that the test that you run may not be working
+correctly yet.
+   

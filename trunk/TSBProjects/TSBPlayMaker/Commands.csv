@@ -1,0 +1,153 @@
+0x01 , man to man HB. One hex follows and what it does is unknown.
+0x02 , man to man FB. One hex follows and what it does is unknown.
+0x03 , man to man WR1. One hex follows and what it does is unknown.
+0x04 , man to man WR2. One hex follows and what it does is unknown.
+0x05 , man to man TE. One hex follows and what it does is unknown.
+0x11 , man to man HB. One hex follows and what it does is unknown.
+0x12 , man to man FB. One hex follows and what it does is unknown.
+0x13 , man to man WR1. One hex follows and what it does is unknown.
+0x14 , man to man WR2. One hex follows and what it does is unknown.
+0x15 , man to man TE. One hex follows and what it does is unknown.
+0x20 to 0x2F , based upon a random number check either goto the pointer or move to the next command.  Two hex follow: lo.byte and hi.byte.
+0x30 , Block RE
+0x31 , Block NT
+0x32 , Block LE
+0x33 , Block ROLB
+0x34 , Block RILB
+0x35 , Block LILB
+0x36 , Block LOLB
+0x37 , Block RCB
+0x38 , Block LCB
+0x39 , Block FS
+0x3A , Block SS
+0x40 , Chop Block RE
+0x41 , Chop Block NT
+0x42 , Chop Block LE
+0x43 , Chop Block LOLB
+0x44 , Chop Block RILB
+0x45 , Chop Block LILB
+0x46 , Chop Block LOLB
+0x47 , Chop Block RCB
+0x48 , Chop Block LCB
+0x49 , Chop Block FS
+0x4A , Chop Block SS
+0x50 , Handoff to QB
+0x50 , Handoff to HB
+0x50 , Handoff to FB
+0x50 , Handoff to WR1
+0x50 , Handoff to WR2
+0x50 , Handoff to TE
+0x50 , Handoff to C
+0x50 , Handoff to LG
+0x50 , Handoff to RG
+0x50 , Handoff to LT
+0x5A , Handoff to RT
+0x60 , Fake Handoff to QB
+0x61 , Fake Handoff to HB
+0x62 , Fake Handoff to FB
+0x63 , Fake Handoff to WR1
+0x64 , Fake Handoff to WR2
+0x65 , Fake Handoff to TE
+0x66 , Fake Handoff to C
+0x67 , Fake Handoff to LG
+0x68 , Fake Handoff to RG
+0x69 , Fake Handoff to LT
+0x6A , Fake Handoff to RT
+0x70 , Pitch to QB
+0x71 , Pitch to HB
+0x72 , Pitch to FB
+0x73 , Pitch to WR1
+0x74 , Pitch to WR2
+0x75 , Pitch to TE
+0x76 , Pitch to C
+0x77 , Pitch to LG
+0x78 , Pitch to RG
+0x79 , Pitch to LT
+0x7A , Pitch to RT
+0x80 , Motion vertically to QB
+0x81 , Motion vertically to HB
+0x82 , Motion vertically to FB
+0x83 , Motion vertically to WR1
+0x84 , Motion vertically to WR2
+0x85 , Motion vertically to TE
+0x86 , Motion vertically to C
+0x87 , Motion vertically to LG
+0x88 , Motion vertically to RG
+0x89 , Motion vertically to LT
+0x8A , Motion vertically to RT
+0x91 , Pass to 2 receivers then branch to change of possession.  Hex that follow are the receivers (2 receivers) (receiver bytes are split into a chance then which receiver like 0x31 -> 3 chance and 1 -> RB1) then lo.byte and hi.byte
+0x92 , Pass to an amount of receivers then branch to change of possession. (3 receivers) 
+0x93 , Pass to an amount of receivers then branch to change of possession. (4 receivers)
+0x94 , Pass to an amount of receivers then branch to change of possession. (5 receivers)
+0xA0 to 0xA5 , Receiver route # (order in which the pass icon will cycle through)
+0xB0 to 0xB1 , Set Position from Kickoff.  Hex that follow are the Y and X coordinates.
+0xB4 to 0xB5 , Move (Absolute).  Hex that follow are the Y and X coordinates.
+0xC0 , Dropback to pass.  Hex that follow are the Y and X coordinates.
+0xC1 , Unknown but used usually before a pass command.  Three hex follow and have unknown affects.
+0xC4 , Celebrate.  One hex follows with an unknown affect.
+0xC5 , Cry.  One hex follows with an unknown affect.
+0xC7 , Computer-team then goto pointer.  Hex that follow are lo.byte and hi.byte.
+0xC8 , Computer-team and based upon a random number check either goto the pointer or move to the next command.  Three hex follow: lo.byte  hi.byte  and random amount.
+0xCC , Pass Block
+0xCD , Unknown but generally used on players moving to block.  Two hex follow
+0xCE , Move (Absolute).  Hex that follow are Y and X coordinates.
+0xCF , Unknown but generally used on players moving to block.  Two hex follow
+0xD0 , Set Position From Hike.  Hex that follow are Y and X coordinates.
+0xD1 , Set Position From Middle of Field.  Hex that follow are Y and X coordinates.
+0xD2 , Hike (Under Center).
+0xD3 , Hike (From Shotgun).
+0xD4 , Take Snap (Under Center).
+0xD5 , Take Snap (From Shotgun).
+0xD6 , Take Snap (For Field Goal/Extra Point)
+0xD7 , Move (Relative).  Hex that follow are Y and X coordinates.
+0xD8 , Move (Absolute).  Hex that follow are Y and X coordinates.
+0xD9 , Move (Absolute).  Hex that follow are Y and X coordinates.
+0xDA , Pass Rush.
+0xDB , Vertically mirror ball carrier
+0xDD , Pass Rush.
+0xDF , Computer takes control of player.
+0xE0 , Boost RS.  Hex that follow is boost amount.
+0xE1 , Boost MS.  Hex that follow is boost amount.
+0xE2 , Boost RP.  Hex that follow is boost amount.
+0xE3 , Boost MS.  Hex that follow is boost amount.
+0xE4 , Player takes control of player.
+0xE5 , Kickoff.
+0xE6 , Punt.
+0xE7 , Field Goal.
+0xE8 , Extra Point.
+0xEA , Take a 3-point stance.
+0xEB , Shift.  Hex that follows is how long before shifting.
+0xEC , Take a 2-point stance.
+0xED , Motion.  Hex that follows is how long before motioning.
+0xEE , Take a QB stance.
+0xEF , Switch player icon to returner.
+0xF0 , Face direction.  Hex that follows is the direction to turn to.
+0xF3 , Pause.  Hex that follows is the amount to pause.
+0xF4 , Pause.  Hex that follows is the amount to pause.
+0xF5 , Pause.  Two hex follow and are the amount to pause.
+0xF7 , Boost HP.  Hex that follow is boost amount.
+0xFA ," Unknown but only is used for ""extra"" plays.",
+0xFC , Unknown but appears to make the player solid.  Two hex follow.,
+0xFD , Set to Pass Block a specific player.  Two hex follow to select the player to block by an unknown method.,
+0xFE , Loop Forward or Backward.  Hex that follows is how many bytes to move forward or backward. [0x00 to 0x7F -> Forward 0 to 127 bytes (0 is the FE command) and 0x80 to 0xFF , Backward 1 to 128 bytes where 0xFF is back 1 (1 is the byte before the FE command)]
+0xFF , Goto pointer.  Two hex follow: lo.byte and hi.byte.,
+
+ ,,
+
+,These commands are combined to create a sequence for the player no matter what is needed.,
+
+-------------,,
+
+Pointers:,,
+
+,Initial Player Pointer (This goes to the first command for the player),
+
+0x20 to 0x2F , Random Pointer (This may go to an alternative command set)
+
+0x91 to 0x94 , Branch Pointer (This is to a E4 DF FE FF)
+
+0xC7 , Computer Pointer (This will go to an command set for only computer-type players)
+
+0xC8 , Computer Random Pointer (This may go to an alternative command set for computer-type players)
+
+0xFF , Goto Pointer (This will go to another command set)

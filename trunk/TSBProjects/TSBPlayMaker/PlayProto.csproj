@@ -1,0 +1,824 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{74E99441-F541-4B61-A0CD-14AF630F5002}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "Play.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "TSBPlayMaker"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = "copy /y ..\..\INFO.txt  .&#xd;&#xa;copy /y ..\..\Instructions.txt  .&#xd;&#xa;xcopy /y  ..\..\DataFiles .\DataFiles\ &#xd;&#xa;&#xd;&#xa;"
+                PostBuildEvent = ""
+                RootNamespace = "PlayProto"
+                RunPostBuildEvent = "Always"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "MSDATASRC"
+                    Guid = "{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "ADODB"
+                    Guid = "{00000205-0000-0010-8000-00AA006D2EA4}"
+                    VersionMajor = "2"
+                    VersionMinor = "5"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "MSComctlLib"
+                    Guid = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "MSFlexGridLib"
+                    Guid = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxMSFlexGridLib"
+                    Guid = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ButtonForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ButtonForm.resx"
+                    DependentUpon = "ButtonForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CommandTree.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CurveControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CurveControl.resx"
+                    DependentUpon = "CurveControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CurveForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CurveForm.resx"
+                    DependentUpon = "CurveForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DefensePanel.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DefensePanel.resx"
+                    DependentUpon = "DefensePanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExcelForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExcelForm.resx"
+                    DependentUpon = "ExcelForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FieldControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FieldControl.resx"
+                    DependentUpon = "FieldControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FieldForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FieldForm.resx"
+                    DependentUpon = "FieldForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FlexGridForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlexGridForm.resx"
+                    DependentUpon = "FlexGridForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "GeneralPanel.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GeneralPanel.resx"
+                    DependentUpon = "GeneralPanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ImageGuy.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "INFO.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Instructions.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OffensePanel.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OffensePanel.resx"
+                    DependentUpon = "OffensePanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Pattern.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PatternReaderForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PatternReaderForm.resx"
+                    DependentUpon = "PatternReaderForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PlayGraphicPanel.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlayGraphicPanel.resx"
+                    DependentUpon = "PlayGraphicPanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PlayTool.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StringInputDlg.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StringInputDlg.resx"
+                    DependentUpon = "StringInputDlg.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TestForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TestForm.resx"
+                    DependentUpon = "TestForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TileControl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TileControl.resx"
+                    DependentUpon = "TileControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TilePanel.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TilePanel.resx"
+                    DependentUpon = "TilePanel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UtilityClasses.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tiles\00.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\01.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\8D.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\8E.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\8F.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\90.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\91.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\92.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\93.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\94.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\95.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\96.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\97.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\98.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\99.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9A.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9B.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9C.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9D.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9E.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\9F.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\A9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AD.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\AF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\B9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BD.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\BF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\C9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CD.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\CF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\D9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DD.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\DF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\E9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\EA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\EB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\EC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\ED.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\EE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\EF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F0.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F1.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F2.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F3.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F4.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F5.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F6.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F7.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F8.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\F9.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FA.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FB.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FC.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FD.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FE.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tiles\FF.BMP"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
