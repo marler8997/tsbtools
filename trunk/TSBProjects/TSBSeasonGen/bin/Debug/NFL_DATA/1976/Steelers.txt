@@ -1,0 +1,44 @@
+Steelers,Offense=8,O_Rushing=1,O_Passing=23,PF=342, Defense=1,D_Rushing=1,D_Passing=3,PA=138
+DT,Mansfield,Ray,skinColor=4,HOF=False,#56,speed='',ranking=200,description='',seasons=14,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+C,Mansfield,Ray,skinColor=4,HOF=False,#56,description='Turbo Star',seasons=14
+C,Webster,Mike,skinColor=1,HOF=True,#52,description='Turbo Star',seasons=17
+C,Clack,Jim,skinColor=1,HOF=False,#50,description='Turbo Star',seasons=11
+CB,Blount,Mel,skinColor=1,HOF=True,#47,speed='',ranking=10,description='Turbo Star',seasons=14,sacks=0,intTD=0,fumbleTD=0,fumblesforced=1,ints=6
+DB,Allen,Jimmy,skinColor=1,HOF=False,#45,speed='',ranking=149,description='',seasons=8,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DB,Shell,Donnie,skinColor=4,HOF=False,#31,speed='',ranking=103,description='',seasons=14,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=1
+DB,Wagner,Mike,skinColor=0,HOF=False,#0,speed='',ranking=68,description='',seasons=10,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=2
+DB,Thomas,J.T.,skinColor=0,HOF=False,#0,speed='',ranking=51,description='',seasons=9,sacks=0,intTD=0,fumbleTD=0,fumblesforced=1,ints=2
+DB,Edwards,Glen,skinColor=0,HOF=False,#0,speed='',ranking=16,description='Turbo Star',seasons=11,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=6
+DE,White,Dwight,skinColor=4,HOF=False,#78,speed='',ranking=1,description='',seasons=10,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Greenwood,L.C.,skinColor=4,HOF=False,#68,speed='',ranking=1,description='',seasons=13,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DE,Furness,Steve,skinColor=1,HOF=False,#64,speed='',ranking=1,description='',seasons=10,sacks=0,intTD=0,fumbleTD=0,fumblesforced=1,ints=0
+DT,Greene,Joe,skinColor=4,HOF=True,#75,speed='',ranking=1,description='',seasons=13,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DT,Holmes,Ernie,skinColor=0,HOF=False,#0,speed='',ranking=1,description='',seasons=7,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DT,Banaszak,John,skinColor=0,HOF=False,#0,speed='',ranking=1,description='',seasons=7,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+DT,Dunn,Gary,skinColor=0,HOF=False,#0,speed='',ranking=1,description='',seasons=11,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+G,Davis,Sam,skinColor=1,HOF=False,#57,description='Turbo Star',seasons=13
+G,Mullins,Gerry,skinColor=0,HOF=False,#0,description='',seasons=9
+K,Gerela,Roy,skinColor=1,HOF=False,#10,ranking=18,fga=26,fgm=14
+LB,Ham,Jack,skinColor=1,HOF=True,#59,speed='',ranking=11,description='',seasons=12,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=2
+LB,Lambert,Jack,skinColor=1,HOF=True,#58,speed='',ranking=11,description='',seasons=11,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=2
+LB,Toews,Loren,skinColor=4,HOF=False,#51,speed='',ranking=70,description='',seasons=11,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+LB,Kellum,Marv,skinColor=0,HOF=False,#0,speed='',ranking=70,description='',seasons=4,sacks=0,intTD=0,fumbleTD=0,fumblesforced=0,ints=0
+P,Walden,Bobby,skinColor=1,HOF=False,#1,ranking=14,punts=76,puntYards=2982
+QB,Bradshaw,Terry,skinColor=1,HOF=True,#12,speed='',ranking=25,description='',seasons=14,passRat=65.4,passYards=1177,passAtt=192,passComp=92,td=10,int=9
+QB,Kruczek,Mike,skinColor=0,HOF=False,#0,speed='',ranking=33,description='',seasons=5,passRat=74.5,passYards=758,passAtt=85,passComp=51,td=0,int=3
+RB,Harrison,Reggie,skinColor=4,HOF=False,#46,speed='',ranking=96,description='',seasons=4,fumblepercent=1.79,rec=2,rushes=54,rushYards=235,recYards=19,td=4,puntRet=0,puntRetYards=0,kickRet=1,kickRetYards=26
+RB,Fuqua,John,skinColor=4,HOF=False,#33,speed='',ranking=136,description='',seasons=8,fumblepercent=12.50,rec=1,rushes=15,rushYards=63,recYards=4,td=1,puntRet=11,puntRetYards=77,kickRet=4,kickRetYards=75
+RB,Harris,Franco,skinColor=1,HOF=True,#32,speed='',ranking=11,description='',seasons=13,fumblepercent=2.56,rec=23,rushes=289,rushYards=1128,recYards=151,td=14,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+RB,Bleier,Rocky,skinColor=1,HOF=False,#20,speed='',ranking=10,description='',seasons=11,fumblepercent=1.64,rec=24,rushes=220,rushYards=1036,recYards=294,td=5,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+RB,Deloplaine,Jack,skinColor=0,HOF=False,#0,speed='',ranking=105,description='',seasons=4,fumblepercent=16.67,rec=1,rushes=17,rushYards=91,recYards=3,td=2,puntRet=17,puntRetYards=150,kickRet=17,kickRetYards=385
+T,Gravelle,Gordon,skinColor=1,HOF=False,#71,description='',seasons=8
+T,Kolb,Jon,skinColor=1,HOF=False,#55,description='Turbo Star',seasons=13
+T,Pinney,Ray,skinColor=4,HOF=False,#65,description='',seasons=9
+TE,Brown,Larry,skinColor=4,HOF=False,#30,speed='',ranking=37,description='',seasons=14,fumblepercent=0.00,rec=7,rushes=0,rushYards=0,recYards=97,td=0
+TE,Grossman,Randy,skinColor=1,HOF=False,#84,speed='',ranking=30,description='',seasons=8,fumblepercent=0.00,rec=15,rushes=0,rushYards=0,recYards=181,td=1
+TE,Cunningham,Bennie,skinColor=0,HOF=False,#0,speed='',ranking=41,description='',seasons=10,fumblepercent=0.00,rec=5,rushes=0,rushYards=0,recYards=49,td=1
+WR,Swann,Lynn,skinColor=4,HOF=True,#88,speed='',ranking=32,description='',seasons=9,fumblepercent=0.00,rec=28,rushes=1,rushYards=2,recYards=516,td=3,puntRet=3,puntRetYards=11,kickRet=0,kickRetYards=0
+WR,Stallworth,John,skinColor=4,HOF=True,#82,speed='',ranking=67,description='',seasons=14,fumblepercent=0.00,rec=9,rushes=0,rushYards=47,recYards=111,td=3,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+WR,Lewis,Frank,skinColor=4,HOF=False,#43,speed='',ranking=50,description='',seasons=13,fumblepercent=0.00,rec=17,rushes=2,rushYards=24,recYards=306,td=2,puntRet=0,puntRetYards=0,kickRet=0,kickRetYards=0
+WR,Bell,Theo,skinColor=0,HOF=False,#0,speed='Fast',ranking=82,description='',seasons=9,fumblepercent=1.25,rec=3,rushes=1,rushYards=5,recYards=43,td=1,puntRet=39,puntRetYards=390,kickRet=0,kickRetYards=0
+WR,Pough,Ernest,skinColor=0,HOF=False,#0,speed='',ranking=69,description='',seasons=3,fumblepercent=0.10,rec=8,rushes=2,rushYards=8,recYards=161,td=1,puntRet=0,puntRetYards=0,kickRet=18,kickRetYards=369

@@ -1,0 +1,86 @@
+
+
+# QB_PC 
+# 1st number in pair --> QB's Completion percent.
+# 2nd number in pair --> Will be QB's PC if his comp pct is greater than
+#                        the first number in pair.
+# QB_PC = { 70,94,  66,88, 63,81, 60,75,  40,31 }
+
+# RETURN_MAN_MS
+# 1st number in pair --> Player's combined punt return yards and kick return yards.
+# 2nd number in pair --> Will be the player's MS if his (punt return yards and kick return yards)
+#                        is greater than the first number in pair.
+# Must have at least 150 return yards to qualify.
+RETURN_MAN_MS = { 1500,75,  1000,56,  700,44, 500,38  }
+
+# DL_LB_PI
+# 1st number in pair --> Player's number of interceptions.
+# 2nd number in pair --> Will be the player's PI if the players interceptions is greater than
+#                        the first number in pair.
+DL_LB_PI = { 5,56,  4,50, 2,44, }
+
+# DB_PI
+# 1st number in pair --> Player's number of interceptions.
+# 2nd number in pair --> Will be the player's PI if the players interceptions is greater than
+#                        the first number in pair.
+DB_PI = { 7,94, 6,75, 5,69, 4,56, 3,44 }
+
+# WR Stuff
+# WR_REC
+# 1st number in pair --> Player's number of recptions.
+# 2nd number in pair --> Will be the player's REC if the players recptions total is greater than
+#                        the first number in pair.
+# WR_REC = { 110,94,  100,88,  80,81,  70,75,  60,63   }
+
+# WR_MS
+# 1st number in pair --> Player's number of rec yards
+# 2nd number in pair --> Will be the player's MS if the players rec yard total is greater than
+#                        the first number in pair.
+# WR_MS = { 1500,75, 1300,69,  1100,56,   }
+
+
+# RB stuff (Applies to FBs and RBs)
+# RB_REC
+# 1st number in pair --> Player's number of recptions.
+# 2nd number in pair --> Will be the player's REC if the players recptions total is greater than
+#                        the first number in pair.
+RB_REC = { 110,94,  100,88,  80,81,  70,75,  60,63, 40,56,  30,50  }
+
+# RB_MS
+# 1st number in pair --> Player's number of Rec yards + Rushing yards
+# 2nd number in pair --> Will be the player's MS if the players rec yard & rush yard total is greater than
+#                        the first number in pair.
+# RB_MS = { 1500,75, 1300,69,  1100,56   }
+
+
+# TE Stuff
+# TE_REC
+# 1st number in pair --> Player's number of recptions.
+# 2nd number in pair --> Will be the player's REC if the players recptions total is greater than
+#                        the first number in pair.
+# TE_REC = {110,94,  100,88,  80,81,  70,75,  60,63, 40,56,  30,50  }
+
+# TE_MS
+# 1st number in pair --> Player's number of rec yards
+# 2nd number in pair --> Will be the player's MS if the players rec yard total is greater than
+#                        the first number in pair.
+TE_MS = { 1500,75,  1100,50,  600,44   }
+
+
+# Ball control
+# Based on fumple percent. 
+# 1st number in pair --> fumble percent
+# 2nd number in pair -->will be the player's BC if the player's fumble percent is 
+# greater than the first number in the pair.
+WR_RB_TE_BC = { 20,6,  10,38,  5,50, 3,56, 1,81 }
+
+
+# Defense Sim options:
+#
+# FRONT_7_MIN_SIM_PASS_RUSH is the minimum sim pass rush points to be assigned to a member of the
+#   front 7 (valid range = 0 - 28)
+FRONT_7_MIN_SIM_PASS_RUSH = 20
+
+# FRONT_7_SIM_POINT_POOL is the amount of points that are to be divided up amongst the front 7
+#   the remaining points will be evenly distributed to the defensive backs.(valid range = 0-255)
+FRONT_7_SIM_POINT_POOL    = 180
