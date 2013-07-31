@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
 
 
     /// <summary>
@@ -334,8 +335,7 @@ import java.util.regex.Pattern;
         {
             if( MainClass.GUI_MODE )
             {
-                //TODO: Fix gui mode
-                //MessageBox.Show(null,error,"",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                JOptionPane.showMessageDialog(null,  error, "Error!", JOptionPane.ERROR_MESSAGE);
             }
             else
                 System.err.println( error );

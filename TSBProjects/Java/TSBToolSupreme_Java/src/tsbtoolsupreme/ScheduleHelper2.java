@@ -200,7 +200,6 @@ import java.util.regex.Pattern;
 
             if( m.find() )
             {
-                //TODO: verify this works
                 awayTeam = m.group(1).toString();
                 homeTeam = m.group(2).toString();
                 if( week_game_count > gamePerWeekLimit - 1 )
