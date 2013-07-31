@@ -1,6 +1,5 @@
 package tsbtoolsupreme;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,7 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
-
 
 /// <summary>
 /// Summary description for TecmoTool.
@@ -22,8 +20,6 @@ public class TecmoTool implements ITecmoTool {
     /* *
      * Team Formation Data: Bills 0x21FE0, 0x31E80 Falcons 0x21FFB, 0x31E9B
      */
-
-    public boolean GUI_MODE = false;
 
     /* *
      * Playbook Data: Bills 0x1D310-0x1D313 Falcons 0x1D37C-0x1D37F
@@ -41,7 +37,7 @@ public class TecmoTool implements ITecmoTool {
     protected int teamSimOffensivePrefStart = 0x27526;
     protected int mBillsPuntKickReturnerPos = 0x328d3;
     protected int dataPositionOffset = (-0x8000 + 0x010); // snes = 0x170000
-    protected Pattern mNameRegex = Pattern.compile("[a-zA-Z \\.]+");;
+    protected Pattern mNameRegex = Pattern.compile("[a-zA-Z \\.]+");
 
     // / <summary>
     // / Returns the rom version
@@ -49,19 +45,16 @@ public class TecmoTool implements ITecmoTool {
     public String getRomVersion() {
         return "28TeamNES";
     }
-
     private Vector<String> errors = new Vector<String>();
-
-    protected String[] positionNames = { "QB1", "QB2", "RB1", "RB2", "RB3",
-            "RB4", "WR1", "WR2", "WR3", "WR4", "TE1", "TE2", "C", "LG", "RG",
-            "LT", "RT", "RE", "NT", "LE", "ROLB", "RILB", "LILB", "LOLB",
-            "RCB", "LCB", "FS", "SS", "K", "P" };
-
-    public static String[] Teams = { "bills", "colts", "dolphins", "patriots",
-            "jets", "bengals", "browns", "oilers", "steelers", "broncos",
-            "chiefs", "raiders", "chargers", "seahawks", "redskins", "giants",
-            "eagles", "cardinals", "cowboys", "bears", "lions", "packers",
-            "vikings", "buccaneers", "49ers", "rams", "saints", "falcons" };
+    protected String[] positionNames = {"QB1", "QB2", "RB1", "RB2", "RB3",
+        "RB4", "WR1", "WR2", "WR3", "WR4", "TE1", "TE2", "C", "LG", "RG",
+        "LT", "RT", "RE", "NT", "LE", "ROLB", "RILB", "LILB", "LOLB",
+        "RCB", "LCB", "FS", "SS", "K", "P"};
+    public static String[] Teams = {"bills", "colts", "dolphins", "patriots",
+        "jets", "bengals", "browns", "oilers", "steelers", "broncos",
+        "chiefs", "raiders", "chargers", "seahawks", "redskins", "giants",
+        "eagles", "cardinals", "cowboys", "bears", "lions", "packers",
+        "vikings", "buccaneers", "49ers", "rams", "saints", "falcons"};
 
     public byte[] getOutputRom() {
         return outputRom;
@@ -81,23 +74,20 @@ public class TecmoTool implements ITecmoTool {
 
     public Vector<String> getErrors() {
         return this.errors;
-    };
+    }
+
+    ;
 
     public void setErrors(Vector<String> errors) {
         this.errors = errors;
     }
-
     public static boolean ShowTeamFormation = false;
     public static boolean ShowPlaybook = false;
     public static boolean ShowColors = false;
-
     private boolean mShowOffPref = false;
     protected int maxNameLength = 16;
-
-    protected int[] gameYearLocations = { 0xC4E4, 0x1e128, 0x1e28a, 0x1e2bd,
-            0x1f89b, 0xc129 };
-
-
+    protected int[] gameYearLocations = {0xC4E4, 0x1e128, 0x1e28a, 0x1e2bd,
+        0x1f89b, 0xc129};
     protected Hashtable<Integer, Integer> abilityMap;
 
     public TecmoTool() {
@@ -111,11 +101,12 @@ public class TecmoTool implements ITecmoTool {
     // / Will ensure that the header is correct.
     // / </summary>
     public void FixHeadder() {
-        if (outputRom == null)
+        if (outputRom == null) {
             return;
+        }
 
-        byte[] correctHeadder = { 0x4E, 0x45, 0x53, 0x1A, 0x10, 0x10, 0x42,
-                0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+        byte[] correctHeadder = {0x4E, 0x45, 0x53, 0x1A, 0x10, 0x10, 0x42,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
         for (int i = 0; i < correctHeadder.length; i++) {
             outputRom[i] = correctHeadder[i];
@@ -133,7 +124,7 @@ public class TecmoTool implements ITecmoTool {
     public boolean IsValidPosition(String pos) {
         boolean ret = false;
         for (int i = 0; i < positionNames.length; i++) {
-            if (pos .equals(positionNames[i])) {
+            if (pos.equals(positionNames[i])) {
                 ret = true;
                 break;
             }
@@ -144,7 +135,7 @@ public class TecmoTool implements ITecmoTool {
     public boolean IsValidTeam(String team) {
         boolean ret = false;
         for (int i = 0; i < Teams.length; i++) {
-            if (team .equals(Teams[i])) {
+            if (team.equals(Teams[i])) {
                 ret = true;
                 break;
             }
@@ -186,24 +177,24 @@ public class TecmoTool implements ITecmoTool {
 
             // switch(positionNames[i])
             {
-                if (positionNames[i] .equals( "QB1") || positionNames[i] .equals( "QB2")) {
+                if (positionNames[i].equals("QB1") || positionNames[i].equals("QB2")) {
                     SetQBAbilities(team, positionNames[i], 31, 31, 31, 31, 31,
                             31, 31, 31);
-                } else if (contains(new String[] { "RB1", "RB2", "RB3", "RB4",
-                        "TE1", "TE2", "WR1", "WR2", "WR3", "WR4" },
+                } else if (contains(new String[]{"RB1", "RB2", "RB3", "RB4",
+                    "TE1", "TE2", "WR1", "WR2", "WR3", "WR4"},
                         positionNames[i])) {
                     SetSkillPlayerAbilities(team, positionNames[i], 31, 31, 31,
                             31, 31, 31);
                 } else if (contains(
-                        new String[] { "C", "RG", "RT", "LG", "LT" },
+                        new String[]{"C", "RG", "RT", "LG", "LT"},
                         positionNames[i])) {
                     SetOLPlayerAbilities(team, positionNames[i], 31, 31, 31, 31);
-                } else if (contains((new String[] { "RE", "NT", "LE", "LOLB",
-                        "LILB", "RILB", "ROLB", "RCB", "LCB", "FS", "SS" }),
+                } else if (contains((new String[]{"RE", "NT", "LE", "LOLB",
+                    "LILB", "RILB", "ROLB", "RCB", "LCB", "FS", "SS"}),
                         positionNames[i])) {
                     SetDefensivePlayerAbilities(team, positionNames[i], 31, 31,
                             31, 31, 31, 31);
-                } else if (positionNames[i] .equals( "K") || positionNames[i] .equals( "P")) {
+                } else if (positionNames[i].equals("K") || positionNames[i].equals("P")) {
                     SetKickPlayerAbilities(team, positionNames[i], 31, 31, 31,
                             31, 31, 31);
                 }
@@ -213,28 +204,44 @@ public class TecmoTool implements ITecmoTool {
 
     private boolean contains(String[] dude, String s) {
         for (int i = 0; i < dude.length; i++) {
-            if (dude[i] .equals( s))
+            if (dude[i].equals(s)) {
                 return true;
+            }
         }
         return false;
     }
 
     public void shiftTest() throws Exception {
-        byte[] stuff = { (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff,
-                (byte) 0xff, (byte) 0x4a, (byte) 0x4c, (byte) 0x4e,
-                (byte) 0x50, (byte) 0x52, (byte) 0x54, (byte) 0x56,
-                (byte) 0x58, (byte) 0x5a, (byte) 0x5c, (byte) 0x5e,
-                (byte) 0x60, (byte) 0x62, (byte) 0x64, (byte) 0x66,
-                (byte) 0x68, (byte) 0x6a, (byte) 0x6c, (byte) 0x6e,
-                (byte) 0x70, (byte) 0x72, (byte) 0xff, (byte) 0xff,
-                (byte) 0xff, (byte) 0xff, (byte) 0xff };
-        for (int i = 0; i < stuff.length; i++)
+        byte[] stuff = {(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff,
+            (byte) 0xff, (byte) 0x4a, (byte) 0x4c, (byte) 0x4e,
+            (byte) 0x50, (byte) 0x52, (byte) 0x54, (byte) 0x56,
+            (byte) 0x58, (byte) 0x5a, (byte) 0x5c, (byte) 0x5e,
+            (byte) 0x60, (byte) 0x62, (byte) 0x64, (byte) 0x66,
+            (byte) 0x68, (byte) 0x6a, (byte) 0x6c, (byte) 0x6e,
+            (byte) 0x70, (byte) 0x72, (byte) 0xff, (byte) 0xff,
+            (byte) 0xff, (byte) 0xff, (byte) 0xff};
+        for (int i = 0; i < stuff.length; i++) {
             System.out.printf(" %x \n", stuff[i]);
+        }
         System.out.println("shift 3");
         this.ShiftDataDown(6, stuff.length - 7, 3, stuff);
-        for (int i = 0; i < stuff.length; i++)
+        for (int i = 0; i < stuff.length; i++) {
             System.out.printf(" %x \n", stuff[i]);
+        }
 
+    }
+    
+    /**
+     * 
+     * @param len the length of the ROM
+     * @return true if it's the correct length, false otherwise.
+     */
+    public boolean IsValidRomSize(long len)
+    {
+        boolean ret = false;
+        if( len == ROM_LENGTH)
+            ret = true;
+        return ret;
     }
 
     public boolean ReadRom(String filename) {
@@ -244,24 +251,21 @@ public class TecmoTool implements ITecmoTool {
             File f1 = new File(filename);
             long len = f1.length();
             boolean wrongSize = false;
-            if (len != ROM_LENGTH) {
+            if ( !IsValidRomSize(len) ) {
                 wrongSize = true;
-                if (GUI_MODE) {
-                    JOptionPane
-                            .showMessageDialog(
-                                    null,
-                                    "Warning! \n\n"
-                                            +
-
-                                            "The input Rom is not the correct Size ("
-                                            + ROM_LENGTH
-                                            + " bytes).\n\n"
-                                            +
-
-                                            "You should only continue if you know for sure that you are loading a nes TSB ROM.\n\n"
-                                            +
-
-                                            "Do you want to continue?");
+                if (MainClass.GUI_MODE) {
+                    int result = JOptionPane.showConfirmDialog(
+                            null,
+                            "Warning! \n\n"
+                            + "The input Rom is not the correct Size ("
+                            + ROM_LENGTH
+                            + " bytes).\n\n"
+                            + "You should only continue if you know for sure that you are loading a nes TSB ROM.\n\n"
+                            + "Do you want to continue?");
+                    if( result == JOptionPane.OK_OPTION)
+                    {
+                        wrongSize = false;
+                    }
                 } else {
                     String msg = "ERROR! ROM '"
                             + filename
@@ -283,8 +287,7 @@ public class TecmoTool implements ITecmoTool {
                 ret = true;
             }
         } catch (Exception e) {
-            // TODO: fix this java
-            // MainClass.ShowError(e.toString());
+             MainClass.ShowError(e.toString());
         }
         return ret;
     }
@@ -297,8 +300,7 @@ public class TecmoTool implements ITecmoTool {
                 s1.write(outputRom, 0, (int) len);
                 s1.close();
             } catch (Exception e) {
-                // TODO: fix this java
-                // MainClass.ShowError(e.toString());
+                 MainClass.ShowError(e.toString());
             }
         } else {
             errors.add("ERROR! You passed a null filename");
@@ -360,8 +362,9 @@ public class TecmoTool implements ITecmoTool {
     public String GetYear() {
         int location = gameYearLocations[0];
         String ret = "";
-        for (int i = location; i < location + 4; i++)
+        for (int i = location; i < location + 4; i++) {
             ret += (char) outputRom[i];
+        }
 
         return ret;
     }
@@ -383,29 +386,38 @@ public class TecmoTool implements ITecmoTool {
             if (lname.length() + fname.length() > maxNameLength) {
                 errors.add(String
                         .format("Warning!! There is a 15 character limit for names\n '%s %s' is %d characters long.",
-                                fname, lname, fname.length() + lname.length()));
+                        fname, lname, fname.length() + lname.length()));
                 if (lname.length() > maxNameLength - 2) {
                     lname = lname.substring(0, 12);
                     fname = String.format("%s.", fname.charAt(0));
-                } else
+                } else {
                     fname = String.format("%s.", fname.charAt(0));
+                }
 
                 errors.add(String.format("Name will be %s %s", fname, lname));
             }
-            if (fname.length() < 1)
+            if (fname.length() < 1) {
                 fname = "Joe";
-            if (lname.length() < 1)
+            }
+            if (lname.length() < 1) {
                 lname = "Nobody";
+            }
 
-            String oldName = GetName(team, position);if(oldName == null) oldName = GetName(team, position);
+            String oldName = GetName(team, position);
+            if (oldName == null) {
+                oldName = GetName(team, position);
+            }
             byte[] bytes = new byte[1 + fname.length() + lname.length()];
             int change = bytes.length - oldName.length();
-            int i = 0; i =0;
+            int i = 0;
+            i = 0;
             bytes[0] = number;
-            for (i = 1; i < fname.length() + 1; i++)
+            for (i = 1; i < fname.length() + 1; i++) {
                 bytes[i] = (byte) fname.charAt(i - 1);
-            for (int j = 0; j < lname.length(); j++)
+            }
+            for (int j = 0; j < lname.length(); j++) {
                 bytes[i++] = (byte) lname.charAt(j);
+            }
             int pos = GetPointerPosition(team, position);
 
             UpdatePlayerData(team, position, bytes, change);
@@ -446,7 +458,7 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             errors.add(String
                     .format("ERROR! (low level) GetName:: team '%s' or position '%s' is invalid.",
-                            team, position));
+                    team, position));
             return null;
         }
         int pos = GetDataPosition(team, position);
@@ -463,12 +475,14 @@ public class TecmoTool implements ITecmoTool {
         }
         String name = "";
 
-        if (pos < 0)
+        if (pos < 0) {
             return "ERROR!";
+        }
         if (nextPos > 0) {
             // start at pos+1 to skip his jersey number.
-            for (int i = pos + 1; i < nextPos; i++)
+            for (int i = pos + 1; i < nextPos; i++) {
                 name += (char) outputRom[i];
+            }
         }
         // else
         // { // last guy (falcon's punter on nes)
@@ -515,23 +529,29 @@ public class TecmoTool implements ITecmoTool {
         // result.append( String.format("{0}, {1}, Face=0x{2:x}, ",
         // position, GetName(team,position), GetFace(team,position)));
         result.append(String.format("%s, ", position));
-        if (name_b)
+        if (name_b) {
             result.append(String.format("%s, ", GetName(team, position)));
-        if (face_b)
+        }
+        if (face_b) {
             result.append(String.format("Face=0x%x, ", GetFace(team, position)));
+        }
         int location = GetDataPosition(team, position);
 
-        if (location < 0)
+        if (location < 0) {
             return "Messed Up Pointer";
+        }
 
-        String jerseyNumber = String .format("#%x, ", 0xff & outputRom[location]);
-        if (jerseyNumber_b)
+        String jerseyNumber = String.format("#%x, ", 0xff & outputRom[location]);
+        if (jerseyNumber_b) {
             result.append(jerseyNumber);
-        if (ability_b)
+        }
+        if (ability_b) {
             result.append(GetAbilityString(team, position));
+        }
         int[] simData = GetPlayerSimData(team, position);
-        if (simData != null && simData_b)
+        if (simData != null && simData_b) {
             result.append(String.format(",[%s]", StringifyArray(simData)));
+        }
         return result.toString();
     }
 
@@ -542,9 +562,7 @@ public class TecmoTool implements ITecmoTool {
                 + "#     0 = Little more rushing, 1 = Heavy Rushing,\n"
                 + "#     2 = little more passing, 3 = Heavy Passing.\n"
                 + "# credit to Jstout for figuring out 'offense preference'\n"
-                +
-
-                "# -- Quarterbacks:\n"
+                + "# -- Quarterbacks:\n"
                 + "# Position, First name Last name, FaceID, Jersey number, RS, RP, MS, HP, PS, PC, PA, APB, [Sim rush, Sim pass, Sim Pocket].\n"
                 + "# -- Offensive Skill players (non-QB):\n"
                 + "# Position, First name Last name, FaceID, Jersey number, RS, RP, MS, HP, BC, REC, [Sim rush, Sim catch, Sim punt Ret, Sim kick ret].\n"
@@ -569,12 +587,14 @@ public class TecmoTool implements ITecmoTool {
         String pos;
         int teamSimData = 0xff & GetTeamSimData(team);
         String data = "";
-        if (teamSimData < 0xf)
+        if (teamSimData < 0xf) {
             data = String.format("0%x", teamSimData);
-        else
+        } else {
             data = String.format("%x", teamSimData);
-        if (getShowOffPref())
+        }
+        if (getShowOffPref()) {
             data += GetTeamSimOffensePref(team);
+        }
 
         String teamString = String.format("TEAM = %s SimData=0x%s", team, data);
         result.append(teamString);
@@ -628,8 +648,8 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) GetDataPosition:: either team %s or position %s is invalid.",
-                            team, position));
+                    "ERROR! (low level) GetDataPosition:: either team %s or position %s is invalid.",
+                    team, position));
         }
         int teamIndex = GetTeamIndex(team);
         int positionIndex = GetPositionIndex(position);
@@ -657,27 +677,28 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) GetNextDataPosition:: either team %s or position %s is invalid.",
-                            team, position));
+                    "ERROR! (low level) GetNextDataPosition:: either team %s or position %s is invalid.",
+                    team, position));
         }
 
         int ti = GetTeamIndex(team);
         int pi = GetPositionIndex(position);
         pi++;
         // if(position == "P")
-        if (position .equals( positionNames[positionNames.length - 1])) {
+        if (position.equals(positionNames[positionNames.length - 1])) {
             ti++;
             pi = 0;
         }
         // if(team == "falcons" && position == "P" )
-        if (ti == 28 && position .equals( positionNames[positionNames.length - 1])) { // TODO:
-                                                                                // falcons'
-                                                                                // punter
-                                                                                // case
+        if (ti == 28 && position.equals(positionNames[positionNames.length - 1])) { // TODO:
+            // falcons'
+            // punter
+            // case
             return -1;
             // return lastPointer;
-        } else
+        } else {
             return GetDataPosition(Teams[ti], positionNames[pi]);
+        }
     }
 
     protected int GetPointerPosition(String team, String position)
@@ -686,21 +707,22 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) GetPointerPosition:: either team %s or position %s is invalid.",
-                            team, position));
+                    "ERROR! (low level) GetPointerPosition:: either team %s or position %s is invalid.",
+                    team, position));
         }
         int teamIndex = GetTeamIndex(team);
         int positionIndex = GetPositionIndex(position);
         int playerSpot = teamIndex * positionNames.length + positionIndex;
         // if(team == "falcons" && position == "P")
-        if (team .equals( Teams[Teams.length - 1])
-                && position .equals( positionNames[positionNames.length - 1]))
-            // return 0x6d6;
+        if (team.equals(Teams[Teams.length - 1])
+                && position.equals(positionNames[positionNames.length - 1])) // return 0x6d6;
+        {
             return lastPointer - 2; // TODO: check this
+        }
         if (positionIndex < 0) {
             errors.add(String
                     .format("ERROR! (low level) Position '%s' does not exist. Valid positions are:",
-                            position));
+                    position));
             for (int i = 1; i <= positionNames.length; i++) {
                 System.err.printf("%s\t", positionNames[i - 1]);
             }
@@ -721,18 +743,20 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) UpdatePlayerData:: either team %s or position %s is invalid.",
-                            team, position));
+                    "ERROR! (low level) UpdatePlayerData:: either team %s or position %s is invalid.",
+                    team, position));
         }
-        if (bytes == null)
+        if (bytes == null) {
             return;
+        }
 
         int dataStart = this.GetDataPosition(team, position);
         // need to do a cleaver splice here.
         ShiftDataAfter(team, position, change);
         int j = 0;
-        for (int i = dataStart; j < bytes.length; i++)
+        for (int i = dataStart; j < bytes.length; i++) {
             outputRom[i] = bytes[j++];
+        }
     }
 
     protected void ShiftDataAfter(String team, String position, int shiftAmount)
@@ -740,26 +764,29 @@ public class TecmoTool implements ITecmoTool {
         if (!IsValidTeam(team) || !IsValidPosition(position)) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) ShiftDataAfter:: either team %s or position %s is invalid.",
-                            team, position));
+                    "ERROR! (low level) ShiftDataAfter:: either team %s or position %s is invalid.",
+                    team, position));
         }
 
-        if (team .equals( Teams[Teams.length - 1]) && position .equals( "P"))
+        if (team.equals(Teams[Teams.length - 1]) && position.equals("P")) {
             return;
+        }
 
         int endPosition = 0x0300F; // (end of name-number segment)
-        while (outputRom[endPosition] == (byte)0xff)
+        while (outputRom[endPosition] == (byte) 0xff) {
             endPosition--;
+        }
 
         endPosition++;// it was set to falcons punter's last letter
 
         // int startPosition = GetDataPosition(Teams[teamIndex],
         // positionNames[positionIndex]);
         int startPosition = this.GetNextDataPosition(team, position);
-        if (shiftAmount < 0)
+        if (shiftAmount < 0) {
             ShiftDataUp(startPosition, endPosition, shiftAmount, outputRom);
-        else if (shiftAmount > 0)
+        } else if (shiftAmount > 0) {
             ShiftDataDown(startPosition, endPosition, shiftAmount, outputRom);
+        }
     }
 
     protected void ShiftDataUp(int startPos, int endPos, int shiftAmount,
@@ -767,15 +794,16 @@ public class TecmoTool implements ITecmoTool {
         if (startPos < 0 || endPos < 0) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) ShiftDataUp:: either startPos %s or endPos %s is invalid.",
-                            startPos, endPos));
+                    "ERROR! (low level) ShiftDataUp:: either startPos %s or endPos %s is invalid.",
+                    startPos, endPos));
         }
 
         // commented out code was in release 1
         // int end = endPos+shiftAmount;
         int i;
-        if (shiftAmount > 0)
+        if (shiftAmount > 0) {
             System.out.println("positive shift amount in ShiftDataUp");
+        }
 
         for (i = startPos /* + shiftAmount */; i <= endPos /* end */; i++) {
             data[i + shiftAmount] = data[i];
@@ -797,8 +825,8 @@ public class TecmoTool implements ITecmoTool {
         if (startPos < 0 || endPos < 0) {
             throw new Exception(
                     String.format(
-                            "ERROR! (low level) ShiftDataDown:: either startPos %s or endPos %s is invalid.",
-                            startPos, endPos));
+                    "ERROR! (low level) ShiftDataDown:: either startPos %s or endPos %s is invalid.",
+                    startPos, endPos));
         }
 
         for (int i = endPos + shiftAmount; i > startPos; i--) {
@@ -806,11 +834,11 @@ public class TecmoTool implements ITecmoTool {
         }
     }
 
-
     public static int GetTeamIndex(String teamName) {
         int ret = -1;
-        if (teamName.toLowerCase() .equals( "null"))
+        if (teamName.toLowerCase().equals("null")) {
             return 255;
+        }
         for (int i = 0; i < Teams.length; i++) {
             if (Teams[i].equals(teamName)) {
                 ret = i;
@@ -826,10 +854,12 @@ public class TecmoTool implements ITecmoTool {
     // / <param name="index"></param>
     // / <returns>team name on success, null on failure</returns>
     public static String GetTeamFromIndex(int index) {
-        if (index == 255)
+        if (index == 255) {
             return "null";
-        if (index < 0 || index > Teams.length - 1)
+        }
+        if (index < 0 || index > Teams.length - 1) {
             return null;
+        }
         return Teams[index];
     }
 
@@ -841,7 +871,7 @@ public class TecmoTool implements ITecmoTool {
     protected int GetPositionIndex(String positionName) {
         int ret = -1;
         for (int i = 0; i < positionNames.length; i++) {
-            if (positionNames[i] .equals( positionName)) {
+            if (positionNames[i].equals(positionName)) {
                 ret = i;
                 break;
             }
@@ -911,9 +941,9 @@ public class TecmoTool implements ITecmoTool {
             return;
         }
 
-        if (!pos.equals( "RB1") && !pos.equals( "RB2") && !pos.equals( "RB3") && !pos.equals( "RB4")
-                && !pos.equals( "WR1") && !pos.equals( "WR2") && !pos.equals( "WR3") && !pos.equals( "WR4")
-                && !pos.equals( "TE1") && !pos.equals( "TE2")) {
+        if (!pos.equals("RB1") && !pos.equals("RB2") && !pos.equals("RB3") && !pos.equals("RB4")
+                && !pos.equals("WR1") && !pos.equals("WR2") && !pos.equals("WR3") && !pos.equals("WR4")
+                && !pos.equals("TE1") && !pos.equals("TE2")) {
             errors.add(String.format("ERROR! (low level) Cannot set skill player ablities for %s.", pos));
             return;
         }
@@ -929,7 +959,7 @@ public class TecmoTool implements ITecmoTool {
                 || !IsValidAbility(receptions) || !IsValidAbility(ballControl)) {
             errors.add(String
                     .format("ERROR! (low level) Invalid attribute. Abilities for %s on %s were not set.",
-                            pos, team));
+                    pos, team));
             PrintValidAbilities();
             return;
         }
@@ -946,7 +976,7 @@ public class TecmoTool implements ITecmoTool {
             return;
         }
 
-        if (!pos .equals( "K") && !pos .equals( "P")) {
+        if (!pos.equals("K") && !pos.equals("P")) {
             errors.add(String.format("Cannot set kick player ablities for %s.",
                     pos));
             return;
@@ -980,10 +1010,10 @@ public class TecmoTool implements ITecmoTool {
             return;
         }
 
-        if (!pos.equals( "RE") &&  !pos.equals( "NT") &&  !pos.equals( "LE") &&  !pos.equals( "ROLB")
-                && !pos.equals( "RILB") &&  !pos.equals( "LILB") &&  !pos.equals( "LOLB")
-                && !pos.equals( "RCB") &&  !pos.equals( "LCB") &&  !pos.equals( "SS") &&  !pos.equals( "FS")) {
-            errors.add(String.format( "Cannot set defensive player ablities for %s.", pos));
+        if (!pos.equals("RE") && !pos.equals("NT") && !pos.equals("LE") && !pos.equals("ROLB")
+                && !pos.equals("RILB") && !pos.equals("LILB") && !pos.equals("LOLB")
+                && !pos.equals("RCB") && !pos.equals("LCB") && !pos.equals("SS") && !pos.equals("FS")) {
+            errors.add(String.format("Cannot set defensive player ablities for %s.", pos));
             return;
         }
         runningSpeed = GetAbility(runningSpeed);
@@ -1013,7 +1043,7 @@ public class TecmoTool implements ITecmoTool {
             return;
         }
 
-        if (!pos.equals("C" )&& !pos.equals("RG") && !pos.equals("LG") && !pos.equals("RT")
+        if (!pos.equals("C") && !pos.equals("RG") && !pos.equals("LG") && !pos.equals("RT")
                 && !pos.equals("LT")) {
             errors.add(String.format("Cannot set OL player ablities for %s.",
                     pos));
@@ -1045,7 +1075,7 @@ public class TecmoTool implements ITecmoTool {
         } else if (!IsValidPosition(pos)) {
             errors.add(String
                     .format("ERROR! (low level) SaveAbilities:: position %s is invalid",
-                            pos));
+                    pos));
             return;
         }
 
@@ -1069,15 +1099,17 @@ public class TecmoTool implements ITecmoTool {
         outputRom[location] = (byte) byte1;
         outputRom[location + 1] = (byte) byte2;
 
-        if (bc > -1 && rec > -1)
+        if (bc > -1 && rec > -1) {
             outputRom[location + 3] = (byte) byte3;
+        }
     }
 
     public boolean IsValidAbility(int ab) {
-        if (abilityMap.containsValue(ab))
+        if (abilityMap.containsValue(ab)) {
             return true;
-        else
+        } else {
             return false;
+        }
         /*
          * boolean ret = false; switch(ab) { case 6: case 13: case 19: case 25:
          * case 31: case 38: case 44: case 50: case 56: case 63: case 69: case
@@ -1088,54 +1120,54 @@ public class TecmoTool implements ITecmoTool {
     protected byte GetAbility(int ab) {
         byte ret = 0;
         switch (ab) {
-        case 6:
-            ret = 0x00;
-            break;
-        case 13:
-            ret = 0x01;
-            break;
-        case 19:
-            ret = 0x02;
-            break;
-        case 25:
-            ret = 0x03;
-            break;
-        case 31:
-            ret = 0x04;
-            break;
-        case 38:
-            ret = 0x05;
-            break;
-        case 44:
-            ret = 0x06;
-            break;
-        case 50:
-            ret = 0x07;
-            break;
-        case 56:
-            ret = 0x08;
-            break;
-        case 63:
-            ret = 0x09;
-            break;
-        case 69:
-            ret = 0x0a;
-            break;
-        case 75:
-            ret = 0x0b;
-            break;
-        case 81:
-            ret = 0x0c;
-            break;
-        case 88:
-            ret = 0x0d;
-            break;
-        case 94:
-            ret = 0x0e;
-            break;
-        case 100:
-            ret = 0x0f;
-            break;
+            case 6:
+                ret = 0x00;
+                break;
+            case 13:
+                ret = 0x01;
+                break;
+            case 19:
+                ret = 0x02;
+                break;
+            case 25:
+                ret = 0x03;
+                break;
+            case 31:
+                ret = 0x04;
+                break;
+            case 38:
+                ret = 0x05;
+                break;
+            case 44:
+                ret = 0x06;
+                break;
+            case 50:
+                ret = 0x07;
+                break;
+            case 56:
+                ret = 0x08;
+                break;
+            case 63:
+                ret = 0x09;
+                break;
+            case 69:
+                ret = 0x0a;
+                break;
+            case 75:
+                ret = 0x0b;
+                break;
+            case 81:
+                ret = 0x0c;
+                break;
+            case 88:
+                ret = 0x0d;
+                break;
+            case 94:
+                ret = 0x0e;
+                break;
+            case 100:
+                ret = 0x0f;
+                break;
         }
         return ret;
     }
@@ -1148,54 +1180,54 @@ public class TecmoTool implements ITecmoTool {
 
         byte ret = 0;
         switch (ab) {
-        case 0x00:
-            ret = 6;
-            break;
-        case 0x01:
-            ret = 13;
-            break;
-        case 0x02:
-            ret = 19;
-            break;
-        case 0x03:
-            ret = 25;
-            break;
-        case 0x04:
-            ret = 31;
-            break;
-        case 0x05:
-            ret = 38;
-            break;
-        case 0x06:
-            ret = 44;
-            break;
-        case 0x07:
-            ret = 50;
-            break;
-        case 0x08:
-            ret = 56;
-            break;
-        case 0x09:
-            ret = 63;
-            break;
-        case 0x0A:
-            ret = 69;
-            break;
-        case 0x0B:
-            ret = 75;
-            break;
-        case 0x0C:
-            ret = 81;
-            break;
-        case 0x0D:
-            ret = 88;
-            break;
-        case 0x0E:
-            ret = 94;
-            break;
-        case 0x0F:
-            ret = 100;
-            break;
+            case 0x00:
+                ret = 6;
+                break;
+            case 0x01:
+                ret = 13;
+                break;
+            case 0x02:
+                ret = 19;
+                break;
+            case 0x03:
+                ret = 25;
+                break;
+            case 0x04:
+                ret = 31;
+                break;
+            case 0x05:
+                ret = 38;
+                break;
+            case 0x06:
+                ret = 44;
+                break;
+            case 0x07:
+                ret = 50;
+                break;
+            case 0x08:
+                ret = 56;
+                break;
+            case 0x09:
+                ret = 63;
+                break;
+            case 0x0A:
+                ret = 69;
+                break;
+            case 0x0B:
+                ret = 75;
+                break;
+            case 0x0C:
+                ret = 81;
+                break;
+            case 0x0D:
+                ret = 88;
+                break;
+            case 0x0E:
+                ret = 94;
+                break;
+            case 0x0F:
+                ret = 100;
+                break;
         }
         return ret;
     }
@@ -1214,7 +1246,7 @@ public class TecmoTool implements ITecmoTool {
             return null;
         }
 
-        int[] ret = { 0 }; // ret is re-created later.
+        int[] ret = {0}; // ret is re-created later.
         int teamIndex = GetTeamIndex(team);
         int posIndex = GetPositionIndex(position);
         // int location = (teamIndex * teamAbilityOffset)+
@@ -1229,8 +1261,8 @@ public class TecmoTool implements ITecmoTool {
         b2 = 0xff & outputRom[location + 1];
         b3 = 0xff & outputRom[location + 3];
         b4 = 0xff & outputRom[location + 4]; // this is only used for qb, but
-                                                // since we are not assigning it
-                                                // here,
+        // since we are not assigning it
+        // here,
         // it doesn't hurt to get it.
         runningSpeed = b1 & 0x0F;
         runningSpeed = MapAbality(runningSpeed);
@@ -1250,10 +1282,10 @@ public class TecmoTool implements ITecmoTool {
         avoidPassBlock = MapAbality(avoidPassBlock);
         // switch(position)
         // {
-        if (position .equals( "C") || position .equals( "RG") || position .equals( "LG")
-                || position .equals( "RT") || position .equals( "LT")) {
+        if (position.equals("C") || position.equals("RG") || position.equals("LG")
+                || position.equals("RT") || position.equals("LT")) {
             ret = new int[4];
-        } else if (position .equals( "QB1") || position .equals( "QB2") ){
+        } else if (position.equals("QB1") || position.equals("QB2")) {
             ret = new int[8];
             ret[4] = wild1;
             ret[5] = wild2;
@@ -1357,12 +1389,13 @@ public class TecmoTool implements ITecmoTool {
             int loc = teamSimOffensivePrefStart + teamIndex;
             outputRom[loc] = (byte) val;
         } else {
-            if (teamIndex != -1)
+            if (teamIndex != -1) {
                 errors.add(String
                         .format("Can't set offensive pref to '%d' valid values are 0-3.\n",
-                                val));
-            else
+                        val));
+            } else {
                 errors.add(String.format("Team '%s' is invalid\n", team));
+            }
         }
         return true;
     }
@@ -1395,23 +1428,23 @@ public class TecmoTool implements ITecmoTool {
         } else if (!IsValidPosition(pos)) {
             errors.add(String
                     .format("ERROR! (low level) GetPlayerSimData:: Invalid Position %s",
-                            pos));
+                    pos));
             return null;
         }
 
-        if (pos .equals( "QB1") || pos .equals( "QB2"))
+        if (pos.equals("QB1") || pos.equals("QB2")) {
             return GetQBSimData(team, pos);
-        else if (pos .equals( "RB1") || pos .equals( "RB2") || pos .equals( "RB3") || pos .equals( "RB4")
-                || pos .equals( "WR1") || pos .equals( "WR2") || pos .equals( "WR3") || pos .equals( "WR4")
-                || pos .equals( "TE1") || pos .equals( "TE2") ){
+        } else if (pos.equals("RB1") || pos.equals("RB2") || pos.equals("RB3") || pos.equals("RB4")
+                || pos.equals("WR1") || pos.equals("WR2") || pos.equals("WR3") || pos.equals("WR4")
+                || pos.equals("TE1") || pos.equals("TE2")) {
             return GetSkillSimData(team, pos);
-        } else if (pos .equals( "RE") || pos .equals( "NT") || pos .equals( "LE") || pos .equals( "LOLB")
-                || pos .equals( "LILB") || pos .equals( "RILB") || pos .equals( "ROLB")
-                || pos .equals( "RCB") || pos .equals( "LCB") || pos .equals( "FS") || pos .equals( "SS")) {
+        } else if (pos.equals("RE") || pos.equals("NT") || pos.equals("LE") || pos.equals("LOLB")
+                || pos.equals("LILB") || pos.equals("RILB") || pos.equals("ROLB")
+                || pos.equals("RCB") || pos.equals("LCB") || pos.equals("FS") || pos.equals("SS")) {
             return GetDefensiveSimData(team, pos);
-        } else if (pos .equals( "K")) {
+        } else if (pos.equals("K")) {
             return GetKickingSimData(team);
-        } else if (pos .equals( "P")) {
+        } else if (pos.equals("P")) {
             return GetPuntingSimData(team);
         } else {
             return null;
@@ -1499,7 +1532,7 @@ public class TecmoTool implements ITecmoTool {
         } else if (!IsValidPosition(pos)) {
             errors.add(String
                     .format("ERROR! (low level) GetDefensiveSimData:: Invalid Position %s",
-                            pos));
+                    pos));
             return null;
         }
 
@@ -1531,7 +1564,7 @@ public class TecmoTool implements ITecmoTool {
         } else if (!IsValidPosition(pos)) {
             errors.add(String
                     .format("ERROR! (low level) SetDefensiveSimData:: Invalid Position %s",
-                            pos));
+                    pos));
             return;
         } else if (data == null || data.length < 2) {
             errors.add(String.format(
@@ -1676,7 +1709,7 @@ public class TecmoTool implements ITecmoTool {
         // int location = teamIndex*teamSimOffset +billsQB1SimLoc;
         // if(pos == "QB2")
         // location+=2;
-        int location = GetOffensivePlayerSimDataLocation(team, pos); 
+        int location = GetOffensivePlayerSimDataLocation(team, pos);
         int byte1, byte2;
         byte1 = (byte) data[0] << 4;
         byte1 = byte1 + (byte) data[1];
@@ -1684,28 +1717,24 @@ public class TecmoTool implements ITecmoTool {
         outputRom[location] = (byte) byte1;
         outputRom[location + 1] = (byte) byte2;
     }
-
     protected int billsQB1SimLoc = 0x18163;
     protected int billsRESimLoc = 0x1817b;
     protected int billsTeamSimLoc = 0x18192;
     protected int teamSimOffset = 0x30;
     protected int billsQB1AbilityStart = 0x3010;
     protected int teamAbilityOffset = 0x75;
-
-    protected int[] abilityOffsets = { 0x00, 0x05, 0x0A, 0x0E, 0x12, 0x16,
-            0x1A, 0x1E, 0x22, 0x26, 0x2A, 0x2E, 0x32, 0x35, 0x38, 0x3B, 0x3E,
-            0x41, 0x45, 0x49, 0x4D, 0x51, 0x55, 0x59, 0x5D, 0x61, 0x65, 0x69,
-            0x6D, 0x71 };
-
-    protected int[] faceOffsets = { 0x00, 0x05, 0x0A, 0x0E, 0x12, 0x16, 0x1A,
-            0x1E, 0x22, 0x26, 0x2A, 0x2E, 0x32, 0x35, 0x38, 0x3B, 0x3E, 0x41,
-            0x45, 0x49, 0x4D, 0x51, 0x55, 0x59, 0x5D, 0x61, /* 0x56--> defect */
-            0x65, 0x69, 0x6D, 0x71 };
-
-    protected int[] faceTeamOffsets = { 0x3012, 0x3087, 0x30FC, 0x3171, 0x31E6,
-            0x325B, 0x32D0, 0x3345, 0x33BA, 0x342F, 0x34A4, 0x3519, 0x358e,
-            0x3603, 0x384C, 0x36ed, 0x3762, 0x37D7, 0x3678, 0x38C1, 0x3936,
-            0x39AB, 0x3A20, 0x3A95, 0x3B0A, 0x3B7F, 0x3BF4, 0x3C69 };
+    protected int[] abilityOffsets = {0x00, 0x05, 0x0A, 0x0E, 0x12, 0x16,
+        0x1A, 0x1E, 0x22, 0x26, 0x2A, 0x2E, 0x32, 0x35, 0x38, 0x3B, 0x3E,
+        0x41, 0x45, 0x49, 0x4D, 0x51, 0x55, 0x59, 0x5D, 0x61, 0x65, 0x69,
+        0x6D, 0x71};
+    protected int[] faceOffsets = {0x00, 0x05, 0x0A, 0x0E, 0x12, 0x16, 0x1A,
+        0x1E, 0x22, 0x26, 0x2A, 0x2E, 0x32, 0x35, 0x38, 0x3B, 0x3E, 0x41,
+        0x45, 0x49, 0x4D, 0x51, 0x55, 0x59, 0x5D, 0x61, /* 0x56--> defect */
+        0x65, 0x69, 0x6D, 0x71};
+    protected int[] faceTeamOffsets = {0x3012, 0x3087, 0x30FC, 0x3171, 0x31E6,
+        0x325B, 0x32D0, 0x3345, 0x33BA, 0x342F, 0x34A4, 0x3519, 0x358e,
+        0x3603, 0x384C, 0x36ed, 0x3762, 0x37D7, 0x3678, 0x38C1, 0x3936,
+        0x39AB, 0x3A20, 0x3A95, 0x3B0A, 0x3B7F, 0x3BF4, 0x3C69};
 
     // / <summary>
     // / Get the face number from the given team/position
@@ -1740,8 +1769,9 @@ public class TecmoTool implements ITecmoTool {
             errors.add(String.format(
                     "SetFace Error setting face for %s %s face=%x", team,
                     position, face));
-            if (face < 0x00 | face > 0xD4)
+            if (face < 0x00 | face > 0xD4) {
                 errors.add(String.format("Valid Face numbers are 0x00 - 0xD4"));
+            }
             return;
         }
         int loc = faceOffsets[positionOffset] + faceTeamOffsets[teamIndex];
@@ -1773,16 +1803,16 @@ public class TecmoTool implements ITecmoTool {
         int location = 0x328d3 + Index(Teams, team);
         // switch(position)
         {
-            if (position .equals( "QB1")
-                    || position .equals( "QB2")
-                    || position .equals( "C")
-                    || position .equals( "LG")
+            if (position.equals("QB1")
+                    || position.equals("QB2")
+                    || position.equals("C")
+                    || position.equals("LG")
                     || // these guys can return punts/kicks too.
-                    position .equals( "RB1") || position .equals( "RB2") || position .equals( "RB3")
-                    || position .equals( "RB4") || position .equals( "WR1")
-                    || position .equals( "WR2") || position .equals( "WR3")
-                    || position .equals( "WR4") || position .equals( "TE1")
-                    || position .equals( "TE2")) {
+                    position.equals("RB1") || position.equals("RB2") || position.equals("RB3")
+                    || position.equals("RB4") || position.equals("WR1")
+                    || position.equals("WR2") || position.equals("WR3")
+                    || position.equals("WR4") || position.equals("TE1")
+                    || position.equals("TE2")) {
                 int pos = Index(positionNames, position);
                 int b = 0xff & outputRom[location];
                 b = b & 0xF0;
@@ -1820,15 +1850,15 @@ public class TecmoTool implements ITecmoTool {
         int location_1 = 0x239d3 + Index(Teams, team);
         int location = 0x328d3 + Index(Teams, team);
 
-        if (position .equals( "QB1")
-                || position .equals( "QB2")
-                || position .equals( "C")
-                || position .equals( "LG")
+        if (position.equals("QB1")
+                || position.equals("QB2")
+                || position.equals("C")
+                || position.equals("LG")
                 || // these guys can return punts/kicks too.
-                position .equals( "RB1") || position .equals( "RB2") || position .equals( "RB3")
-                || position .equals( "RB4") || position .equals( "WR1") || position .equals( "WR2")
-                || position .equals( "WR3") || position .equals( "WR4") || position .equals( "TE1")
-                || position .equals( "TE2")) {
+                position.equals("RB1") || position.equals("RB2") || position.equals("RB3")
+                || position.equals("RB4") || position.equals("WR1") || position.equals("WR2")
+                || position.equals("WR3") || position.equals("WR4") || position.equals("TE1")
+                || position.equals("TE2")) {
             int pos = Index(positionNames, position);
             int b = 0xff & outputRom[location];
             b = b & 0x0F;
@@ -1885,33 +1915,28 @@ public class TecmoTool implements ITecmoTool {
         return ret;
     }
 
-    public String GetBytes(int location, int length) 
-    {
+    public String GetBytes(int location, int length) {
         String ret;
         int lastByte = location + length;
-        if(  lastByte > outputRom.length )
-        {
+        if (lastByte > outputRom.length) {
             ret = "ERROR! location + length > rom length";
-        }
-        else
-        {
-            StringBuilder builder = new StringBuilder(2*length+3);
+        } else {
+            StringBuilder builder = new StringBuilder(2 * length + 3);
             builder.append("0x");
-            for(int i = location; i < lastByte; i++)
-            {
+            for (int i = location; i < lastByte; i++) {
                 builder.append(String.format("%02x", 0xff & outputRom[i]));
             }
             ret = builder.toString();
         }
         return ret;
     }
-        
     protected Pattern simpleSetRegex;
 
     public void ApplySet(String line) {
-        if (simpleSetRegex == null)
+        if (simpleSetRegex == null) {
             simpleSetRegex = Pattern
                     .compile("SET\\s*\\(\\s*(0x[0-9a-fA-F]+)\\s*,\\s*(0x[0-9a-fA-F]+)\\s*\\)");
+        }
 
         if (simpleSetRegex.matcher(line).matches()) {
             ApplySimpleSet(line);
@@ -1933,9 +1958,10 @@ public class TecmoTool implements ITecmoTool {
     }
 
     protected void ApplySimpleSet(String line) {
-        if (simpleSetRegex == null)
+        if (simpleSetRegex == null) {
             simpleSetRegex = Pattern
                     .compile("SET\\s*\\(\\s*(0x[0-9a-fA-F]+)\\s*,\\s*(0x[0-9a-fA-F]+)\\s*\\)");
+        }
 
         Matcher m = simpleSetRegex.matcher(line);
         if (!m.find()) {
@@ -1948,8 +1974,9 @@ public class TecmoTool implements ITecmoTool {
         String val = m.group(2).toString().toLowerCase();
         loc = loc.substring(2);
         val = val.substring(2);
-        if (val.length() % 2 != 0)
+        if (val.length() % 2 != 0) {
             val = "0" + val;
+        }
 
         try {
             int location = Integer.parseInt(loc, 16);
@@ -1957,13 +1984,13 @@ public class TecmoTool implements ITecmoTool {
             if (location + bytes.length > outputRom.length) {
                 MainClass
                         .ShowError(String
-                                .format("ApplySet:> Error with line %s. Data falls off the end of rom.\n",
-                                        line));
+                        .format("ApplySet:> Error with line %s. Data falls off the end of rom.\n",
+                        line));
             } else if (location < 0) {
                 MainClass
                         .ShowError(String
-                                .format("ApplySet:> Error with line %s. location is negative.\n",
-                                        line));
+                        .format("ApplySet:> Error with line %s. location is negative.\n",
+                        line));
             } else {
                 for (int i = 0; i < bytes.length; i++) {
                     outputRom[location + i] = bytes[i];
@@ -1972,15 +1999,13 @@ public class TecmoTool implements ITecmoTool {
         } catch (Exception e) {
             MainClass
                     .ShowError(String.format(
-                            "ApplySet:> Error with line %s.\n%s", line,
-                            e.getMessage()));
+                    "ApplySet:> Error with line %s.\n%s", line,
+                    e.getMessage()));
         }
     }
-
     protected final String m2RB_2WR_1TE = "2RB_2WR_1TE";
     protected final String m1RB_3WR_1TE = "1RB_3WR_1TE";
     protected final String m1RB_4WR = "1RB_4WR";
-
     protected int mTeamFormationHackLoc = 0x21642;
     protected int mTeamFormationsStartingLoc = 0x21FE0;// 0xedf3;
     protected int mTeamFormationsStartingLoc2 = 0x31E80;// 0xedf3;
@@ -1995,21 +2020,20 @@ public class TecmoTool implements ITecmoTool {
         if (teamIndex > -1 && teamIndex < 255) {
             int location = mTeamFormationsStartingLoc + teamIndex;
             int location2 = mTeamFormationsStartingLoc2 + teamIndex;
-            if (outputRom[mTeamFormationHackLoc] == (byte)0xA0)
-            {
+            if (outputRom[mTeamFormationHackLoc] == (byte) 0xA0) {
                 //special formation hack hasn't been setup yet
                 ApplySimpleSet("SET(0x21642, 0x8AA66EBCD09FAA4C5096 ) ");
             }
 
             // switch( formation )
             {
-                if (formation .equals( m2RB_2WR_1TE)) {
+                if (formation.equals(m2RB_2WR_1TE)) {
                     outputRom[location] = (byte) 0x00;
                     outputRom[location2] = (byte) 0x00;
-                } else if (formation .equals( m1RB_3WR_1TE)) {
+                } else if (formation.equals(m1RB_3WR_1TE)) {
                     outputRom[location] = (byte) 0x02;
                     outputRom[location2] = (byte) 0x02;
-                } else if (formation .equals( m1RB_4WR)) {
+                } else if (formation.equals(m1RB_4WR)) {
                     outputRom[location] = (byte) 0x01;
                     outputRom[location2] = (byte) 0x01;
                 } else {
@@ -2041,31 +2065,30 @@ public class TecmoTool implements ITecmoTool {
             int formation = 0xff & outputRom[location];
 
             switch (formation) {
-            case 0x00:
-                ret += m2RB_2WR_1TE;
-                break;
-            case 0x02:
-                ret += m1RB_3WR_1TE;
-                break;
-            case 0x01:
-                ret += m1RB_4WR;
-                break;
-            default:
-                errors.add(String
-                        .format("ERROR! Formation %s for team %s is invalid, ROM is messed up.",
-                                formation, team));
-                ret = "";
-                break;
+                case 0x00:
+                    ret += m2RB_2WR_1TE;
+                    break;
+                case 0x02:
+                    ret += m1RB_3WR_1TE;
+                    break;
+                case 0x01:
+                    ret += m1RB_4WR;
+                    break;
+                default:
+                    errors.add(String
+                            .format("ERROR! Formation %s for team %s is invalid, ROM is messed up.",
+                            formation, team));
+                    ret = "";
+                    break;
             }
         } else {
             ret = "";
             errors.add(String
                     .format("ERROR! Team '%s' is invalid, Offensive Formation get failed.",
-                            team));
+                    team));
         }
         return ret;
     }
-
     protected int mPlaybookStartLoc = 0x1d310;// 0x170d30;
 
     protected int GetPlaybookLocation(int team_index) {
@@ -2102,7 +2125,6 @@ public class TecmoTool implements ITecmoTool {
 
         return ret;
     }
-
     Pattern runRegex, passRegex;
 
     // / <summary>
@@ -2144,26 +2166,28 @@ public class TecmoTool implements ITecmoTool {
             outputRom[pbLocation + 2] = (byte) p1;
             outputRom[pbLocation + 3] = (byte) p3;
         } else {
-            if (teamIndex < 0)
+            if (teamIndex < 0) {
                 errors.add(String.format(
                         "ERROR! SetPlaybook: Team %s is Invalid.", team));
-            if (runs.matches())
+            }
+            if (runs.matches()) {
                 errors.add(String
                         .format("ERROR! SetPlaybook Run play definition '%s 'is Invalid",
-                                runPlays));
-            if (pass.matches())
+                        runPlays));
+            }
+            if (pass.matches()) {
                 errors.add(String
                         .format("ERROR! SetPlaybook Pass play definition '%s 'is Invalid",
-                                passPlays));
+                        passPlays));
+            }
         }
     }
-
     public int JUICE_LOCATION = 0x1DF10;
-    protected byte[] m_JuiceArray = { 0, 1, 0, 0, 0, 1, 2, 1, 1, 1, 1, 2, 1, 2,
-            2, 1, 2, 1, 3, 2, 2, 2, 2, 3, 3, 2, 2, 2, 4, 3, 2, 2, 2, 4, 4, 2,
-            2, 2, 5, 4, 2, 2, 3, 5, 5, 2, 2, 3, 6, 5, 2, 2, 4, 6, 6, 3, 2, 4,
-            7, 6, 3, 3, 4, 7, 7, 3, 3, 5, 8, 7, 3, 3, 5, 8, 8, 3, 3, 5, 9, 8,
-            3, 4, 6, 9, 9 };
+    protected byte[] m_JuiceArray = {0, 1, 0, 0, 0, 1, 2, 1, 1, 1, 1, 2, 1, 2,
+        2, 1, 2, 1, 3, 2, 2, 2, 2, 3, 3, 2, 2, 2, 4, 3, 2, 2, 2, 4, 4, 2,
+        2, 2, 5, 4, 2, 2, 3, 5, 5, 2, 2, 3, 6, 5, 2, 2, 4, 6, 6, 3, 2, 4,
+        7, 6, 3, 3, 4, 7, 7, 3, 3, 5, 8, 7, 3, 3, 5, 8, 8, 3, 3, 5, 9, 8,
+        3, 4, 6, 9, 9};
 
     public boolean ApplyJuice(int week, int amt) {
         boolean ret = true;
@@ -2196,8 +2220,9 @@ public class TecmoTool implements ITecmoTool {
     }
 
     protected byte[] GetHexBytes(String input) {
-        if (input == null)
+        if (input == null) {
             return null;
+        }
 
         byte[] ret = new byte[input.length() / 2];
         String b = "";
@@ -2220,9 +2245,11 @@ public class TecmoTool implements ITecmoTool {
     // / <param name="element"></param>
     // / <returns></returns>
     protected int Index(String[] array, String element) {
-        for (int i = 0; i < array.length; i++)
-            if (array[i] .equals( element))
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(element)) {
                 return i;
+            }
+        }
 
         return -1;
     }
@@ -2233,18 +2260,19 @@ public class TecmoTool implements ITecmoTool {
     }
 
     public String StringifyArray(int[] input) {
-        if (input == null)
+        if (input == null) {
             return null;
+        }
 
         StringBuilder sb = new StringBuilder(40);
-        for (int i = 0; i < input.length; i++)
+        for (int i = 0; i < input.length; i++) {
             sb.append(String.format("%d, ", input[i]));
+        }
 
         int index = sb.length() - 2;
         sb.delete(index, index + 1); // trim last comma
         return sb.toString();
     }
-
     private int mBillsUniformLoc = 0x2c2e4;
 
     public void SetHomeUniform(String team, String colorString) {
@@ -2291,7 +2319,7 @@ public class TecmoTool implements ITecmoTool {
         int loc = GetUniformLoc(team);
         if (loc > -1) {
             ret = String.format("Uniform1=0x%02x%02x%02x",
-                    0xff &outputRom[loc], 0xff &outputRom[loc + 1], 0xff &outputRom[loc + 2]);
+                    0xff & outputRom[loc], 0xff & outputRom[loc + 1], 0xff & outputRom[loc + 2]);
         }
         return ret;
     }
@@ -2301,7 +2329,7 @@ public class TecmoTool implements ITecmoTool {
         int loc = GetUniformLoc(team);
         if (loc > -1) {
             ret = String.format("Uniform2=0x%02x%02x%02x",
-                    0xff &outputRom[loc + 3],0xff & outputRom[loc + 4],0xff & outputRom[loc + 5]);
+                    0xff & outputRom[loc + 3], 0xff & outputRom[loc + 4], 0xff & outputRom[loc + 5]);
         }
         return ret;
     }
@@ -2320,7 +2348,6 @@ public class TecmoTool implements ITecmoTool {
         }
         return ret;
     }
-
     private final int mBillsActionSeqLoc = 0x342d8;
 
     // / <summary>
@@ -2344,9 +2371,7 @@ public class TecmoTool implements ITecmoTool {
                 GetAwayUniform(team));
         return ret;
     }
-
     private final int mBillsDivChampLoc = 0x343e8;
-
     private final int mBillsConfChampLoc = 0x34494;
 
     protected int GetDivChampLoc(String team) {
@@ -2451,7 +2476,4 @@ public class TecmoTool implements ITecmoTool {
     public void SetReturnTeam(String team, String pos0, String pos1, String pos2) {
         // do nothing
     }
-
-
-
 }

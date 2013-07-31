@@ -18,6 +18,9 @@ public class RomFileFilter extends javax.swing.filechooser.FileFilter
     public boolean accept(File f) 
     {
         String path = f.getAbsolutePath().toLowerCase();
+        if(f.isDirectory())
+            return true;
+        
         for(String dude : okFileExtensions )
         {
             if( path.endsWith(dude))

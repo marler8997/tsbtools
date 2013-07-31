@@ -3,20 +3,16 @@
  * and open the template in the editor.
  */
 package tsbtool_gui;
+
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.security.CodeSource;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import tsbtoolsupreme.InputParser;
@@ -87,16 +83,7 @@ public class AttributeForm extends javax.swing.JDialog
     public void setCurrentTeam(String team)
     {
         CurrentTeam = team;
-        int index = 0;
-        ComboBoxModel model = mTeamsComboBox.getModel();
-        for(int i= 0; i < model.getSize(); i++)
-        {
-            if( model.getElementAt(i).toString().equals(team))
-            {
-                index = i;
-                break;
-            }
-        }
+        int index = MainGUI.ComboBoxIndexOf(mTeamsComboBox, team);
         if(index > -1 )
         {
             mTeamsComboBox.setSelectedIndex(index);
@@ -108,16 +95,7 @@ public class AttributeForm extends javax.swing.JDialog
     public void setCurrentPosition(String position)
     {
         CurrentPosition = position;
-        int index = 0;
-        ComboBoxModel model = mPositionComboBox.getModel();
-        for(int i= 0; i < model.getSize(); i++)
-        {
-            if( model.getElementAt(i).toString().equals(position))
-            {
-                index = i;
-                break;
-            }
-        }
+        int index = MainGUI.ComboBoxIndexOf(mPositionComboBox, position);
         if(index > -1 )
         {
             mPositionComboBox.setSelectedIndex(index);
@@ -286,17 +264,9 @@ public class AttributeForm extends javax.swing.JDialog
             //currentTeamIndex = m.group(1).Index;
             currentTeamIndex = m.start();
 
-            int test = -1;
-            ComboBoxModel model = mTeamsComboBox.getModel();
-            int modelSize = model.getSize();
-            for( int i=0; i < modelSize; i++)
-            {
-                if( team.equals(model.getElementAt(i)))
-                {
-                    test = i;
-                    break;
-                }
-            }
+            int test =MainGUI.ComboBoxIndexOf(mTeamsComboBox, team);
+            int modelSize = mTeamsComboBox.getModel().getSize();
+ 
             if( test != modelSize - 1 )
             {
                 nextTeam      = String.format("TEAM\\s*=\\s*%s",mTeamsComboBox.getModel().getElementAt(test+1));
@@ -401,18 +371,7 @@ public class AttributeForm extends javax.swing.JDialog
     /// <returns></returns>
     private int AttrIndex(String val)
     {
-        int ret = -1;
-        ComboBoxModel model = m_Attributes[0].getModel();
-        String currentDude = "";
-        for( int i = 0 ; i < model.getSize(); i++)
-        {
-            currentDude = model.getElementAt(i).toString();
-            if( currentDude.equals(val) )
-            {
-                ret = i;
-                break;
-            }
-        }
+        int ret = MainGUI.ComboBoxIndexOf(m_Attributes[0],val);
         return ret;
     }    
     
@@ -615,7 +574,8 @@ public class AttributeForm extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jComboBox1 = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
@@ -671,183 +631,242 @@ public class AttributeForm extends javax.swing.JDialog
         setMinimumSize(new java.awt.Dimension(530, 370));
         setName("AttributeForm"); // NOI18N
         setPreferredSize(new java.awt.Dimension(416, 312));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
         jLabel1.setText("Team");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 14, -1, -1));
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 14, 32, 16);
 
         mTeamsComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(mTeamsComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 11, 98, -1));
+        getContentPane().add(mTeamsComboBox);
+        mTeamsComboBox.setBounds(46, 11, 98, 26);
 
         mPositionComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "QB1", "QB2", "RB1", "RB2", "RB3", "RB4", "WR1", "WR2", "WR3", "WR4", "TE1", "TE2", "C", "LG", "RG", "LT", "RT", "RE", "NT", "LE", "ROLB", "RILB", "LILB", "LOLB", "RCB", "LCB", "FS", "SS", "K", "P" }));
-        mPositionComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mPositionComboBox.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mPositionComboBoxActionPerformed(evt);
             }
         });
-        getContentPane().add(mPositionComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 11, 98, -1));
+        getContentPane().add(mPositionComboBox);
+        mPositionComboBox.setBounds(310, 11, 98, 26);
 
         positionLabel.setText("Position");
-        getContentPane().add(positionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 14, -1, -1));
+        getContentPane().add(positionLabel);
+        positionLabel.setBounds(263, 14, 45, 16);
 
         jLabel2.setText("#");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 42, -1, -1));
-        getContentPane().add(mJerseyNumberUpDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 62, 50, -1));
-        getContentPane().add(mFirstNameTextBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 62, 142, -1));
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 42, 7, 16);
+        getContentPane().add(mJerseyNumberUpDown);
+        mJerseyNumberUpDown.setBounds(10, 62, 50, 28);
+        getContentPane().add(mFirstNameTextBox);
+        mFirstNameTextBox.setBounds(70, 62, 142, 28);
 
         jLabel3.setText("First Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 42, 63, -1));
-        getContentPane().add(mLastNameTextBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 62, 142, -1));
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(70, 42, 63, 16);
+        getContentPane().add(mLastNameTextBox);
+        mLastNameTextBox.setBounds(263, 62, 142, 28);
 
         jLabel4.setText("Last Name");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 42, 63, -1));
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(263, 42, 63, 16);
 
         mAttributeGroupBox.setBorder(javax.swing.BorderFactory.createTitledBorder("Attributes"));
-        mAttributeGroupBox.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        mAttributeGroupBox.setLayout(null);
 
         jLabel5.setText("RS");
-        mAttributeGroupBox.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        mAttributeGroupBox.add(jLabel5);
+        jLabel5.setBounds(20, 20, 17, 16);
 
         m_RSBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_RSBox.setMaximumSize(new java.awt.Dimension(56, 20));
-        mAttributeGroupBox.add(m_RSBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 60, -1));
+        mAttributeGroupBox.add(m_RSBox);
+        m_RSBox.setBounds(10, 40, 60, 26);
 
         m_RPBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_RPBox.setMaximumSize(new java.awt.Dimension(43, 20));
-        m_RPBox.setMinimumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_RPBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 60, -1));
+        mAttributeGroupBox.add(m_RPBox);
+        m_RPBox.setBounds(70, 40, 60, 26);
 
         jLabel6.setText("RP");
-        mAttributeGroupBox.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+        mAttributeGroupBox.add(jLabel6);
+        jLabel6.setBounds(80, 20, 17, 16);
 
         m_MSBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_MSBox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_MSBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 60, -1));
+        mAttributeGroupBox.add(m_MSBox);
+        m_MSBox.setBounds(130, 40, 60, 26);
 
         jLabel7.setText("MS");
-        mAttributeGroupBox.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, -1, -1));
+        mAttributeGroupBox.add(jLabel7);
+        jLabel7.setBounds(140, 20, 17, 16);
 
         m_HPBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_HPBox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_HPBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 60, -1));
+        mAttributeGroupBox.add(m_HPBox);
+        m_HPBox.setBounds(190, 40, 60, 26);
 
         jLabel8.setText("HP");
-        mAttributeGroupBox.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, -1, -1));
+        mAttributeGroupBox.add(jLabel8);
+        jLabel8.setBounds(200, 20, 17, 16);
 
         m_PS_BC_PI_KABox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_PS_BC_PI_KABox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_PS_BC_PI_KABox, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 60, -1));
+        mAttributeGroupBox.add(m_PS_BC_PI_KABox);
+        m_PS_BC_PI_KABox.setBounds(250, 40, 60, 26);
 
         m_A1Label.setText("PS");
-        mAttributeGroupBox.add(m_A1Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, -1));
+        mAttributeGroupBox.add(m_A1Label);
+        m_A1Label.setBounds(260, 20, 16, 16);
 
         m_PC_REC_QU_KABox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_PC_REC_QU_KABox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_PC_REC_QU_KABox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 60, -1));
+        mAttributeGroupBox.add(m_PC_REC_QU_KABox);
+        m_PC_REC_QU_KABox.setBounds(310, 40, 60, 26);
 
         m_A2Label.setText("PC");
-        mAttributeGroupBox.add(m_A2Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, -1, -1));
+        mAttributeGroupBox.add(m_A2Label);
+        m_A2Label.setBounds(310, 20, 17, 16);
 
         m_ACCBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_ACCBox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_ACCBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, 60, -1));
+        mAttributeGroupBox.add(m_ACCBox);
+        m_ACCBox.setBounds(370, 40, 60, 26);
 
         m_A3Label.setText("ACC");
-        mAttributeGroupBox.add(m_A3Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, -1));
+        mAttributeGroupBox.add(m_A3Label);
+        m_A3Label.setBounds(380, 20, 25, 16);
 
         m_APBBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "6", "13", "19", "25", "31", "38", "44", "50", "56", "63", "69", "75", "81", "88", "94", "100" }));
         m_APBBox.setMaximumSize(new java.awt.Dimension(43, 20));
-        mAttributeGroupBox.add(m_APBBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 60, -1));
+        mAttributeGroupBox.add(m_APBBox);
+        m_APBBox.setBounds(430, 40, 60, 26);
 
         m_A4Label.setText("APB");
-        mAttributeGroupBox.add(m_A4Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, -1, -1));
+        mAttributeGroupBox.add(m_A4Label);
+        m_A4Label.setBounds(440, 20, 23, 16);
 
-        getContentPane().add(mAttributeGroupBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 88, 500, 80));
+        getContentPane().add(mAttributeGroupBox);
+        mAttributeGroupBox.setBounds(10, 88, 500, 80);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Sim attributes"));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(m_Sim1UpDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 60, -1));
+        jPanel1.setLayout(null);
+        jPanel1.add(m_Sim1UpDown);
+        m_Sim1UpDown.setBounds(20, 60, 60, 28);
 
         m_Sim1Label.setText("Sim Rush");
         m_Sim1Label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(m_Sim1Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 40));
-        jPanel1.add(m_Sim2UpDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 60, -1));
+        jPanel1.add(m_Sim1Label);
+        m_Sim1Label.setBounds(20, 20, 70, 40);
+        jPanel1.add(m_Sim2UpDown);
+        m_Sim2UpDown.setBounds(100, 60, 60, 28);
 
         m_Sim2Label.setText("Sim Pass");
         m_Sim2Label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(m_Sim2Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 80, 40));
+        jPanel1.add(m_Sim2Label);
+        m_Sim2Label.setBounds(100, 20, 80, 40);
 
         m_Sim3Label.setText("Sim Pocket");
         m_Sim3Label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(m_Sim3Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 70, 40));
-        jPanel1.add(m_Sim3UpDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 60, -1));
+        jPanel1.add(m_Sim3Label);
+        m_Sim3Label.setBounds(180, 20, 70, 40);
+        jPanel1.add(m_Sim3UpDown);
+        m_Sim3UpDown.setBounds(180, 60, 60, 28);
 
         m_Sim4Label.setText("Sim Kick Ret");
         m_Sim4Label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(m_Sim4Label, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, 40));
-        jPanel1.add(m_Sim4UpDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 60, -1));
+        jPanel1.add(m_Sim4Label);
+        m_Sim4Label.setBounds(260, 20, 70, 40);
+        jPanel1.add(m_Sim4UpDown);
+        m_Sim4UpDown.setBounds(260, 60, 60, 28);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 350, 110));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(150, 170, 350, 110);
 
         mFaceBox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tsbtool_gui/facepackage/00.png"))); // NOI18N
-        mFaceBox.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        mFaceBox.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 mFaceBoxMouseClicked(evt);
             }
         });
-        getContentPane().add(mFaceBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 65, 64));
+        getContentPane().add(mFaceBox);
+        mFaceBox.setBounds(10, 180, 65, 64);
 
         m_FaceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_FaceLabel.setText("C0");
-        getContentPane().add(m_FaceLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 63, -1));
+        getContentPane().add(m_FaceLabel);
+        m_FaceLabel.setBounds(10, 250, 63, 16);
 
         mPrevPicture.setText("\\/");
-        mPrevPicture.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mPrevPicture.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mPrevPictureActionPerformed(evt);
             }
         });
-        getContentPane().add(mPrevPicture, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
+        getContentPane().add(mPrevPicture);
+        mPrevPicture.setBounds(10, 270, 50, 28);
 
         mNextPicture.setText("/\\");
-            mNextPicture.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
+            mNextPicture.addActionListener(new java.awt.event.ActionListener()
+            {
+                public void actionPerformed(java.awt.event.ActionEvent evt)
+                {
                     mNextPictureActionPerformed(evt);
                 }
             });
-            getContentPane().add(mNextPicture, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
+            getContentPane().add(mNextPicture);
+            mNextPicture.setBounds(60, 270, 50, 28);
 
             mPrevPlayerButton.setText("Prev Player");
-            mPrevPlayerButton.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
+            mPrevPlayerButton.addActionListener(new java.awt.event.ActionListener()
+            {
+                public void actionPerformed(java.awt.event.ActionEvent evt)
+                {
                     mPrevPlayerButtonActionPerformed(evt);
                 }
             });
-            getContentPane().add(mPrevPlayerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+            getContentPane().add(mPrevPlayerButton);
+            mPrevPlayerButton.setBounds(10, 300, 89, 28);
 
             mNextPlayerButton.setText("Next Player");
-            mNextPlayerButton.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
+            mNextPlayerButton.addActionListener(new java.awt.event.ActionListener()
+            {
+                public void actionPerformed(java.awt.event.ActionEvent evt)
+                {
                     mNextPlayerButtonActionPerformed(evt);
                 }
             });
-            getContentPane().add(mNextPlayerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, -1, -1));
+            getContentPane().add(mNextPlayerButton);
+            mNextPlayerButton.setBounds(100, 300, 89, 28);
 
             mCancelButton.setText("Cancel");
-            mCancelButton.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
+            mCancelButton.addActionListener(new java.awt.event.ActionListener()
+            {
+                public void actionPerformed(java.awt.event.ActionEvent evt)
+                {
                     mCancelButtonActionPerformed(evt);
                 }
             });
-            getContentPane().add(mCancelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 82, -1));
+            getContentPane().add(mCancelButton);
+            mCancelButton.setBounds(400, 300, 82, 28);
 
             mOKButton.setText("OK");
-            mOKButton.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
+            mOKButton.addActionListener(new java.awt.event.ActionListener()
+            {
+                public void actionPerformed(java.awt.event.ActionEvent evt)
+                {
                     mOKButtonActionPerformed(evt);
                 }
             });
-            getContentPane().add(mOKButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 70, -1));
+            getContentPane().add(mOKButton);
+            mOKButton.setBounds(320, 300, 70, 28);
 
             pack();
         }// </editor-fold>//GEN-END:initComponents

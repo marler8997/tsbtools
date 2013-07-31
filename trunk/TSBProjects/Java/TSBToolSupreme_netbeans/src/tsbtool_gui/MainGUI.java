@@ -26,12 +26,16 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
+import javax.swing.ComboBoxModel;
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import tsbtoolsupreme.ITecmoTool;
 import tsbtoolsupreme.TecmoToolFactory;
 import javax.swing.filechooser.FileFilter;
 import tsbtoolsupreme.InputParser;
+import tsbtoolsupreme.TecmoTool;
 
 /**
  *
@@ -91,8 +95,8 @@ tsbtoolsupreme.MainClass.version +"\n"+
         InputStream is = instance.getClass().getResourceAsStream(fileName);
         try {
             buff = ImageIO.read(is);
-        } catch (IOException ex) {
-            Logger.getLogger(MainGUI.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(MainGUI.class.getName()).log(Level.SEVERE, "Error getting image ->" + fileName, ex);
         }
         return buff;
     }
@@ -104,7 +108,8 @@ tsbtoolsupreme.MainClass.version +"\n"+
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         mLoadTSBRomButton = new javax.swing.JButton();
         mSaveDataButton = new javax.swing.JButton();
@@ -133,7 +138,8 @@ tsbtoolsupreme.MainClass.version +"\n"+
         mAboutItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setIconImage( MainGUI.GetImage("/tsbtool_gui/icons/49ers.png", this));
+        setTitle("TSBToolSupreme");
+        setIconImage(MainGUI.GetImage("/tsbtool_gui/icons/49ers.PNG", this));
         setMinimumSize(new java.awt.Dimension(688, 200));
         setPreferredSize(new java.awt.Dimension(764, 536));
 
@@ -141,36 +147,46 @@ tsbtoolsupreme.MainClass.version +"\n"+
         mLoadTSBRomButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         mLoadTSBRomButton.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         mLoadTSBRomButton.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        mLoadTSBRomButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mLoadTSBRomButton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mLoadTSBRomButtonActionPerformed(evt);
             }
         });
 
         mSaveDataButton.setText("Save Data");
-        mSaveDataButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mSaveDataButton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mSaveDataButtonActionPerformed(evt);
             }
         });
 
         mViewContentsButton.setText("View Contents");
-        mViewContentsButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mViewContentsButton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mViewContentsButtonActionPerformed(evt);
             }
         });
 
         mLoadDataButton.setText("Load Data");
-        mLoadDataButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mLoadDataButton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mLoadDataButtonActionPerformed(evt);
             }
         });
 
         mApplyToRomButton.setText("Apply To Rom");
-        mApplyToRomButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mApplyToRomButton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mApplyToRomButtonActionPerformed(evt);
             }
         });
@@ -178,8 +194,10 @@ tsbtoolsupreme.MainClass.version +"\n"+
         mTextArea.setColumns(20);
         mTextArea.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
         mTextArea.setRows(5);
-        mTextArea.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        mTextArea.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 mTextAreaMouseClicked(evt);
             }
         });
@@ -188,32 +206,40 @@ tsbtoolsupreme.MainClass.version +"\n"+
         jMenu1.setText("File");
 
         mLoadRomMenuItem.setText("Load TSB ROM");
-        mLoadRomMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mLoadRomMenuItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mLoadRomMenuItemActionPerformed(evt);
             }
         });
         jMenu1.add(mLoadRomMenuItem);
 
         mLoadDataMenuItem.setText("Load Data");
-        mLoadDataMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mLoadDataMenuItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mLoadDataMenuItemActionPerformed(evt);
             }
         });
         jMenu1.add(mLoadDataMenuItem);
 
         mApplyToRomMenuItem.setText("Apply To ROM");
-        mApplyToRomMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mApplyToRomMenuItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mApplyToRomMenuItemActionPerformed(evt);
             }
         });
         jMenu1.add(mApplyToRomMenuItem);
 
         mGetBytesMenuItem.setText("Get Bytes");
-        mGetBytesMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mGetBytesMenuItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mGetBytesMenuItemActionPerformed(evt);
             }
         });
@@ -239,28 +265,35 @@ tsbtoolsupreme.MainClass.version +"\n"+
         mEolMenuItem.setText("EOL (Windows Style) CR LF | CR ");
         jMenu2.add(mEolMenuItem);
 
+        mShowColorsMenuItem.setSelected(true);
         mShowColorsMenuItem.setText("Show Colors");
         jMenu2.add(mShowColorsMenuItem);
 
         mEditPlayersItem.setText("Edit Players");
-        mEditPlayersItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mEditPlayersItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mEditPlayersItemActionPerformed(evt);
             }
         });
         jMenu2.add(mEditPlayersItem);
 
         mEditTeamsItem.setText("Edit Teams");
-        mEditTeamsItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mEditTeamsItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mEditTeamsItemActionPerformed(evt);
             }
         });
         jMenu2.add(mEditTeamsItem);
 
         mDleteCommasItem.setText("Delete Trailing Commas");
-        mDleteCommasItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mDleteCommasItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mDleteCommasItemActionPerformed(evt);
             }
         });
@@ -274,8 +307,10 @@ tsbtoolsupreme.MainClass.version +"\n"+
         jMenu4.setText("About");
 
         mAboutItem.setText("About TSBTool");
-        mAboutItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mAboutItem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mAboutItemActionPerformed(evt);
             }
         });
@@ -296,17 +331,17 @@ tsbtoolsupreme.MainClass.version +"\n"+
                 .addComponent(mViewContentsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(mSaveDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                .addComponent(mLoadDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addComponent(mLoadDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(mApplyToRomButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+                .addComponent(mApplyToRomButton, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -391,6 +426,28 @@ tsbtoolsupreme.MainClass.version +"\n"+
         JOptionPane.showMessageDialog(this, MainGUI.aboutMsg);
     }//GEN-LAST:event_mAboutItemActionPerformed
 
+    /**
+     * 
+     * @param box the combo box to look through
+     * @param item the item to search for
+     * @return -1 if not found, index of 'item' if found
+     */
+    public static int ComboBoxIndexOf(JComboBox box, Object item)
+    {
+        int index = -1;
+        ComboBoxModel model = box.getModel();//.indexOf(value);
+        int size = model.getSize();
+        for(int i = 0;i < size; i++)
+        {
+            if( item.equals(model.getElementAt(i)))
+            {
+                index = i;
+                break;
+            }
+        }
+        return index;
+    }
+    
     private void GetBytes()
     {
         if( tool != null && tool.getOutputRom() != null )
@@ -435,7 +492,7 @@ tsbtoolsupreme.MainClass.version +"\n"+
         }
         else if( line.indexOf("COLORS") > -1 )
         {
-            //ModifyColors(); // java TODO:
+            ModifyColors();
         }
         else
             EditPlayer();
@@ -541,6 +598,35 @@ tsbtoolsupreme.MainClass.version +"\n"+
         form.dispose();
     }
     
+        private void ModifyColors()
+        {
+            String team = GetTeam(mTextArea.getSelectionStart());
+            ModifyColors(team);
+        }
+        
+
+        private void ModifyColors(String team)
+        {
+            UniformEditForm form = new UniformEditForm(this, true);
+            form.setData(mTextArea.getText());
+            form.setCurrentTeam(team);
+            form.setVisible(true);
+
+            if( !form.getCanceled() )
+            {
+                int index = mTextArea.getSelectionStart();
+                Point pt = mTextArea.getCaret().getMagicCaretPosition();
+                Rectangle rect = new Rectangle(pt, new Dimension(1, 10));
+                SetText( form.getData());
+                if( mTextArea.getText().length() > index)
+                {
+                    mTextArea.setSelectionStart(index);
+                    mTextArea.scrollRectToVisible(rect);
+                }
+            }
+            form.dispose();
+        }        
+    
     private String GetTeam(int textPosition)
     {
         String team = "bills";
@@ -620,12 +706,13 @@ tsbtoolsupreme.MainClass.version +"\n"+
     private void LoadRom()
     {
         String filename = GetFileName(nesFilter, false);
-        
+        tsbtoolsupreme.MainClass.GUI_MODE = true;
         if( filename != null)
             tool = TecmoToolFactory.GetToolForRom( filename );
         
         if(filename != null && tool != null)
         {
+            
             if( tool.getOutputRom() != null )
             {
                 state2();

@@ -139,5 +139,7 @@ public interface ITecmoTool
         /// "SNES", "28TeamNES", "32TeamNES"
         /// </summary>
         String getRomVersion();
+        
+        boolean IsValidRomSize(long fileLength);
 
     }
