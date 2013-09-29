@@ -76,6 +76,11 @@ namespace TSBTool
 		private  int    m_ExpansionSegmentEnd = 0x3fff0;
 		private byte[] m_RomVersionData = null;
 
+        /// <summary>
+        /// Returns the rom version 
+        /// </summary>
+        public override string RomVersion { get { return "32TeamNES"; } }
+
 		public CXRomTSBTool()
 		{
 			SetupForCxROM();

@@ -1,5 +1,36 @@
 TSBToolSupreme README
 ======================================================================================================
+TSBToolSupreme Version 1.0.0.1
+Defects Fixed:
+1. Should work under mono on Linux & Mac now
+2. Team Formation Fix.
+
+Features Added:
+1. Hacks Menu added
+2. Pro Bowl editing support (text + GUI) [Menu added under 'View']
+
+     -------------- Hacks feature ------------------
+To use 'Hacks' feature, Create a 'HACKS' directory and populate with '.txt' files.
+Name 'hack' files accordingly to what they affect.
+A few examples are provided.
+You can prompt the user for input in the follwing way:
+	SET(0x2224B, {28TeamNES PromptUser:Msg="Enter desired quarter length":int(1-15)} )
+When you hit 'Apply to ROM', this will get processed and prompt the user to enter a number and place it
+at location '0x2224B' in the ROM.
+
+In this case, '28TeamNES' specifies that this is only to be used for the original nes ROM.
+For a hack that applies to both the 28 & 32 team ROM you can specify the line like this:
+	SET(0x2224B, {32TeamNES,28TeamNES PromptUser:Msg="Enter desired number":int(0x1-0x15)} )
+
+For a hack that applies to both the SNES ROM you can specify the line like this:
+	SET(0x2224B, {SNES PromptUser:Msg="Enter desired number":int(0x1-0x15)} )
+     -----------------------------------------------
+
+NOTE:
+Program still works with TSBSeasonGen when you have TSBSeasonGen.exe, TSBData\ + NFL_DATA\ in the same 
+folder.
+
+======================================================================================================
 TSBToolSupreme Version 0.9.1 beta
 Defects Fixed:
 1. Uniform usage for the cutscenes was not being updated.

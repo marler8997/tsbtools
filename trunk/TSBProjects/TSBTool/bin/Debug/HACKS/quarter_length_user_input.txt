@@ -1,0 +1,7 @@
+# 32TeamNES 28TeamNES
+# user specified quarters (32TeamNES, 28TeamNES, SNES )
+#SET(0x2224B, {32TeamNES,28TeamNES PromptUser:Msg="Enter desired quarter length":int(1-15)} )
+#SET(0x2224B, {32TeamNES,28TeamNES PromptUser:Msg="Enter desired quarter length":int(0x1-0x15)} )
+
+SET(0x2224B, {28TeamNES PromptUser:Msg="Enter desired quarter length":int(1-15)} )
+                

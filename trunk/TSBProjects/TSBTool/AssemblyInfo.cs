@@ -28,7 +28,7 @@ using System.Runtime.CompilerServices;
 
 //[assembly: AssemblyVersion("1.2.0.2")]
 //[assembly: AssemblyVersion("2.0.0.1")] Defect with menu selection
-[assembly: AssemblyVersion("0.0.9.1")]
+[assembly: AssemblyVersion("1.0.0.1")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 
