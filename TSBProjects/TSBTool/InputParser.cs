@@ -176,7 +176,8 @@ namespace TSBTool
 
 			if(line.StartsWith("#") || line == "" || line.ToLower().Trim().StartsWith("schedule") )
 				return;
-			else if( setRegex.Match(line) != Match.Empty )//line.StartsWith("SET") )
+			else if( /*setRegex.Match(line) != Match.Empty )//*/
+                line.StartsWith("SET") )
 			{
 				tool.ApplySet(line);
 			}
@@ -297,6 +298,23 @@ namespace TSBTool
 			{
 				SetYear(line);
 			}
+            else if (line.StartsWith("AFC") || line.StartsWith("NFC"))
+            {
+                String[] parts = line.Replace(" ", "").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                if (parts != null && parts.Length > 3)
+                {
+                    try
+                    {
+                        tool.SetProBowlPlayer((Conference)Enum.Parse(typeof(Conference), parts[0]),
+                            parts[1], parts[2],
+                            (TSBPlayer)Enum.Parse(typeof(TSBPlayer), parts[3]));
+                    }
+                    catch (Exception)
+                    {
+                        errors.Add("Error processing line > " + line);
+                    }
+                }
+            }
 			else if(currentState == scheduleState)
 			{
 				if( scheduleList != null )
@@ -306,10 +324,10 @@ namespace TSBTool
 			{
 				UpdateRoster(line);
 			}
-			else
-			{
-				errors.Add(string.Format("Garbage/orphin line not applied \"{0}\"", line));
-			}
+            else
+            {
+                errors.Add(string.Format("Garbage/orphin line not applied \"{0}\"", line));
+            }
 		}
 
 		private void SetYear(string line)

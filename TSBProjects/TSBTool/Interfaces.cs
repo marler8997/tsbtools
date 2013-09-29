@@ -11,6 +11,8 @@ namespace TSBTool
 		K,P
 	}
 
+    public enum Conference { AFC, NFC }
+
 	public interface ITecmoTool
 	{
 		byte[] OutputRom{get; set;}
@@ -137,6 +139,24 @@ namespace TSBTool
 
 		string GetChampColors(string team);
 
+        String GetProBowlPlayers();
+
+        void SetProBowlPlayer(Conference conf, String proBowlPos, String fromTeam, TSBPlayer fromTeamPos);
+
+        /// <summary>
+        /// "SNES", "28TeamNES", "32TeamNES"
+        /// </summary>
+        string RomVersion { get; }
 
 	}
+
+    public interface IAllStarPlayerControl 
+    {
+        Conference Conference { get; set; }
+
+        String Data { get; set; }
+        TSBPlayer PlayerPosition { get; set; }
+
+        void ReInitialize();
+    }
 }

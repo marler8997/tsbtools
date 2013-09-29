@@ -10,6 +10,6 @@ copy "..\..\bin\Debug\TSPRBOWL.nes" .
 ::FC /C /L Test1.txt Output1.txt > RESULTS.txt
 ::del *.nes
 
-"C:\Program Files\ExamDiff\ExamDiff.exe"  Input4.txt Output4.txt
+"C:\Program Files\ExamDiff Pro\ExamDiff.exe"  Input4.txt Output4.txt
 
 

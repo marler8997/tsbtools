@@ -1,1227 +1,532 @@
-<VisualStudioProject>
-    <CSHARP
-        ProjectType = "Local"
-        ProductVersion = "7.10.3077"
-        SchemaVersion = "2.0"
-        ProjectGuid = "{693F0C71-8F57-413E-9F43-48B2677DB6E0}"
-    >
-        <Build>
-            <Settings
-                ApplicationIcon = "49ers.ico"
-                AssemblyKeyContainerName = ""
-                AssemblyName = "TSBToolSupreme"
-                AssemblyOriginatorKeyFile = ""
-                DefaultClientScript = "JScript"
-                DefaultHTMLPageLayout = "Grid"
-                DefaultTargetSchema = "IE50"
-                DelaySign = "false"
-                OutputType = "Exe"
-                PreBuildEvent = ""
-                PostBuildEvent = "echo $(SolutionDir)TSBSupreme.config $(TargetDir)&#xd;&#xa;::copy $(SolutionDir)TSBToolSupreme.exe.config $(TargetDir)&#xd;&#xa;::copy $(SolutionDir)TSBTool_README.txt  $(TargetDir)"
-                RootNamespace = "TSBTool"
-                RunPostBuildEvent = "OnBuildSuccess"
-                StartupObject = ""
-            >
-                <Config
-                    Name = "Debug"
-                    AllowUnsafeBlocks = "false"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "DEBUG;TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "true"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "false"
-                    NoStdLib = "false"
-                    NoWarn = ""
-                    Optimize = "false"
-                    OutputPath = "bin\Debug\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "false"
-                    WarningLevel = "4"
-                />
-                <Config
-                    Name = "Release"
-                    AllowUnsafeBlocks = "false"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "false"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "false"
-                    NoStdLib = "false"
-                    NoWarn = ""
-                    Optimize = "true"
-                    OutputPath = "bin\Release\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "false"
-                    WarningLevel = "4"
-                />
-            </Settings>
-            <References>
-                <Reference
-                    Name = "System"
-                    AssemblyName = "System"
-                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
-                />
-                <Reference
-                    Name = "System.Data"
-                    AssemblyName = "System.Data"
-                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
-                />
-                <Reference
-                    Name = "System.XML"
-                    AssemblyName = "System.Xml"
-                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
-                />
-                <Reference
-                    Name = "System.Drawing"
-                    AssemblyName = "System.Drawing"
-                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
-                />
-                <Reference
-                    Name = "System.Windows.Forms"
-                    AssemblyName = "System.Windows.Forms"
-                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
-                />
-            </References>
-        </Build>
-        <Files>
-            <Include>
-                <File
-                    RelPath = "49ers.ico"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "AssemblyInfo.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "AttributeForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "AttributeForm.resx"
-                    DependentUpon = "AttributeForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ColorForm2.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ColorForm2.resx"
-                    DependentUpon = "ColorForm2.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ColorInfo.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "CXRomScheduleHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "CxRomTeamHomeAwayUniformForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "CxRomTeamHomeAwayUniformForm.resx"
-                    DependentUpon = "CxRomTeamHomeAwayUniformForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "CXRomTSBTool.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "FaceForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "FaceForm.resx"
-                    DependentUpon = "FaceForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "guy.ico"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "HomeAwayUniformForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "HomeAwayUniformForm.resx"
-                    DependentUpon = "HomeAwayUniformForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "InputParser.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Interfaces.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "MainClass.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "MainGUI.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "MainGUI.resx"
-                    DependentUpon = "MainGUI.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ModifyTeamForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ModifyTeamForm.resx"
-                    DependentUpon = "ModifyTeamForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "NumberForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "NumberForm.resx"
-                    DependentUpon = "NumberForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "RichTextDisplay.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "RichTextDisplay.resx"
-                    DependentUpon = "RichTextDisplay.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "SchedulerHelper2.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "SimStuff.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "SNES_ScheduleHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "SNES_TecmoTool.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "StringInputDlg.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "StringInputDlg.resx"
-                    DependentUpon = "StringInputDlg.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "TecmoTool.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "TecmoToolFactory.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "TSBTool_README.txt"
-                    BuildAction = "Content"
-                />
-                <File
-                    RelPath = "TSBToolSupreme.exe.config"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "UniformEditForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "UniformEditForm.resx"
-                    DependentUpon = "UniformEditForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "WindowsCommandLine.txt"
-                    BuildAction = "Content"
-                />
-                <File
-                    RelPath = "FACES\00.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\01.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\02.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\03.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\04.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\05.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\06.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\07.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\08.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\09.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\0F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\10.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\11.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\12.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\13.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\14.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\15.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\16.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\17.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\18.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\19.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\1F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\20.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\21.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\22.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\23.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\24.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\25.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\26.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\27.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\28.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\29.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\2F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\30.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\31.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\32.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\33.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\34.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\35.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\36.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\37.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\38.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\39.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\3F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\40.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\41.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\42.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\43.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\44.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\45.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\46.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\47.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\48.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\49.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\4F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\50.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\51.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\52.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\80.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\81.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\82.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\83.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\84.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\85.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\86.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\87.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\88.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\89.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\8F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\90.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\91.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\92.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\93.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\94.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\95.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\96.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\97.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\98.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\99.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9A.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9B.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9C.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9D.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9E.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\9F.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A8.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\A9.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AA.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AB.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AC.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AD.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AE.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\AF.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B8.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\B9.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BA.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BB.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BC.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BD.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BE.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\BF.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C8.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\C9.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CA.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CB.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CC.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CD.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CE.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\CF.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\D0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\D1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\D2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\D3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\D4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "FACES\NA.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P1-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P2-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P3-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\P4-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R1-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R2-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R3-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-0.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-1.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-2.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-3.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-4.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-5.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-6.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "PLAYS\R4-7.BMP"
-                    BuildAction = "EmbeddedResource"
-                />
-            </Include>
-        </Files>
-    </CSHARP>
-</VisualStudioProject>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{693F0C71-8F57-413E-9F43-48B2677DB6E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>49ers.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>TSBToolSupreme</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TSBTool</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>TSBTool.MainClass</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllStarConfrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllStarConfrenceControl.Designer.cs">
+      <DependentUpon>AllStarConfrenceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllStarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStarForm.Designer.cs">
+      <DependentUpon>AllStarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllstarPlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllstarPlayerControl.Designer.cs">
+      <DependentUpon>AllstarPlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttributeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CXRomScheduleHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CxRomTeamHomeAwayUniformForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXRomTSBTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeAwayUniformForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProBowlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProBowlForm.Designer.cs">
+      <DependentUpon>ProBowlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProBowlTeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProBowlTeamControl.Designer.cs">
+      <DependentUpon>ProBowlTeamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerHelper2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimStuff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnesReturnTeamPlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SnesReturnTeamPlayerControl.Designer.cs">
+      <DependentUpon>SnesReturnTeamPlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SNES_ScheduleHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SNES_TecmoTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringInputDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TecmoTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TecmoToolFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestClass.cs" />
+    <Compile Include="UniformEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="ROM_HACK_INFO.txt" />
+    <Content Include="TSBTool_README.txt" />
+    <Content Include="WindowsCommandLine.txt" />
+    <EmbeddedResource Include="49ers.ico" />
+    <EmbeddedResource Include="AllStarConfrenceControl.resx">
+      <DependentUpon>AllStarConfrenceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStarForm.resx">
+      <DependentUpon>AllStarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllstarPlayerControl.resx">
+      <DependentUpon>AllstarPlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeForm.resx">
+      <DependentUpon>AttributeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorForm2.resx">
+      <DependentUpon>ColorForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CxRomTeamHomeAwayUniformForm.resx">
+      <DependentUpon>CxRomTeamHomeAwayUniformForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceForm.resx">
+      <DependentUpon>FaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACES\00.BMP" />
+    <EmbeddedResource Include="FACES\01.BMP" />
+    <EmbeddedResource Include="FACES\02.BMP" />
+    <EmbeddedResource Include="FACES\03.BMP" />
+    <EmbeddedResource Include="FACES\04.BMP" />
+    <EmbeddedResource Include="FACES\05.BMP" />
+    <EmbeddedResource Include="FACES\06.BMP" />
+    <EmbeddedResource Include="FACES\07.BMP" />
+    <EmbeddedResource Include="FACES\08.BMP" />
+    <EmbeddedResource Include="FACES\09.BMP" />
+    <EmbeddedResource Include="FACES\0A.BMP" />
+    <EmbeddedResource Include="FACES\0B.BMP" />
+    <EmbeddedResource Include="FACES\0C.BMP" />
+    <EmbeddedResource Include="FACES\0D.BMP" />
+    <EmbeddedResource Include="FACES\0E.BMP" />
+    <EmbeddedResource Include="FACES\0F.BMP" />
+    <EmbeddedResource Include="FACES\10.BMP" />
+    <EmbeddedResource Include="FACES\11.BMP" />
+    <EmbeddedResource Include="FACES\12.BMP" />
+    <EmbeddedResource Include="FACES\13.BMP" />
+    <EmbeddedResource Include="FACES\14.BMP" />
+    <EmbeddedResource Include="FACES\15.BMP" />
+    <EmbeddedResource Include="FACES\16.BMP" />
+    <EmbeddedResource Include="FACES\17.BMP" />
+    <EmbeddedResource Include="FACES\18.BMP" />
+    <EmbeddedResource Include="FACES\19.BMP" />
+    <EmbeddedResource Include="FACES\1A.BMP" />
+    <EmbeddedResource Include="FACES\1B.BMP" />
+    <EmbeddedResource Include="FACES\1C.BMP" />
+    <EmbeddedResource Include="FACES\1D.BMP" />
+    <EmbeddedResource Include="FACES\1E.BMP" />
+    <EmbeddedResource Include="FACES\1F.BMP" />
+    <EmbeddedResource Include="FACES\20.BMP" />
+    <EmbeddedResource Include="FACES\21.BMP" />
+    <EmbeddedResource Include="FACES\22.BMP" />
+    <EmbeddedResource Include="FACES\23.BMP" />
+    <EmbeddedResource Include="FACES\24.BMP" />
+    <EmbeddedResource Include="FACES\25.BMP" />
+    <EmbeddedResource Include="FACES\26.BMP" />
+    <EmbeddedResource Include="FACES\27.BMP" />
+    <EmbeddedResource Include="FACES\28.BMP" />
+    <EmbeddedResource Include="FACES\29.BMP" />
+    <EmbeddedResource Include="FACES\2A.BMP" />
+    <EmbeddedResource Include="FACES\2B.BMP" />
+    <EmbeddedResource Include="FACES\2C.BMP" />
+    <EmbeddedResource Include="FACES\2D.BMP" />
+    <EmbeddedResource Include="FACES\2E.BMP" />
+    <EmbeddedResource Include="FACES\2F.BMP" />
+    <EmbeddedResource Include="FACES\30.BMP" />
+    <EmbeddedResource Include="FACES\31.BMP" />
+    <EmbeddedResource Include="FACES\32.BMP" />
+    <EmbeddedResource Include="FACES\33.BMP" />
+    <EmbeddedResource Include="FACES\34.BMP" />
+    <EmbeddedResource Include="FACES\35.BMP" />
+    <EmbeddedResource Include="FACES\36.BMP" />
+    <EmbeddedResource Include="FACES\37.BMP" />
+    <EmbeddedResource Include="FACES\38.BMP" />
+    <EmbeddedResource Include="FACES\39.BMP" />
+    <EmbeddedResource Include="FACES\3A.BMP" />
+    <EmbeddedResource Include="FACES\3B.BMP" />
+    <EmbeddedResource Include="FACES\3C.BMP" />
+    <EmbeddedResource Include="FACES\3D.BMP" />
+    <EmbeddedResource Include="FACES\3E.BMP" />
+    <EmbeddedResource Include="FACES\3F.BMP" />
+    <EmbeddedResource Include="FACES\40.BMP" />
+    <EmbeddedResource Include="FACES\41.BMP" />
+    <EmbeddedResource Include="FACES\42.BMP" />
+    <EmbeddedResource Include="FACES\43.BMP" />
+    <EmbeddedResource Include="FACES\44.BMP" />
+    <EmbeddedResource Include="FACES\45.BMP" />
+    <EmbeddedResource Include="FACES\46.BMP" />
+    <EmbeddedResource Include="FACES\47.BMP" />
+    <EmbeddedResource Include="FACES\48.BMP" />
+    <EmbeddedResource Include="FACES\49.BMP" />
+    <EmbeddedResource Include="FACES\4A.BMP" />
+    <EmbeddedResource Include="FACES\4B.BMP" />
+    <EmbeddedResource Include="FACES\4C.BMP" />
+    <EmbeddedResource Include="FACES\4D.BMP" />
+    <EmbeddedResource Include="FACES\4E.BMP" />
+    <EmbeddedResource Include="FACES\4F.BMP" />
+    <EmbeddedResource Include="FACES\50.BMP" />
+    <EmbeddedResource Include="FACES\51.BMP" />
+    <EmbeddedResource Include="FACES\52.BMP" />
+    <EmbeddedResource Include="FACES\80.BMP" />
+    <EmbeddedResource Include="FACES\81.BMP" />
+    <EmbeddedResource Include="FACES\82.BMP" />
+    <EmbeddedResource Include="FACES\83.BMP" />
+    <EmbeddedResource Include="FACES\84.BMP" />
+    <EmbeddedResource Include="FACES\85.BMP" />
+    <EmbeddedResource Include="FACES\86.BMP" />
+    <EmbeddedResource Include="FACES\87.BMP" />
+    <EmbeddedResource Include="FACES\88.BMP" />
+    <EmbeddedResource Include="FACES\89.BMP" />
+    <EmbeddedResource Include="FACES\8A.BMP" />
+    <EmbeddedResource Include="FACES\8B.BMP" />
+    <EmbeddedResource Include="FACES\8C.BMP" />
+    <EmbeddedResource Include="FACES\8D.BMP" />
+    <EmbeddedResource Include="FACES\8E.BMP" />
+    <EmbeddedResource Include="FACES\8F.BMP" />
+    <EmbeddedResource Include="FACES\90.BMP" />
+    <EmbeddedResource Include="FACES\91.BMP" />
+    <EmbeddedResource Include="FACES\92.BMP" />
+    <EmbeddedResource Include="FACES\93.BMP" />
+    <EmbeddedResource Include="FACES\94.BMP" />
+    <EmbeddedResource Include="FACES\95.BMP" />
+    <EmbeddedResource Include="FACES\96.BMP" />
+    <EmbeddedResource Include="FACES\97.BMP" />
+    <EmbeddedResource Include="FACES\98.BMP" />
+    <EmbeddedResource Include="FACES\99.BMP" />
+    <EmbeddedResource Include="FACES\9A.BMP" />
+    <EmbeddedResource Include="FACES\9B.BMP" />
+    <EmbeddedResource Include="FACES\9C.BMP" />
+    <EmbeddedResource Include="FACES\9D.BMP" />
+    <EmbeddedResource Include="FACES\9E.BMP" />
+    <EmbeddedResource Include="FACES\9F.BMP" />
+    <EmbeddedResource Include="FACES\A0.BMP" />
+    <EmbeddedResource Include="FACES\A1.BMP" />
+    <EmbeddedResource Include="FACES\A2.BMP" />
+    <EmbeddedResource Include="FACES\A3.BMP" />
+    <EmbeddedResource Include="FACES\A4.BMP" />
+    <EmbeddedResource Include="FACES\A5.BMP" />
+    <EmbeddedResource Include="FACES\A6.BMP" />
+    <EmbeddedResource Include="FACES\A7.BMP" />
+    <EmbeddedResource Include="FACES\A8.BMP" />
+    <EmbeddedResource Include="FACES\A9.BMP" />
+    <EmbeddedResource Include="FACES\AA.BMP" />
+    <EmbeddedResource Include="FACES\AB.BMP" />
+    <EmbeddedResource Include="FACES\AC.BMP" />
+    <EmbeddedResource Include="FACES\AD.BMP" />
+    <EmbeddedResource Include="FACES\AE.BMP" />
+    <EmbeddedResource Include="FACES\AF.BMP" />
+    <EmbeddedResource Include="FACES\B0.BMP" />
+    <EmbeddedResource Include="FACES\B1.BMP" />
+    <EmbeddedResource Include="FACES\B2.BMP" />
+    <EmbeddedResource Include="FACES\B3.BMP" />
+    <EmbeddedResource Include="FACES\B4.BMP" />
+    <EmbeddedResource Include="FACES\B5.BMP" />
+    <EmbeddedResource Include="FACES\B6.BMP" />
+    <EmbeddedResource Include="FACES\B7.BMP" />
+    <EmbeddedResource Include="FACES\B8.BMP" />
+    <EmbeddedResource Include="FACES\B9.BMP" />
+    <EmbeddedResource Include="FACES\BA.BMP" />
+    <EmbeddedResource Include="FACES\BB.BMP" />
+    <EmbeddedResource Include="FACES\BC.BMP" />
+    <EmbeddedResource Include="FACES\BD.BMP" />
+    <EmbeddedResource Include="FACES\BE.BMP" />
+    <EmbeddedResource Include="FACES\BF.BMP" />
+    <EmbeddedResource Include="FACES\C0.BMP" />
+    <EmbeddedResource Include="FACES\C1.BMP" />
+    <EmbeddedResource Include="FACES\C2.BMP" />
+    <EmbeddedResource Include="FACES\C3.BMP" />
+    <EmbeddedResource Include="FACES\C4.BMP" />
+    <EmbeddedResource Include="FACES\C5.BMP" />
+    <EmbeddedResource Include="FACES\C6.BMP" />
+    <EmbeddedResource Include="FACES\C7.BMP" />
+    <EmbeddedResource Include="FACES\C8.BMP" />
+    <EmbeddedResource Include="FACES\C9.BMP" />
+    <EmbeddedResource Include="FACES\CA.BMP" />
+    <EmbeddedResource Include="FACES\CB.BMP" />
+    <EmbeddedResource Include="FACES\CC.BMP" />
+    <EmbeddedResource Include="FACES\CD.BMP" />
+    <EmbeddedResource Include="FACES\CE.BMP" />
+    <EmbeddedResource Include="FACES\CF.BMP" />
+    <EmbeddedResource Include="FACES\D0.BMP" />
+    <EmbeddedResource Include="FACES\D1.BMP" />
+    <EmbeddedResource Include="FACES\D2.BMP" />
+    <EmbeddedResource Include="FACES\D3.BMP" />
+    <EmbeddedResource Include="FACES\D4.BMP" />
+    <EmbeddedResource Include="FACES\NA.BMP" />
+    <EmbeddedResource Include="guy.ico" />
+    <EmbeddedResource Include="HomeAwayUniformForm.resx">
+      <DependentUpon>HomeAwayUniformForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGUI.resx">
+      <DependentUpon>MainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyTeamForm.resx">
+      <DependentUpon>ModifyTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberForm.resx">
+      <DependentUpon>NumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLAYS\P1-0.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-1.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-2.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-3.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-4.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-5.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-6.BMP" />
+    <EmbeddedResource Include="PLAYS\P1-7.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-0.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-1.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-2.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-3.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-4.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-5.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-6.BMP" />
+    <EmbeddedResource Include="PLAYS\P2-7.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-0.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-1.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-2.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-3.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-4.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-5.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-6.BMP" />
+    <EmbeddedResource Include="PLAYS\P3-7.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-0.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-1.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-2.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-3.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-4.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-5.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-6.BMP" />
+    <EmbeddedResource Include="PLAYS\P4-7.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-0.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-1.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-2.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-3.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-4.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-5.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-6.BMP" />
+    <EmbeddedResource Include="PLAYS\R1-7.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-0.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-1.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-2.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-3.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-4.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-5.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-6.BMP" />
+    <EmbeddedResource Include="PLAYS\R2-7.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-0.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-1.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-2.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-3.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-4.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-5.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-6.BMP" />
+    <EmbeddedResource Include="PLAYS\R3-7.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-0.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-1.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-2.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-3.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-4.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-5.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-6.BMP" />
+    <EmbeddedResource Include="PLAYS\R4-7.BMP" />
+    <EmbeddedResource Include="ProBowlForm.resx">
+      <DependentUpon>ProBowlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProBowlTeamControl.resx">
+      <DependentUpon>ProBowlTeamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextDisplay.resx">
+      <DependentUpon>RichTextDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnesReturnTeamPlayerControl.resx">
+      <DependentUpon>SnesReturnTeamPlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringInputDlg.resx">
+      <DependentUpon>StringInputDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformEditForm.resx">
+      <DependentUpon>UniformEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="TSBToolSupreme.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent>echo $(SolutionDir)TSBSupreme.config $(TargetDir)
+::copy $(SolutionDir)TSBToolSupreme.exe.config $(TargetDir)
+::copy $(SolutionDir)TSBTool_README.txt  $(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

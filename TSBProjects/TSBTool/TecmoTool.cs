@@ -39,6 +39,12 @@ namespace TSBTool
 		protected int mBillsPuntKickReturnerPos = 0x328d3 ;
 		protected int dataPositionOffset        = (- 0x8000 + 0x010); // snes = 0x170000
 		protected Regex mNameRegex;
+
+        /// <summary>
+        /// Returns the rom version 
+        /// </summary>
+        public virtual string RomVersion { get { return "28TeamNES"; } }
+
 		private ArrayList errors = new ArrayList();
 
 		protected  string[] positionNames = { 
@@ -485,6 +491,10 @@ Do you want to continue?",ROM_LENGTH),
 				return null;
 			}
 			int pos = GetDataPosition(team,position);
+            if (position == "P" && team == "falcons")
+            {
+                position = position;
+            }
 			int nextPos = GetNextDataPosition(team,position);
 			if( nextPos == -1 )
 			{
@@ -671,6 +681,7 @@ Do you want to continue?",ROM_LENGTH),
 				team = teams[i];
 				all.Append(GetTeamPlayers(team));
 			}
+
 			return all.ToString();
 		}
 
@@ -1989,7 +2000,25 @@ Do you want to continue?",ROM_LENGTH),
 				simpleSetRegex = new Regex("SET\\s*\\(\\s*(0x[0-9a-fA-F]+)\\s*,\\s*(0x[0-9a-fA-F]+)\\s*\\)");
 			
 			if( simpleSetRegex.Match(line) != Match.Empty )
-				ApplySimpleSet(line);
+            {
+                ApplySimpleSet(line);
+            }
+            else if (line.IndexOf("PromptUser", StringComparison.OrdinalIgnoreCase) > -1)
+            {
+                if (line.IndexOf(RomVersion, StringComparison.OrdinalIgnoreCase) > -1)
+                {
+                    // good to go! apply it
+                    string simpleSetLine = StringInputDlg.PromptForSetUserInput(line);
+                    if (!string.IsNullOrEmpty(simpleSetLine))
+                    {
+                        ApplySet(simpleSetLine);
+                    }
+                }
+                else
+                {
+                    MainClass.ShowError("Rom version not specified in Hack: " + line);
+                }
+            }
 			else
 			{
 				errors.Add(string.Format("ERROR with line \"{0}\"",line));
@@ -2045,6 +2074,7 @@ Do you want to continue?",ROM_LENGTH),
 		protected const string m1RB_4WR     = "1RB_4WR";
 
 
+        protected int mTeamFormationHackLoc = 0x21642;
 		protected int mTeamFormationsStartingLoc =   0x21FE0;//0xedf3;
 		protected int mTeamFormationsStartingLoc2 =  0x31E80;//0xedf3;
 		
@@ -2060,7 +2090,12 @@ Do you want to continue?",ROM_LENGTH),
 			{
 				int location  = mTeamFormationsStartingLoc  + teamIndex;
 				int location2 = mTeamFormationsStartingLoc2 + teamIndex;
-
+                if (outputRom[mTeamFormationHackLoc] == 0xA0)
+                {
+                    //special formation hack hasn't been setup yet
+                    ApplySimpleSet("SET(0x21642, 0x8AA66EBCD09FAA4C5096 ) ");
+                }
+                
 				switch( formation )
 				{
 					case m2RB_2WR_1TE:
@@ -2622,6 +2657,84 @@ Do you want to continue?",ROM_LENGTH),
 		{
 			// do nothing
 		}
+
+        /// <summary>
+        /// SET( 0x32853, 0x0800 )
+        //http://tecmobowl.org/topic/11755-editing-pro-bowl-rosters-for-32-team-rom/#entry104493
+
+        protected int mProwbowlStartingLoc = 0x32853;
+
+        /// </summary>
+        /// <param name="conf"></param>
+        /// <param name="proBowlPos"></param>
+        /// <param name="fromTeam"></param>
+        /// <param name="fromTeamPos"></param>
+        public void SetProBowlPlayer(Conference conf, String proBowlPos, String fromTeam, TSBPlayer fromTeamPos)
+        {
+            //NFC => 30*2 + (int) 
+            int offset = 0;
+            if (conf == Conference.NFC)
+                offset += 60; //(30 spots * 2 bytes);
+            int teamIndex = GetTeamIndex(fromTeam);
+            if (teamIndex < 0)
+            {
+                throw new Exception(String.Format("Error, team '{0}' is invalid",fromTeam));
+            }
+            byte val1 = (byte)teamIndex;
+            byte val2 = (byte)fromTeamPos;
+
+            int posIndex = GetPositionIndex(proBowlPos);
+            int loc = mProwbowlStartingLoc + offset + (2* posIndex);
+            OutputRom[loc] = val1;
+            OutputRom[loc+1] = val2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="conf"></param>
+        /// <param name="proBowlPos"></param>
+        /// <returns></returns>
+        public String GetProBowlPlayer(Conference conf, String proBowlPos)
+        {
+            String ret = "";
+            int offset = 0;
+            if (conf == Conference.NFC)
+                offset += 60; //(30 spots * 2 bytes);
+            int loc = mProwbowlStartingLoc + offset + (2* GetPositionIndex(proBowlPos));
+            int teamIndex = OutputRom[loc];
+            int pos = OutputRom[loc+1];
+
+            string team = Teams[teamIndex];
+            ret = String.Format("{0},{1},{2},{3}",conf.ToString(), 
+                proBowlPos.ToString(),team, ((TSBPlayer)pos).ToString());
+
+            return ret;
+        }
+
+        public String GetConferenceProBowlPlayers(Conference conf)
+        {
+            StringBuilder builder = new StringBuilder(500);
+            for (int i = 0; i < positionNames.Length; i++)
+            {
+                builder.Append(GetProBowlPlayer(conf, positionNames[i]));
+                builder.Append("\r\n");
+            }
+            return builder.ToString();
+        }
+
+        public String GetProBowlPlayers()
+        {
+            StringBuilder builder = new StringBuilder(1000);
+            builder.Append("# AFC ProBowl players\r\n");
+            builder.Append(GetConferenceProBowlPlayers(Conference.AFC));
+            builder.Append("\r\n");
+
+            builder.Append("# NFC ProBowl players\r\n");
+            builder.Append(GetConferenceProBowlPlayers(Conference.NFC));
+            builder.Append("\r\n");
+            return builder.ToString();
+        }
 
 	}
 }

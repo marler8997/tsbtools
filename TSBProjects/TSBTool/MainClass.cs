@@ -13,96 +13,120 @@ namespace TSBTool
 	/// </summary>
 	class MainClass
 	{
-		[DllImport("kernel32.dll")]
-		static extern IntPtr GetConsoleWindow();
+        //[DllImport("kernel32.dll")]
+        //static extern IntPtr GetConsoleWindow();
 
-		[DllImport("user32.dll")]
-		static extern bool ShowWindow(IntPtr hWnd, WindowShowStyle nCmdShow);
+        //[DllImport("user32.dll")]
+        //static extern bool ShowWindow(IntPtr hWnd, WindowShowStyle nCmdShow);
+        /// <summary>
+        /// Used for string comprison in testing 
+        /// </summary>
+        public static String TestString = "";
 
 		public static bool GUI_MODE = false;
-		public static string version = "Version 0.9.1 beta";
+		public static string version = "Version 1.1.0.1";
 
 		//                   -j             -n     -f     -a         -s         -sch    
 		private static bool jerseyNumbers, names, faces, abilities, simData,  schedule, 
 		//  -gui  -stdin
-			gui,  stdin; 
+			gui,  stdin, proBowl; 
 		private static bool printStuff, modifyStuff, printHelp;
 		private static string outFileName = "output.nes";
 		private static string getFileName = null;
+
+        public static bool OnWindows { get; set; }
 		/// <summary>
 		/// The main entry point for the application.
 		/// </summary>
 		[STAThread]
 		static void Main(string[] stuff)
-		{			
-			jerseyNumbers = names = faces = abilities = simData =  
-			printStuff = modifyStuff = schedule = false;
-			//Junk(stuff);
-			ArrayList args = GetArgs(stuff);
-			ArrayList options = GetOptions(stuff);
-			SetupOptions(options);
-			string romFile = GetRomFileName(args);
-			if( romFile!= null&& romFile.ToLower().EndsWith(".smc") )
-			{
-				outFileName = "output.smc";
-			}
-			else
-			{
-				outFileName = "output.nes";
-			}
-			string dataFile = GetInputFileName(args);
-
-			if(stuff.Length == 0 || gui)
-			{
-				MainClass.GUI_MODE = true;
-				ShowWindow(GetConsoleWindow(), WindowShowStyle.Hide);
-				Application.Run(new MainGUI(romFile, dataFile));
-				ShowWindow(GetConsoleWindow(), WindowShowStyle.Show);
-				return;
-			}
-			if(printHelp )
-			{
-				PrintHelp();
-				return;
-			}
-
-			if( stdin )
-				dataFile = null; // if the romFile is null, we'll read from stdin.
-
-			if(romFile == null)
-				return;
-			if( getFileName != null && File.Exists(getFileName) )
-			{
-				ITecmoTool tool = TecmoToolFactory.GetToolForRom( romFile); 
-				string result = GetLocations( getFileName, tool.OutputRom);
-				Console.WriteLine(result);
-				return;
-			}
-			if(options.Count == 0 && romFile != null )
-			{
-				printStuff = true;
-				jerseyNumbers = names = faces = abilities = simData = printStuff = schedule = true;
-			}
-			else if(jerseyNumbers ||names ||faces ||abilities ||simData ||printStuff ||schedule || 
-				TecmoTool.ShowColors || TecmoTool.ShowPlaybook || TecmoTool.ShowTeamFormation )
-				printStuff = true;
-
-			try
-			{
-				if(printStuff)
-					PrintStuff(romFile);
-				else if(romFile != null && dataFile != null)
-					ModifyStuff(romFile,dataFile);
-				else if(romFile != null)
-					ModifyStuff(romFile,null);
-				else
-					Console.Error.WriteLine("Exiting...");
-			}
-			catch (Exception e)
-			{
-				Console.Error.WriteLine("ERROR!\n"+e.Message);
-			}
+		{
+            RunMain(stuff);
 		}
+
+        public static void RunMain(string[] stuff)
+        {
+            //GUI_MODE = true;
+            //MainGUI.PromptForSetUserInput("SET(0x2224B, {32TeamNES,28TeamNES PromptUser:Msg=\"Enter desired quarter length\":int(0x1-0x15)} )");
+
+            OnWindows = true;
+            if (System.Environment.OSVersion.ToString().IndexOf("windows", StringComparison.OrdinalIgnoreCase) < 0)
+            {
+                OnWindows = false;
+            }
+            jerseyNumbers = names = faces = abilities = simData =
+            printStuff = modifyStuff = schedule = proBowl = 
+              TecmoTool.ShowColors = TecmoTool.ShowPlaybook = 
+              TecmoTool.ShowTeamFormation = false;
+            //Junk(stuff);
+            ArrayList args = GetArgs(stuff);
+            ArrayList options = GetOptions(stuff);
+            SetupOptions(options);
+            string romFile = GetRomFileName(args);
+            if (romFile != null && romFile.ToLower().EndsWith(".smc"))
+            {
+                outFileName = "output.smc";
+            }
+            else
+            {
+                outFileName = "output.nes";
+            }
+            string dataFile = GetInputFileName(args);
+
+            if (stuff.Length == 0 || gui)
+            {
+                MainClass.GUI_MODE = true;
+                //if (OnWindows)
+                //    ShowWindow(GetConsoleWindow(), WindowShowStyle.Hide);
+                Application.Run(new MainGUI(romFile, dataFile));
+                //if (OnWindows)
+                //    ShowWindow(GetConsoleWindow(), WindowShowStyle.Show);
+
+                return;
+            }
+            if (printHelp)
+            {
+                PrintHelp();
+                return;
+            }
+
+            if (stdin)
+                dataFile = null; // if the romFile is null, we'll read from stdin.
+
+            if (romFile == null)
+                return;
+            if (getFileName != null && File.Exists(getFileName))
+            {
+                ITecmoTool tool = TecmoToolFactory.GetToolForRom(romFile);
+                string result = GetLocations(getFileName, tool.OutputRom);
+                Console.WriteLine(result);
+                return;
+            }
+            if (options.Count == 0 && romFile != null)
+            {
+                printStuff = true;
+                jerseyNumbers = names = faces = abilities = simData = printStuff = schedule = proBowl = true;
+            }
+            else if (jerseyNumbers || names || faces || abilities || simData || printStuff || schedule || proBowl ||
+                TecmoTool.ShowColors || TecmoTool.ShowPlaybook || TecmoTool.ShowTeamFormation)
+                printStuff = true;
+
+            try
+            {
+                if (printStuff)
+                    PrintStuff(romFile);
+                else if (romFile != null && dataFile != null)
+                    ModifyStuff(romFile, dataFile);
+                else if (romFile != null)
+                    ModifyStuff(romFile, null);
+                else
+                    Console.Error.WriteLine("Exiting...");
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine("ERROR!\n" + e.Message);
+            }
+        }
 
 		public static void PrintHelp()
 		{
@@ -133,6 +157,7 @@ The following are the available options.
 -stdin		Read data from standard in.
 -gui		Launch GUI.
 -pb		Show Playbooks
+-proBowl    Show Pro bowl rosters.
 -of		Show Offensive Formations
 -colors		Show Uniform Colors
 -out:filename	Save modified rom to <filename>.
@@ -228,13 +253,16 @@ The following are the available options.
 						case "-colors": case "/colors":
 							TecmoTool.ShowColors = true;
 							break;
+                        case "-probowl": case "/probowl":
+                            proBowl = true;
+                            break;
 						default:
 							Console.Error.WriteLine("Invalid option '{0}'",option);
 							break;
 					}
 				}
 			}
-			if( jerseyNumbers || names || faces || abilities || simData )
+			if( jerseyNumbers || names || faces || abilities || simData || proBowl)
 				printStuff = true;
 		}
 
@@ -272,27 +300,31 @@ The following are the available options.
 				ShowError("ERROR determining ROM type.");
 				return;
 			}
-			string stuff = "";
+			StringBuilder stuff = new StringBuilder(77000);
 			if(jerseyNumbers && names && faces && abilities && simData )
 			{
 				tool.ShowOffPref = true;
-				stuff += tool.GetKey();
-				stuff += tool.GetAll();
+				stuff.Append( tool.GetKey());
+				stuff.Append( tool.GetAll());
 			}
 			else if( TecmoTool.ShowColors || TecmoTool.ShowPlaybook || TecmoTool.ShowTeamFormation )
 			{
 				tool.ShowOffPref = true;
-				stuff += tool.GetKey();
-				stuff += tool.GetAll();
+				stuff.Append(tool.GetKey());
+				stuff.Append(tool.GetAll());
 				//stuff = tool.GetPlayerStuff(jerseyNumbers,names,faces,abilities,simData);
 			}
 			else if(jerseyNumbers || names || faces || abilities || simData)
 			{
-				stuff = tool.GetPlayerStuff(jerseyNumbers,names,faces,abilities,simData);
+				stuff.Append( tool.GetPlayerStuff(jerseyNumbers,names,faces,abilities,simData));
 			}
+            if (proBowl)
+            {
+                stuff.Append(tool.GetProBowlPlayers());
+            }
 			if(schedule)
 			{
-				stuff += tool.GetSchedule();
+				stuff.Append(tool.GetSchedule());
 			}
 
 			if(System.IO.Path.DirectorySeparatorChar == '\\')
@@ -300,7 +332,8 @@ The following are the available options.
 				stuff = stuff.Replace("\r\n", "\n");
 				stuff = stuff.Replace("\n","\r\n");
 			}
-			Console.WriteLine(stuff);
+            TestString = stuff.ToString();
+			Console.WriteLine(TestString);
 			//string playerStuff = tool.GetPlayerStuff();
 		}
 
