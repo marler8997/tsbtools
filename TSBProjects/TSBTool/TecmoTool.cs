@@ -272,11 +272,11 @@ namespace TSBTool
 							string.Format(
 							@"Warning! 
 
-The input Rom is not the correct Size ({0} bytes).
+The input Rom is not the correct Size ({0} bytes). [{1} size = {2}]
 
 You should only continue if you know for sure that you are loading a nes TSB ROM.
 
-Do you want to continue?",ROM_LENGTH),
+Do you want to continue?",ROM_LENGTH, filename, len),
 							"WARNING!",
 							System.Windows.Forms.MessageBoxButtons.YesNo,
 							System.Windows.Forms.MessageBoxIcon.Warning );
