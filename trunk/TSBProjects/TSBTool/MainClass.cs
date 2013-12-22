@@ -24,7 +24,13 @@ namespace TSBTool
         public static String TestString = "";
 
 		public static bool GUI_MODE = false;
-		public static string version = "Version 1.1.0.1";
+        public static string version //= "Version 1.1.0.1";
+        {
+            get
+            {
+                return System.Reflection.Assembly.GetEntryAssembly().GetName().Version.ToString();
+            }
+        }
 
 		//                   -j             -n     -f     -a         -s         -sch    
 		private static bool jerseyNumbers, names, faces, abilities, simData,  schedule, 

@@ -64,11 +64,8 @@ namespace TSBTool
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Button button2;
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.Container components = null;
+        private System.Windows.Forms.Button button2;
+        private IContainer components;
 		private System.Windows.Forms.MenuItem menuItem2;
 		private System.Windows.Forms.MenuItem menuItem3;
 		private System.Windows.Forms.GroupBox mConfChampGroupBox;
@@ -664,594 +661,606 @@ Please verify that this teams's color attributes are correct.", oldData);
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(UniformEditForm));
-			this.mHomePictureBox = new System.Windows.Forms.PictureBox();
-			this.mAwayPictureBox = new System.Windows.Forms.PictureBox();
-			this.mainMenu1 = new System.Windows.Forms.MainMenu();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.mScaleMenuItem = new System.Windows.Forms.MenuItem();
-			this.mCloseMenuItem = new System.Windows.Forms.MenuItem();
-			this.menuItem2 = new System.Windows.Forms.MenuItem();
-			this.menuItem3 = new System.Windows.Forms.MenuItem();
-			this.mHomeJerseyButton = new System.Windows.Forms.Button();
-			this.mHomePantsButton = new System.Windows.Forms.Button();
-			this.mAwayPantsButton = new System.Windows.Forms.Button();
-			this.mAwayJerseyButton = new System.Windows.Forms.Button();
-			this.mHomeJerseyLabel = new System.Windows.Forms.Label();
-			this.mHomePantsLabel = new System.Windows.Forms.Label();
-			this.mAwayPantsLabel = new System.Windows.Forms.Label();
-			this.mAwayJerseyLabel = new System.Windows.Forms.Label();
-			this.mDivChampPictureBox = new System.Windows.Forms.PictureBox();
-			this.mConfChampPictureBox = new System.Windows.Forms.PictureBox();
-			this.mDivChampUniform1Label = new System.Windows.Forms.Label();
-			this.mDivChampUniform2Label = new System.Windows.Forms.Label();
-			this.mDivChampUniform3Label = new System.Windows.Forms.Label();
-			this.mDivChampHelmet1Label = new System.Windows.Forms.Label();
-			this.mDivChampHelmet2Label = new System.Windows.Forms.Label();
-			this.mConfChampHelmetLabel = new System.Windows.Forms.Label();
-			this.mConfChampUniform3Label = new System.Windows.Forms.Label();
-			this.mConfChampUniform2Label = new System.Windows.Forms.Label();
-			this.mConfChampUniform1Label = new System.Windows.Forms.Label();
-			this.mConfChampGroupBox = new System.Windows.Forms.GroupBox();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.mDivChampGroupBox = new System.Windows.Forms.GroupBox();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.mCancelButton = new System.Windows.Forms.Button();
-			this.mSkin2Label = new System.Windows.Forms.Label();
-			this.mSkin1Label = new System.Windows.Forms.Label();
-			this.mSkin2Button = new System.Windows.Forms.Button();
-			this.mSkin1Button = new System.Windows.Forms.Button();
-			this.label5 = new System.Windows.Forms.Label();
-			this.mTeamsComboBox = new System.Windows.Forms.ComboBox();
-			this.button2 = new System.Windows.Forms.Button();
-			this.mUniform1GroupBox = new System.Windows.Forms.GroupBox();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.mConfChampGroupBox.SuspendLayout();
-			this.mDivChampGroupBox.SuspendLayout();
-			this.mUniform1GroupBox.SuspendLayout();
-			this.groupBox1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// mHomePictureBox
-			// 
-			this.mHomePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mHomePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mHomePictureBox.Image")));
-			this.mHomePictureBox.Location = new System.Drawing.Point(8, 16);
-			this.mHomePictureBox.Name = "mHomePictureBox";
-			this.mHomePictureBox.Size = new System.Drawing.Size(56, 88);
-			this.mHomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.mHomePictureBox.TabIndex = 0;
-			this.mHomePictureBox.TabStop = false;
-			this.mHomePictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mHomePictureBox_MouseDown);
-			// 
-			// mAwayPictureBox
-			// 
-			this.mAwayPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mAwayPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mAwayPictureBox.Image")));
-			this.mAwayPictureBox.Location = new System.Drawing.Point(8, 16);
-			this.mAwayPictureBox.Name = "mAwayPictureBox";
-			this.mAwayPictureBox.Size = new System.Drawing.Size(56, 88);
-			this.mAwayPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.mAwayPictureBox.TabIndex = 1;
-			this.mAwayPictureBox.TabStop = false;
-			// 
-			// mainMenu1
-			// 
-			this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.menuItem1,
-																					  this.menuItem2});
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 0;
-			this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.mScaleMenuItem,
-																					  this.mCloseMenuItem});
-			this.menuItem1.Text = "&File";
-			// 
-			// mScaleMenuItem
-			// 
-			this.mScaleMenuItem.Index = 0;
-			this.mScaleMenuItem.Text = "&Scale";
-			this.mScaleMenuItem.Click += new System.EventHandler(this.mScaleMenuItem_Click);
-			// 
-			// mCloseMenuItem
-			// 
-			this.mCloseMenuItem.Index = 1;
-			this.mCloseMenuItem.Text = "&Close";
-			this.mCloseMenuItem.Click += new System.EventHandler(this.mCloseMenuItem_Click);
-			// 
-			// menuItem2
-			// 
-			this.menuItem2.Index = 1;
-			this.menuItem2.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.menuItem3});
-			this.menuItem2.Text = "&How To";
-			// 
-			// menuItem3
-			// 
-			this.menuItem3.Index = 0;
-			this.menuItem3.Text = "How to use";
-			this.menuItem3.Click += new System.EventHandler(this.menuItem3_Click);
-			// 
-			// mHomeJerseyButton
-			// 
-			this.mHomeJerseyButton.Location = new System.Drawing.Point(8, 112);
-			this.mHomeJerseyButton.Name = "mHomeJerseyButton";
-			this.mHomeJerseyButton.Size = new System.Drawing.Size(56, 23);
-			this.mHomeJerseyButton.TabIndex = 4;
-			this.mHomeJerseyButton.Text = "Jersey";
-			this.mHomeJerseyButton.Click += new System.EventHandler(this.mJerseyButton_Click);
-			// 
-			// mHomePantsButton
-			// 
-			this.mHomePantsButton.Location = new System.Drawing.Point(8, 144);
-			this.mHomePantsButton.Name = "mHomePantsButton";
-			this.mHomePantsButton.Size = new System.Drawing.Size(56, 23);
-			this.mHomePantsButton.TabIndex = 5;
-			this.mHomePantsButton.Text = "Pants";
-			this.mHomePantsButton.Click += new System.EventHandler(this.mPantsButton_Click);
-			// 
-			// mAwayPantsButton
-			// 
-			this.mAwayPantsButton.Location = new System.Drawing.Point(8, 144);
-			this.mAwayPantsButton.Name = "mAwayPantsButton";
-			this.mAwayPantsButton.Size = new System.Drawing.Size(56, 23);
-			this.mAwayPantsButton.TabIndex = 7;
-			this.mAwayPantsButton.Text = "Pants";
-			this.mAwayPantsButton.Click += new System.EventHandler(this.mPantsButton_Click);
-			// 
-			// mAwayJerseyButton
-			// 
-			this.mAwayJerseyButton.Location = new System.Drawing.Point(8, 112);
-			this.mAwayJerseyButton.Name = "mAwayJerseyButton";
-			this.mAwayJerseyButton.Size = new System.Drawing.Size(56, 23);
-			this.mAwayJerseyButton.TabIndex = 6;
-			this.mAwayJerseyButton.Text = "Jersey";
-			this.mAwayJerseyButton.Click += new System.EventHandler(this.mJerseyButton_Click);
-			// 
-			// mHomeJerseyLabel
-			// 
-			this.mHomeJerseyLabel.Location = new System.Drawing.Point(64, 112);
-			this.mHomeJerseyLabel.Name = "mHomeJerseyLabel";
-			this.mHomeJerseyLabel.Size = new System.Drawing.Size(24, 23);
-			this.mHomeJerseyLabel.TabIndex = 8;
-			this.mHomeJerseyLabel.Text = "00";
-			this.mHomeJerseyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mHomePantsLabel
-			// 
-			this.mHomePantsLabel.Location = new System.Drawing.Point(64, 144);
-			this.mHomePantsLabel.Name = "mHomePantsLabel";
-			this.mHomePantsLabel.Size = new System.Drawing.Size(24, 23);
-			this.mHomePantsLabel.TabIndex = 9;
-			this.mHomePantsLabel.Text = "00";
-			this.mHomePantsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mAwayPantsLabel
-			// 
-			this.mAwayPantsLabel.Location = new System.Drawing.Point(64, 144);
-			this.mAwayPantsLabel.Name = "mAwayPantsLabel";
-			this.mAwayPantsLabel.Size = new System.Drawing.Size(24, 23);
-			this.mAwayPantsLabel.TabIndex = 11;
-			this.mAwayPantsLabel.Text = "00";
-			this.mAwayPantsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mAwayJerseyLabel
-			// 
-			this.mAwayJerseyLabel.Location = new System.Drawing.Point(64, 112);
-			this.mAwayJerseyLabel.Name = "mAwayJerseyLabel";
-			this.mAwayJerseyLabel.Size = new System.Drawing.Size(24, 23);
-			this.mAwayJerseyLabel.TabIndex = 10;
-			this.mAwayJerseyLabel.Text = "00";
-			this.mAwayJerseyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mDivChampPictureBox
-			// 
-			this.mDivChampPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.mDivChampPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mDivChampPictureBox.Image")));
-			this.mDivChampPictureBox.Location = new System.Drawing.Point(88, 16);
-			this.mDivChampPictureBox.Name = "mDivChampPictureBox";
-			this.mDivChampPictureBox.Size = new System.Drawing.Size(232, 136);
-			this.mDivChampPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.mDivChampPictureBox.TabIndex = 12;
-			this.mDivChampPictureBox.TabStop = false;
-			this.mDivChampPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mDivChampPictureBox_MouseDown);
-			// 
-			// mConfChampPictureBox
-			// 
-			this.mConfChampPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.mConfChampPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mConfChampPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mConfChampPictureBox.Image")));
-			this.mConfChampPictureBox.Location = new System.Drawing.Point(120, 16);
-			this.mConfChampPictureBox.Name = "mConfChampPictureBox";
-			this.mConfChampPictureBox.Size = new System.Drawing.Size(200, 142);
-			this.mConfChampPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.mConfChampPictureBox.TabIndex = 13;
-			this.mConfChampPictureBox.TabStop = false;
-			this.mConfChampPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mConfChampPictureBox_MouseDown);
-			// 
-			// mDivChampUniform1Label
-			// 
-			this.mDivChampUniform1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampUniform1Label.Location = new System.Drawing.Point(56, 16);
-			this.mDivChampUniform1Label.Name = "mDivChampUniform1Label";
-			this.mDivChampUniform1Label.Size = new System.Drawing.Size(24, 16);
-			this.mDivChampUniform1Label.TabIndex = 14;
-			this.mDivChampUniform1Label.Text = "00";
-			this.mDivChampUniform1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mDivChampUniform2Label
-			// 
-			this.mDivChampUniform2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampUniform2Label.Location = new System.Drawing.Point(56, 40);
-			this.mDivChampUniform2Label.Name = "mDivChampUniform2Label";
-			this.mDivChampUniform2Label.Size = new System.Drawing.Size(24, 16);
-			this.mDivChampUniform2Label.TabIndex = 15;
-			this.mDivChampUniform2Label.Text = "00";
-			this.mDivChampUniform2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mDivChampUniform3Label
-			// 
-			this.mDivChampUniform3Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampUniform3Label.Location = new System.Drawing.Point(56, 64);
-			this.mDivChampUniform3Label.Name = "mDivChampUniform3Label";
-			this.mDivChampUniform3Label.Size = new System.Drawing.Size(24, 16);
-			this.mDivChampUniform3Label.TabIndex = 16;
-			this.mDivChampUniform3Label.Text = "00";
-			this.mDivChampUniform3Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mDivChampHelmet1Label
-			// 
-			this.mDivChampHelmet1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampHelmet1Label.Location = new System.Drawing.Point(56, 104);
-			this.mDivChampHelmet1Label.Name = "mDivChampHelmet1Label";
-			this.mDivChampHelmet1Label.Size = new System.Drawing.Size(24, 16);
-			this.mDivChampHelmet1Label.TabIndex = 17;
-			this.mDivChampHelmet1Label.Text = "00";
-			this.mDivChampHelmet1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mDivChampHelmet2Label
-			// 
-			this.mDivChampHelmet2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mDivChampHelmet2Label.Location = new System.Drawing.Point(56, 128);
-			this.mDivChampHelmet2Label.Name = "mDivChampHelmet2Label";
-			this.mDivChampHelmet2Label.Size = new System.Drawing.Size(24, 16);
-			this.mDivChampHelmet2Label.TabIndex = 18;
-			this.mDivChampHelmet2Label.Text = "00";
-			this.mDivChampHelmet2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mConfChampHelmetLabel
-			// 
-			this.mConfChampHelmetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mConfChampHelmetLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-			this.mConfChampHelmetLabel.Location = new System.Drawing.Point(80, 112);
-			this.mConfChampHelmetLabel.Name = "mConfChampHelmetLabel";
-			this.mConfChampHelmetLabel.Size = new System.Drawing.Size(24, 16);
-			this.mConfChampHelmetLabel.TabIndex = 22;
-			this.mConfChampHelmetLabel.Text = "00";
-			this.mConfChampHelmetLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.mConfChampHelmetLabel.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mConfChampUniform3Label
-			// 
-			this.mConfChampUniform3Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mConfChampUniform3Label.Location = new System.Drawing.Point(80, 72);
-			this.mConfChampUniform3Label.Name = "mConfChampUniform3Label";
-			this.mConfChampUniform3Label.Size = new System.Drawing.Size(24, 16);
-			this.mConfChampUniform3Label.TabIndex = 21;
-			this.mConfChampUniform3Label.Text = "00";
-			this.mConfChampUniform3Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mConfChampUniform2Label
-			// 
-			this.mConfChampUniform2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mConfChampUniform2Label.Location = new System.Drawing.Point(80, 48);
-			this.mConfChampUniform2Label.Name = "mConfChampUniform2Label";
-			this.mConfChampUniform2Label.Size = new System.Drawing.Size(24, 16);
-			this.mConfChampUniform2Label.TabIndex = 20;
-			this.mConfChampUniform2Label.Text = "00";
-			this.mConfChampUniform2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mConfChampUniform1Label
-			// 
-			this.mConfChampUniform1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mConfChampUniform1Label.Location = new System.Drawing.Point(80, 24);
-			this.mConfChampUniform1Label.Name = "mConfChampUniform1Label";
-			this.mConfChampUniform1Label.Size = new System.Drawing.Size(24, 16);
-			this.mConfChampUniform1Label.TabIndex = 19;
-			this.mConfChampUniform1Label.Text = "00";
-			this.mConfChampUniform1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
-			// 
-			// mConfChampGroupBox
-			// 
-			this.mConfChampGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.mConfChampGroupBox.Controls.Add(this.mConfChampHelmetLabel);
-			this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform3Label);
-			this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform2Label);
-			this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform1Label);
-			this.mConfChampGroupBox.Controls.Add(this.mConfChampPictureBox);
-			this.mConfChampGroupBox.Controls.Add(this.label9);
-			this.mConfChampGroupBox.Controls.Add(this.label10);
-			this.mConfChampGroupBox.Controls.Add(this.label12);
-			this.mConfChampGroupBox.Controls.Add(this.label11);
-			this.mConfChampGroupBox.Location = new System.Drawing.Point(208, 184);
-			this.mConfChampGroupBox.Name = "mConfChampGroupBox";
-			this.mConfChampGroupBox.Size = new System.Drawing.Size(328, 168);
-			this.mConfChampGroupBox.TabIndex = 23;
-			this.mConfChampGroupBox.TabStop = false;
-			this.mConfChampGroupBox.Text = "Confrence Champ Colors";
-			// 
-			// label9
-			// 
-			this.label9.Location = new System.Drawing.Point(16, 72);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(40, 16);
-			this.label9.TabIndex = 37;
-			this.label9.Text = "Uni 3";
-			// 
-			// label10
-			// 
-			this.label10.Location = new System.Drawing.Point(16, 48);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(40, 16);
-			this.label10.TabIndex = 36;
-			this.label10.Text = "Uni 2";
-			// 
-			// label12
-			// 
-			this.label12.Location = new System.Drawing.Point(16, 112);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(40, 16);
-			this.label12.TabIndex = 38;
-			this.label12.Text = "Helm 1";
-			// 
-			// label11
-			// 
-			this.label11.Location = new System.Drawing.Point(16, 24);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(40, 16);
-			this.label11.TabIndex = 35;
-			this.label11.Text = "Uni 1";
-			// 
-			// mDivChampGroupBox
-			// 
-			this.mDivChampGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.mDivChampGroupBox.Controls.Add(this.label8);
-			this.mDivChampGroupBox.Controls.Add(this.label6);
-			this.mDivChampGroupBox.Controls.Add(this.label4);
-			this.mDivChampGroupBox.Controls.Add(this.label3);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampPictureBox);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform1Label);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform2Label);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform3Label);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampHelmet1Label);
-			this.mDivChampGroupBox.Controls.Add(this.mDivChampHelmet2Label);
-			this.mDivChampGroupBox.Controls.Add(this.label7);
-			this.mDivChampGroupBox.Location = new System.Drawing.Point(208, 8);
-			this.mDivChampGroupBox.Name = "mDivChampGroupBox";
-			this.mDivChampGroupBox.Size = new System.Drawing.Size(328, 168);
-			this.mDivChampGroupBox.TabIndex = 24;
-			this.mDivChampGroupBox.TabStop = false;
-			this.mDivChampGroupBox.Text = "Division Champ Colors";
-			// 
-			// label8
-			// 
-			this.label8.Location = new System.Drawing.Point(8, 128);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(40, 16);
-			this.label8.TabIndex = 34;
-			this.label8.Text = "Helm 2";
-			// 
-			// label6
-			// 
-			this.label6.Location = new System.Drawing.Point(8, 64);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(40, 16);
-			this.label6.TabIndex = 21;
-			this.label6.Text = "Uni 3";
-			// 
-			// label4
-			// 
-			this.label4.Location = new System.Drawing.Point(8, 40);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(40, 16);
-			this.label4.TabIndex = 20;
-			this.label4.Text = "Uni 2";
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(8, 16);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(40, 16);
-			this.label3.TabIndex = 19;
-			this.label3.Text = "Uni 1";
-			// 
-			// label7
-			// 
-			this.label7.Location = new System.Drawing.Point(8, 104);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(40, 16);
-			this.label7.TabIndex = 33;
-			this.label7.Text = "Helm 1";
-			// 
-			// button1
-			// 
-			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.button1.Location = new System.Drawing.Point(352, 376);
-			this.button1.Name = "button1";
-			this.button1.TabIndex = 25;
-			this.button1.Text = "&OK";
-			// 
-			// mCancelButton
-			// 
-			this.mCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.mCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.mCancelButton.Location = new System.Drawing.Point(440, 376);
-			this.mCancelButton.Name = "mCancelButton";
-			this.mCancelButton.TabIndex = 26;
-			this.mCancelButton.Text = "&Cancel";
-			// 
-			// mSkin2Label
-			// 
-			this.mSkin2Label.Location = new System.Drawing.Point(64, 176);
-			this.mSkin2Label.Name = "mSkin2Label";
-			this.mSkin2Label.Size = new System.Drawing.Size(24, 23);
-			this.mSkin2Label.TabIndex = 30;
-			this.mSkin2Label.Text = "00";
-			this.mSkin2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mSkin1Label
-			// 
-			this.mSkin1Label.Location = new System.Drawing.Point(64, 176);
-			this.mSkin1Label.Name = "mSkin1Label";
-			this.mSkin1Label.Size = new System.Drawing.Size(24, 23);
-			this.mSkin1Label.TabIndex = 29;
-			this.mSkin1Label.Text = "00";
-			this.mSkin1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mSkin2Button
-			// 
-			this.mSkin2Button.Location = new System.Drawing.Point(8, 176);
-			this.mSkin2Button.Name = "mSkin2Button";
-			this.mSkin2Button.Size = new System.Drawing.Size(56, 23);
-			this.mSkin2Button.TabIndex = 28;
-			this.mSkin2Button.Text = "Skin 2";
-			this.mSkin2Button.Click += new System.EventHandler(this.mSkin2Button_Click);
-			// 
-			// mSkin1Button
-			// 
-			this.mSkin1Button.Location = new System.Drawing.Point(8, 176);
-			this.mSkin1Button.Name = "mSkin1Button";
-			this.mSkin1Button.Size = new System.Drawing.Size(56, 23);
-			this.mSkin1Button.TabIndex = 27;
-			this.mSkin1Button.Text = "Skin 1";
-			this.mSkin1Button.Click += new System.EventHandler(this.mSkin1Button_Click);
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(8, 8);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(33, 16);
-			this.label5.TabIndex = 32;
-			this.label5.Text = "Team";
-			// 
-			// mTeamsComboBox
-			// 
-			this.mTeamsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.mTeamsComboBox.Items.AddRange(new object[] {
-																"bills",
-																"colts",
-																"dolphins",
-																"patriots",
-																"jets",
-																"bengals",
-																"browns",
-																"oilers",
-																"steelers",
-																"broncos",
-																"chiefs",
-																"raiders",
-																"chargers",
-																"seahawks",
-																"redskins",
-																"giants",
-																"eagles",
-																"cardinals",
-																"cowboys",
-																"bears",
-																"lions",
-																"packers",
-																"vikings",
-																"buccaneers",
-																"49ers",
-																"rams",
-																"saints",
-																"falcons"});
-			this.mTeamsComboBox.Location = new System.Drawing.Point(56, 8);
-			this.mTeamsComboBox.Name = "mTeamsComboBox";
-			this.mTeamsComboBox.Size = new System.Drawing.Size(104, 21);
-			this.mTeamsComboBox.TabIndex = 0;
-			this.mTeamsComboBox.SelectedIndexChanged += new System.EventHandler(this.mTeamsComboBox_SelectedIndexChanged);
-			// 
-			// button2
-			// 
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.button2.Location = new System.Drawing.Point(8, 272);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(192, 96);
-			this.button2.TabIndex = 33;
-			this.button2.Text = "Edit Uniform Usage";
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// mUniform1GroupBox
-			// 
-			this.mUniform1GroupBox.Controls.Add(this.mHomeJerseyButton);
-			this.mUniform1GroupBox.Controls.Add(this.mHomeJerseyLabel);
-			this.mUniform1GroupBox.Controls.Add(this.mSkin1Button);
-			this.mUniform1GroupBox.Controls.Add(this.mHomePictureBox);
-			this.mUniform1GroupBox.Controls.Add(this.mHomePantsButton);
-			this.mUniform1GroupBox.Controls.Add(this.mHomePantsLabel);
-			this.mUniform1GroupBox.Controls.Add(this.mSkin1Label);
-			this.mUniform1GroupBox.Location = new System.Drawing.Point(8, 40);
-			this.mUniform1GroupBox.Name = "mUniform1GroupBox";
-			this.mUniform1GroupBox.Size = new System.Drawing.Size(96, 224);
-			this.mUniform1GroupBox.TabIndex = 34;
-			this.mUniform1GroupBox.TabStop = false;
-			this.mUniform1GroupBox.Text = "Uniform 1";
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.mAwayPantsButton);
-			this.groupBox1.Controls.Add(this.mAwayPictureBox);
-			this.groupBox1.Controls.Add(this.mSkin2Button);
-			this.groupBox1.Controls.Add(this.mAwayPantsLabel);
-			this.groupBox1.Controls.Add(this.mAwayJerseyLabel);
-			this.groupBox1.Controls.Add(this.mSkin2Label);
-			this.groupBox1.Controls.Add(this.mAwayJerseyButton);
-			this.groupBox1.Location = new System.Drawing.Point(108, 40);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(96, 224);
-			this.groupBox1.TabIndex = 35;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Uniform 2";
-			// 
-			// UniformEditForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(544, 406);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.mUniform1GroupBox);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.mTeamsComboBox);
-			this.Controls.Add(this.mCancelButton);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.mDivChampGroupBox);
-			this.Controls.Add(this.mConfChampGroupBox);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximumSize = new System.Drawing.Size(552, 440);
-			this.Menu = this.mainMenu1;
-			this.MinimumSize = new System.Drawing.Size(552, 440);
-			this.Name = "UniformEditForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Edit Uniforms";
-			this.mConfChampGroupBox.ResumeLayout(false);
-			this.mDivChampGroupBox.ResumeLayout(false);
-			this.mUniform1GroupBox.ResumeLayout(false);
-			this.groupBox1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UniformEditForm));
+            this.mHomePictureBox = new System.Windows.Forms.PictureBox();
+            this.mAwayPictureBox = new System.Windows.Forms.PictureBox();
+            this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.mScaleMenuItem = new System.Windows.Forms.MenuItem();
+            this.mCloseMenuItem = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.mHomeJerseyButton = new System.Windows.Forms.Button();
+            this.mHomePantsButton = new System.Windows.Forms.Button();
+            this.mAwayPantsButton = new System.Windows.Forms.Button();
+            this.mAwayJerseyButton = new System.Windows.Forms.Button();
+            this.mHomeJerseyLabel = new System.Windows.Forms.Label();
+            this.mHomePantsLabel = new System.Windows.Forms.Label();
+            this.mAwayPantsLabel = new System.Windows.Forms.Label();
+            this.mAwayJerseyLabel = new System.Windows.Forms.Label();
+            this.mDivChampPictureBox = new System.Windows.Forms.PictureBox();
+            this.mConfChampPictureBox = new System.Windows.Forms.PictureBox();
+            this.mDivChampUniform1Label = new System.Windows.Forms.Label();
+            this.mDivChampUniform2Label = new System.Windows.Forms.Label();
+            this.mDivChampUniform3Label = new System.Windows.Forms.Label();
+            this.mDivChampHelmet1Label = new System.Windows.Forms.Label();
+            this.mDivChampHelmet2Label = new System.Windows.Forms.Label();
+            this.mConfChampHelmetLabel = new System.Windows.Forms.Label();
+            this.mConfChampUniform3Label = new System.Windows.Forms.Label();
+            this.mConfChampUniform2Label = new System.Windows.Forms.Label();
+            this.mConfChampUniform1Label = new System.Windows.Forms.Label();
+            this.mConfChampGroupBox = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.mDivChampGroupBox = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.mCancelButton = new System.Windows.Forms.Button();
+            this.mSkin2Label = new System.Windows.Forms.Label();
+            this.mSkin1Label = new System.Windows.Forms.Label();
+            this.mSkin2Button = new System.Windows.Forms.Button();
+            this.mSkin1Button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.mTeamsComboBox = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.mUniform1GroupBox = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.mHomePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAwayPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mDivChampPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mConfChampPictureBox)).BeginInit();
+            this.mConfChampGroupBox.SuspendLayout();
+            this.mDivChampGroupBox.SuspendLayout();
+            this.mUniform1GroupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // mHomePictureBox
+            // 
+            this.mHomePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mHomePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mHomePictureBox.Image")));
+            this.mHomePictureBox.Location = new System.Drawing.Point(8, 16);
+            this.mHomePictureBox.Name = "mHomePictureBox";
+            this.mHomePictureBox.Size = new System.Drawing.Size(56, 88);
+            this.mHomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mHomePictureBox.TabIndex = 0;
+            this.mHomePictureBox.TabStop = false;
+            this.mHomePictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mHomePictureBox_MouseDown);
+            // 
+            // mAwayPictureBox
+            // 
+            this.mAwayPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mAwayPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mAwayPictureBox.Image")));
+            this.mAwayPictureBox.Location = new System.Drawing.Point(8, 16);
+            this.mAwayPictureBox.Name = "mAwayPictureBox";
+            this.mAwayPictureBox.Size = new System.Drawing.Size(56, 88);
+            this.mAwayPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mAwayPictureBox.TabIndex = 1;
+            this.mAwayPictureBox.TabStop = false;
+            // 
+            // mainMenu1
+            // 
+            this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem1,
+            this.menuItem2});
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mScaleMenuItem,
+            this.mCloseMenuItem});
+            this.menuItem1.Text = "&File";
+            // 
+            // mScaleMenuItem
+            // 
+            this.mScaleMenuItem.Index = 0;
+            this.mScaleMenuItem.Text = "&Scale";
+            this.mScaleMenuItem.Click += new System.EventHandler(this.mScaleMenuItem_Click);
+            // 
+            // mCloseMenuItem
+            // 
+            this.mCloseMenuItem.Index = 1;
+            this.mCloseMenuItem.Text = "&Close";
+            this.mCloseMenuItem.Click += new System.EventHandler(this.mCloseMenuItem_Click);
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 1;
+            this.menuItem2.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem3});
+            this.menuItem2.Text = "&How To";
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 0;
+            this.menuItem3.Text = "How to use";
+            this.menuItem3.Click += new System.EventHandler(this.menuItem3_Click);
+            // 
+            // mHomeJerseyButton
+            // 
+            this.mHomeJerseyButton.Location = new System.Drawing.Point(8, 112);
+            this.mHomeJerseyButton.Name = "mHomeJerseyButton";
+            this.mHomeJerseyButton.Size = new System.Drawing.Size(56, 23);
+            this.mHomeJerseyButton.TabIndex = 4;
+            this.mHomeJerseyButton.Text = "Jersey";
+            this.mHomeJerseyButton.Click += new System.EventHandler(this.mJerseyButton_Click);
+            // 
+            // mHomePantsButton
+            // 
+            this.mHomePantsButton.Location = new System.Drawing.Point(8, 144);
+            this.mHomePantsButton.Name = "mHomePantsButton";
+            this.mHomePantsButton.Size = new System.Drawing.Size(56, 23);
+            this.mHomePantsButton.TabIndex = 5;
+            this.mHomePantsButton.Text = "Pants";
+            this.mHomePantsButton.Click += new System.EventHandler(this.mPantsButton_Click);
+            // 
+            // mAwayPantsButton
+            // 
+            this.mAwayPantsButton.Location = new System.Drawing.Point(8, 144);
+            this.mAwayPantsButton.Name = "mAwayPantsButton";
+            this.mAwayPantsButton.Size = new System.Drawing.Size(56, 23);
+            this.mAwayPantsButton.TabIndex = 7;
+            this.mAwayPantsButton.Text = "Pants";
+            this.mAwayPantsButton.Click += new System.EventHandler(this.mPantsButton_Click);
+            // 
+            // mAwayJerseyButton
+            // 
+            this.mAwayJerseyButton.Location = new System.Drawing.Point(8, 112);
+            this.mAwayJerseyButton.Name = "mAwayJerseyButton";
+            this.mAwayJerseyButton.Size = new System.Drawing.Size(56, 23);
+            this.mAwayJerseyButton.TabIndex = 6;
+            this.mAwayJerseyButton.Text = "Jersey";
+            this.mAwayJerseyButton.Click += new System.EventHandler(this.mJerseyButton_Click);
+            // 
+            // mHomeJerseyLabel
+            // 
+            this.mHomeJerseyLabel.Location = new System.Drawing.Point(64, 112);
+            this.mHomeJerseyLabel.Name = "mHomeJerseyLabel";
+            this.mHomeJerseyLabel.Size = new System.Drawing.Size(24, 23);
+            this.mHomeJerseyLabel.TabIndex = 8;
+            this.mHomeJerseyLabel.Text = "00";
+            this.mHomeJerseyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mHomePantsLabel
+            // 
+            this.mHomePantsLabel.Location = new System.Drawing.Point(64, 144);
+            this.mHomePantsLabel.Name = "mHomePantsLabel";
+            this.mHomePantsLabel.Size = new System.Drawing.Size(24, 23);
+            this.mHomePantsLabel.TabIndex = 9;
+            this.mHomePantsLabel.Text = "00";
+            this.mHomePantsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mAwayPantsLabel
+            // 
+            this.mAwayPantsLabel.Location = new System.Drawing.Point(64, 144);
+            this.mAwayPantsLabel.Name = "mAwayPantsLabel";
+            this.mAwayPantsLabel.Size = new System.Drawing.Size(24, 23);
+            this.mAwayPantsLabel.TabIndex = 11;
+            this.mAwayPantsLabel.Text = "00";
+            this.mAwayPantsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mAwayJerseyLabel
+            // 
+            this.mAwayJerseyLabel.Location = new System.Drawing.Point(64, 112);
+            this.mAwayJerseyLabel.Name = "mAwayJerseyLabel";
+            this.mAwayJerseyLabel.Size = new System.Drawing.Size(24, 23);
+            this.mAwayJerseyLabel.TabIndex = 10;
+            this.mAwayJerseyLabel.Text = "00";
+            this.mAwayJerseyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mDivChampPictureBox
+            // 
+            this.mDivChampPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mDivChampPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mDivChampPictureBox.Image")));
+            this.mDivChampPictureBox.Location = new System.Drawing.Point(88, 16);
+            this.mDivChampPictureBox.Name = "mDivChampPictureBox";
+            this.mDivChampPictureBox.Size = new System.Drawing.Size(232, 136);
+            this.mDivChampPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mDivChampPictureBox.TabIndex = 12;
+            this.mDivChampPictureBox.TabStop = false;
+            this.mDivChampPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mDivChampPictureBox_MouseDown);
+            // 
+            // mConfChampPictureBox
+            // 
+            this.mConfChampPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mConfChampPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mConfChampPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("mConfChampPictureBox.Image")));
+            this.mConfChampPictureBox.Location = new System.Drawing.Point(120, 16);
+            this.mConfChampPictureBox.Name = "mConfChampPictureBox";
+            this.mConfChampPictureBox.Size = new System.Drawing.Size(200, 142);
+            this.mConfChampPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mConfChampPictureBox.TabIndex = 13;
+            this.mConfChampPictureBox.TabStop = false;
+            this.mConfChampPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mConfChampPictureBox_MouseDown);
+            // 
+            // mDivChampUniform1Label
+            // 
+            this.mDivChampUniform1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampUniform1Label.Location = new System.Drawing.Point(56, 16);
+            this.mDivChampUniform1Label.Name = "mDivChampUniform1Label";
+            this.mDivChampUniform1Label.Size = new System.Drawing.Size(24, 16);
+            this.mDivChampUniform1Label.TabIndex = 14;
+            this.mDivChampUniform1Label.Text = "00";
+            this.mDivChampUniform1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mDivChampUniform2Label
+            // 
+            this.mDivChampUniform2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampUniform2Label.Location = new System.Drawing.Point(56, 40);
+            this.mDivChampUniform2Label.Name = "mDivChampUniform2Label";
+            this.mDivChampUniform2Label.Size = new System.Drawing.Size(24, 16);
+            this.mDivChampUniform2Label.TabIndex = 15;
+            this.mDivChampUniform2Label.Text = "00";
+            this.mDivChampUniform2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mDivChampUniform3Label
+            // 
+            this.mDivChampUniform3Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampUniform3Label.Location = new System.Drawing.Point(56, 64);
+            this.mDivChampUniform3Label.Name = "mDivChampUniform3Label";
+            this.mDivChampUniform3Label.Size = new System.Drawing.Size(24, 16);
+            this.mDivChampUniform3Label.TabIndex = 16;
+            this.mDivChampUniform3Label.Text = "00";
+            this.mDivChampUniform3Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mDivChampHelmet1Label
+            // 
+            this.mDivChampHelmet1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampHelmet1Label.Location = new System.Drawing.Point(56, 104);
+            this.mDivChampHelmet1Label.Name = "mDivChampHelmet1Label";
+            this.mDivChampHelmet1Label.Size = new System.Drawing.Size(24, 16);
+            this.mDivChampHelmet1Label.TabIndex = 17;
+            this.mDivChampHelmet1Label.Text = "00";
+            this.mDivChampHelmet1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mDivChampHelmet2Label
+            // 
+            this.mDivChampHelmet2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mDivChampHelmet2Label.Location = new System.Drawing.Point(56, 128);
+            this.mDivChampHelmet2Label.Name = "mDivChampHelmet2Label";
+            this.mDivChampHelmet2Label.Size = new System.Drawing.Size(24, 16);
+            this.mDivChampHelmet2Label.TabIndex = 18;
+            this.mDivChampHelmet2Label.Text = "00";
+            this.mDivChampHelmet2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mConfChampHelmetLabel
+            // 
+            this.mConfChampHelmetLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mConfChampHelmetLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.mConfChampHelmetLabel.Location = new System.Drawing.Point(80, 112);
+            this.mConfChampHelmetLabel.Name = "mConfChampHelmetLabel";
+            this.mConfChampHelmetLabel.Size = new System.Drawing.Size(24, 16);
+            this.mConfChampHelmetLabel.TabIndex = 22;
+            this.mConfChampHelmetLabel.Text = "00";
+            this.mConfChampHelmetLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mConfChampHelmetLabel.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mConfChampUniform3Label
+            // 
+            this.mConfChampUniform3Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mConfChampUniform3Label.Location = new System.Drawing.Point(80, 72);
+            this.mConfChampUniform3Label.Name = "mConfChampUniform3Label";
+            this.mConfChampUniform3Label.Size = new System.Drawing.Size(24, 16);
+            this.mConfChampUniform3Label.TabIndex = 21;
+            this.mConfChampUniform3Label.Text = "00";
+            this.mConfChampUniform3Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mConfChampUniform2Label
+            // 
+            this.mConfChampUniform2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mConfChampUniform2Label.Location = new System.Drawing.Point(80, 48);
+            this.mConfChampUniform2Label.Name = "mConfChampUniform2Label";
+            this.mConfChampUniform2Label.Size = new System.Drawing.Size(24, 16);
+            this.mConfChampUniform2Label.TabIndex = 20;
+            this.mConfChampUniform2Label.Text = "00";
+            this.mConfChampUniform2Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mConfChampUniform1Label
+            // 
+            this.mConfChampUniform1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mConfChampUniform1Label.Location = new System.Drawing.Point(80, 24);
+            this.mConfChampUniform1Label.Name = "mConfChampUniform1Label";
+            this.mConfChampUniform1Label.Size = new System.Drawing.Size(24, 16);
+            this.mConfChampUniform1Label.TabIndex = 19;
+            this.mConfChampUniform1Label.Text = "00";
+            this.mConfChampUniform1Label.Click += new System.EventHandler(this.mUniformLabel_Click);
+            // 
+            // mConfChampGroupBox
+            // 
+            this.mConfChampGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mConfChampGroupBox.Controls.Add(this.mConfChampHelmetLabel);
+            this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform3Label);
+            this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform2Label);
+            this.mConfChampGroupBox.Controls.Add(this.mConfChampUniform1Label);
+            this.mConfChampGroupBox.Controls.Add(this.mConfChampPictureBox);
+            this.mConfChampGroupBox.Controls.Add(this.label9);
+            this.mConfChampGroupBox.Controls.Add(this.label10);
+            this.mConfChampGroupBox.Controls.Add(this.label12);
+            this.mConfChampGroupBox.Controls.Add(this.label11);
+            this.mConfChampGroupBox.Location = new System.Drawing.Point(208, 184);
+            this.mConfChampGroupBox.Name = "mConfChampGroupBox";
+            this.mConfChampGroupBox.Size = new System.Drawing.Size(328, 168);
+            this.mConfChampGroupBox.TabIndex = 23;
+            this.mConfChampGroupBox.TabStop = false;
+            this.mConfChampGroupBox.Text = "Confrence Champ Colors";
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(16, 72);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(40, 16);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Uni 3";
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(16, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 16);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Uni 2";
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(16, 112);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 16);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "Helm 1";
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(16, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 16);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Uni 1";
+            // 
+            // mDivChampGroupBox
+            // 
+            this.mDivChampGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mDivChampGroupBox.Controls.Add(this.label8);
+            this.mDivChampGroupBox.Controls.Add(this.label6);
+            this.mDivChampGroupBox.Controls.Add(this.label4);
+            this.mDivChampGroupBox.Controls.Add(this.label3);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampPictureBox);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform1Label);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform2Label);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampUniform3Label);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampHelmet1Label);
+            this.mDivChampGroupBox.Controls.Add(this.mDivChampHelmet2Label);
+            this.mDivChampGroupBox.Controls.Add(this.label7);
+            this.mDivChampGroupBox.Location = new System.Drawing.Point(208, 8);
+            this.mDivChampGroupBox.Name = "mDivChampGroupBox";
+            this.mDivChampGroupBox.Size = new System.Drawing.Size(328, 168);
+            this.mDivChampGroupBox.TabIndex = 24;
+            this.mDivChampGroupBox.TabStop = false;
+            this.mDivChampGroupBox.Text = "Division Champ Colors";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(8, 128);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 16);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Helm 2";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(8, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Uni 3";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(8, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 16);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Uni 2";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(8, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Uni 1";
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(8, 104);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Helm 1";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Location = new System.Drawing.Point(352, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "&OK";
+            // 
+            // mCancelButton
+            // 
+            this.mCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mCancelButton.Location = new System.Drawing.Point(440, 376);
+            this.mCancelButton.Name = "mCancelButton";
+            this.mCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.mCancelButton.TabIndex = 26;
+            this.mCancelButton.Text = "&Cancel";
+            // 
+            // mSkin2Label
+            // 
+            this.mSkin2Label.Location = new System.Drawing.Point(64, 176);
+            this.mSkin2Label.Name = "mSkin2Label";
+            this.mSkin2Label.Size = new System.Drawing.Size(24, 23);
+            this.mSkin2Label.TabIndex = 30;
+            this.mSkin2Label.Text = "00";
+            this.mSkin2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mSkin1Label
+            // 
+            this.mSkin1Label.Location = new System.Drawing.Point(64, 176);
+            this.mSkin1Label.Name = "mSkin1Label";
+            this.mSkin1Label.Size = new System.Drawing.Size(24, 23);
+            this.mSkin1Label.TabIndex = 29;
+            this.mSkin1Label.Text = "00";
+            this.mSkin1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mSkin2Button
+            // 
+            this.mSkin2Button.Location = new System.Drawing.Point(8, 176);
+            this.mSkin2Button.Name = "mSkin2Button";
+            this.mSkin2Button.Size = new System.Drawing.Size(56, 23);
+            this.mSkin2Button.TabIndex = 28;
+            this.mSkin2Button.Text = "Skin 2";
+            this.mSkin2Button.Click += new System.EventHandler(this.mSkin2Button_Click);
+            // 
+            // mSkin1Button
+            // 
+            this.mSkin1Button.Location = new System.Drawing.Point(8, 176);
+            this.mSkin1Button.Name = "mSkin1Button";
+            this.mSkin1Button.Size = new System.Drawing.Size(56, 23);
+            this.mSkin1Button.TabIndex = 27;
+            this.mSkin1Button.Text = "Skin 1";
+            this.mSkin1Button.Click += new System.EventHandler(this.mSkin1Button_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Team";
+            // 
+            // mTeamsComboBox
+            // 
+            this.mTeamsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mTeamsComboBox.Items.AddRange(new object[] {
+            "bills",
+            "colts",
+            "dolphins",
+            "patriots",
+            "jets",
+            "bengals",
+            "browns",
+            "oilers",
+            "steelers",
+            "broncos",
+            "chiefs",
+            "raiders",
+            "chargers",
+            "seahawks",
+            "redskins",
+            "giants",
+            "eagles",
+            "cardinals",
+            "cowboys",
+            "bears",
+            "lions",
+            "packers",
+            "vikings",
+            "buccaneers",
+            "49ers",
+            "rams",
+            "saints",
+            "falcons"});
+            this.mTeamsComboBox.Location = new System.Drawing.Point(56, 8);
+            this.mTeamsComboBox.Name = "mTeamsComboBox";
+            this.mTeamsComboBox.Size = new System.Drawing.Size(104, 21);
+            this.mTeamsComboBox.TabIndex = 0;
+            this.mTeamsComboBox.SelectedIndexChanged += new System.EventHandler(this.mTeamsComboBox_SelectedIndexChanged);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(8, 272);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(192, 96);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Edit Uniform Usage";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // mUniform1GroupBox
+            // 
+            this.mUniform1GroupBox.Controls.Add(this.mHomeJerseyButton);
+            this.mUniform1GroupBox.Controls.Add(this.mHomeJerseyLabel);
+            this.mUniform1GroupBox.Controls.Add(this.mSkin1Button);
+            this.mUniform1GroupBox.Controls.Add(this.mHomePictureBox);
+            this.mUniform1GroupBox.Controls.Add(this.mHomePantsButton);
+            this.mUniform1GroupBox.Controls.Add(this.mHomePantsLabel);
+            this.mUniform1GroupBox.Controls.Add(this.mSkin1Label);
+            this.mUniform1GroupBox.Location = new System.Drawing.Point(8, 40);
+            this.mUniform1GroupBox.Name = "mUniform1GroupBox";
+            this.mUniform1GroupBox.Size = new System.Drawing.Size(96, 224);
+            this.mUniform1GroupBox.TabIndex = 34;
+            this.mUniform1GroupBox.TabStop = false;
+            this.mUniform1GroupBox.Text = "Uniform 1";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.mAwayPantsButton);
+            this.groupBox1.Controls.Add(this.mAwayPictureBox);
+            this.groupBox1.Controls.Add(this.mSkin2Button);
+            this.groupBox1.Controls.Add(this.mAwayPantsLabel);
+            this.groupBox1.Controls.Add(this.mAwayJerseyLabel);
+            this.groupBox1.Controls.Add(this.mSkin2Label);
+            this.groupBox1.Controls.Add(this.mAwayJerseyButton);
+            this.groupBox1.Location = new System.Drawing.Point(108, 40);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(96, 224);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Uniform 2";
+            // 
+            // UniformEditForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(536, 402);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.mUniform1GroupBox);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.mTeamsComboBox);
+            this.Controls.Add(this.mCancelButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mDivChampGroupBox);
+            this.Controls.Add(this.mConfChampGroupBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(552, 440);
+            this.Menu = this.mainMenu1;
+            this.MinimumSize = new System.Drawing.Size(552, 440);
+            this.Name = "UniformEditForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Edit Uniforms";
+            ((System.ComponentModel.ISupportInitialize)(this.mHomePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAwayPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mDivChampPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mConfChampPictureBox)).EndInit();
+            this.mConfChampGroupBox.ResumeLayout(false);
+            this.mDivChampGroupBox.ResumeLayout(false);
+            this.mUniform1GroupBox.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion

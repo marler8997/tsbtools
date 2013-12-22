@@ -79,6 +79,8 @@ namespace TSBTool
         private MenuItem hacksMainMenuItem;
         private MenuItem mProwbowlMenuItem;
         private MenuItem mProBowlMenuItem;
+        private MenuItem mScheduleGUIMenuItem;
+        private MenuItem mScheduleMenuItem;
 		//filter="Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*"
 		//private string nesFilter = "nes files (*.nes)|*.nes|SNES files (*.smc)|*.smc";
 		private string nesFilter = "TSB files (*.nes;*.smc)|*.nes;*.smc";
@@ -290,6 +292,8 @@ namespace TSBTool
             this.findNextMenuItem = new System.Windows.Forms.MenuItem();
             this.findPrevMenuItem = new System.Windows.Forms.MenuItem();
             this.hacksMainMenuItem = new System.Windows.Forms.MenuItem();
+            this.mScheduleMenuItem = new System.Windows.Forms.MenuItem();
+            this.mScheduleGUIMenuItem = new System.Windows.Forms.MenuItem();
             this.menuItem9 = new System.Windows.Forms.MenuItem();
             this.aboutMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -328,6 +332,7 @@ namespace TSBTool
             this.menuItem11,
             this.menuItem2,
             this.hacksMainMenuItem,
+            this.mScheduleMenuItem,
             this.menuItem9});
             // 
             // menuItem1
@@ -505,9 +510,22 @@ namespace TSBTool
             this.hacksMainMenuItem.Index = 3;
             this.hacksMainMenuItem.Text = "&Hacks";
             // 
+            // mScheduleMenuItem
+            // 
+            this.mScheduleMenuItem.Index = 4;
+            this.mScheduleMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mScheduleGUIMenuItem});
+            this.mScheduleMenuItem.Text = "&Schedule";
+            // 
+            // mScheduleGUIMenuItem
+            // 
+            this.mScheduleGUIMenuItem.Index = 0;
+            this.mScheduleGUIMenuItem.Text = "Schedule &GUI";
+            this.mScheduleGUIMenuItem.Click += new System.EventHandler(this.mScheduleGUIMenuItem_Click);
+            // 
             // menuItem9
             // 
-            this.menuItem9.Index = 4;
+            this.menuItem9.Index = 5;
             this.menuItem9.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.aboutMenuItem});
             this.menuItem9.Text = "A&bout";
@@ -721,7 +739,7 @@ namespace TSBTool
             // 
             // MainGUI
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(680, 558);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -876,9 +894,12 @@ namespace TSBTool
 			TecmoTool.ShowTeamFormation = mOffensiveFormationsMenuItem.Checked;
 
 			string msg = 
-					"#  -> Double click on a team or player to bring up the All new Player/Team editing GUI.\r\n"+
-				    "#  -> Select (Show Colors) menu Item (under view Menu) to enable listing of team colors.\r\n"+
-				    "#  -> Double Click on a 'COLORS' line to edit team COLORS.\r\n";
+					"#  -> Double click on a team or player to bring up the All new Player/Team editing GUI.\n"+
+				    "#  -> Select (Show Colors) menu Item (under view Menu) to enable listing of team colors.\n"+
+				    "#  -> Double Click on a 'COLORS' line to edit team COLORS.\n" +
+                    "#  -> Double click on a 'TEAM' to bring up a team editing GUI with the selected team.\n" +
+                    "#  -> Double click on a 'NFC' or 'AFC' line to bring up the Pro Bowl editor GUI.\n" +
+                    "#  -> Double Click on a 'WEEK x' or a game line to edit schedule\n";
             string text = msg
                 +
                 tool.GetKey() + tool.GetAll();
@@ -888,7 +909,7 @@ namespace TSBTool
             text += tool.GetSchedule();
 			SetText(text);
 			richTextBox1.SelectionStart = 0;
-			richTextBox1.SelectionLength = msg.Length-2;
+			richTextBox1.SelectionLength = msg.Length;
 			richTextBox1.SelectionColor = Color.Magenta;
 			richTextBox1.SelectionStart = 0;
 			richTextBox1.SelectionLength = 0;
@@ -951,6 +972,7 @@ namespace TSBTool
 Double click on a player to bring up the new player editing GUI with that player selected.
 Double click on a 'TEAM' to bring up a team editing GUI with the selected team.
 Double click on a 'NFC' or 'AFC' line to bring up the Pro Bowl editor GUI.
+Double Click on 'WEEK x' or a game to edit schedule.
 
 ====================BASIC USAGE=================
 1. Load TSB nes or snes rom.
@@ -1506,6 +1528,10 @@ This Program is not endorsed or related to the Tecmo video game company.
             {
                 mProwbowlMenuItem_Click(null, EventArgs.Empty);
             }
+            else if (line.StartsWith("WEEK") || line.IndexOf(" at ") > -1)
+            {
+                DisplayScheduleForm( GetWeekAtCaret() );
+            }
             else
                 EditPlayer();
 		}
@@ -1716,6 +1742,50 @@ This Program is not endorsed or related to the Tecmo video game company.
         private void mProBowlMenuItem_Click(object sender, EventArgs e)
         {
             mProBowlMenuItem.Checked = !mProBowlMenuItem.Checked;
+        }
+
+        private void mScheduleGUIMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayScheduleForm(1);
+        }
+
+        private void DisplayScheduleForm(int week)
+        {
+            ScheduleForm schForm = new ScheduleForm();
+            schForm.Data = richTextBox1.Text;
+            schForm.CurrentWeek = week;
+            if (schForm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                SetText(schForm.Data);
+                int location = richTextBox1.Text.IndexOf( "WEEK " + week);
+                if (location > -1 && location < richTextBox1.Text.Length)
+                {
+                    richTextBox1.SelectionStart = location;
+                    richTextBox1.ScrollToCaret();
+                }
+            }
+            schForm.Dispose();
+        }
+
+        private int GetWeekAtCaret()
+        {
+            int retVal = 0;
+            int last_location = richTextBox1.Text.IndexOf('\n', richTextBox1.SelectionStart);
+            int location = 0;
+
+            if (last_location > -1)
+            {
+                bool done = false;
+                while (!done)
+                {
+                    location = richTextBox1.Text.IndexOf("WEEK", location + 1);
+                    if (location < 0 || location > last_location)
+                        break;
+                    else
+                        retVal++;
+                }
+            }
+            return retVal;
         }
 
 	}

@@ -174,20 +174,22 @@ namespace TSBTool
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(FaceForm));
-			// 
-			// FaceForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(528, 502);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximumSize = new System.Drawing.Size(536, 536);
-			this.MinimizeBox = false;
-			this.MinimumSize = new System.Drawing.Size(536, 536);
-			this.Name = "FaceForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Pick your Face.";
-			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FaceForm_MouseDown);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FaceForm));
+            this.SuspendLayout();
+            // 
+            // FaceForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(520, 498);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(536, 536);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(536, 536);
+            this.Name = "FaceForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Pick your Face.";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FaceForm_MouseDown);
+            this.ResumeLayout(false);
 
 		}
 		#endregion

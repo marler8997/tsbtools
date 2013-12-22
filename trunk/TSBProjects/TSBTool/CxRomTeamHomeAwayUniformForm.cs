@@ -760,7 +760,7 @@ namespace TSBTool
             // 
             // CxRomTeamHomeAwayUniformForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(512, 354);
             this.ContextMenu = this.contextMenu1;

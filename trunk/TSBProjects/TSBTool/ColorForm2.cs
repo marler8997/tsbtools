@@ -1137,7 +1137,7 @@ namespace TSBTool
             // 
             // ColorForm2
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(528, 194);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

@@ -519,757 +519,759 @@ namespace TSBTool
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(AttributeForm));
-			this.label1 = new System.Windows.Forms.Label();
-			this.m_TeamsComboBox = new System.Windows.Forms.ComboBox();
-			this.m_PositionComboBox = new System.Windows.Forms.ComboBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.m_FaceBox = new System.Windows.Forms.PictureBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.m_RSBox = new System.Windows.Forms.ComboBox();
-			this.m_RPBox = new System.Windows.Forms.ComboBox();
-			this.m_MSBox = new System.Windows.Forms.ComboBox();
-			this.m_HPBox = new System.Windows.Forms.ComboBox();
-			this.m_ACCBox = new System.Windows.Forms.ComboBox();
-			this.m_PC_REC_QU_KABox = new System.Windows.Forms.ComboBox();
-			this.m_PS_BC_PI_KABox = new System.Windows.Forms.ComboBox();
-			this.m_A3Label = new System.Windows.Forms.Label();
-			this.m_A2Label = new System.Windows.Forms.Label();
-			this.m_A1Label = new System.Windows.Forms.Label();
-			this.m_Sim4Label = new System.Windows.Forms.Label();
-			this.m_Sim3Label = new System.Windows.Forms.Label();
-			this.m_Sim2Label = new System.Windows.Forms.Label();
-			this.m_Sim1Label = new System.Windows.Forms.Label();
-			this.mSimBox = new System.Windows.Forms.GroupBox();
-			this.m_Sim4UpDown = new System.Windows.Forms.NumericUpDown();
-			this.m_Sim3UpDown = new System.Windows.Forms.NumericUpDown();
-			this.m_Sim2UpDown = new System.Windows.Forms.NumericUpDown();
-			this.m_Sim1UpDown = new System.Windows.Forms.NumericUpDown();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.m_APBBox = new System.Windows.Forms.ComboBox();
-			this.m_A4Label = new System.Windows.Forms.Label();
-			this.m_NextPlayerButton = new System.Windows.Forms.Button();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.m_FirstNameTextBox = new System.Windows.Forms.TextBox();
-			this.m_LastNameTextBox = new System.Windows.Forms.TextBox();
-			this.m_PrevPicture = new System.Windows.Forms.Button();
-			this.m_NextPicture = new System.Windows.Forms.Button();
-			this.m_FaceLabel = new System.Windows.Forms.Label();
-			this.m_SaveButton = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.m_PrevPlayerButton = new System.Windows.Forms.Button();
-			this.m_CancelButton = new System.Windows.Forms.Button();
-			this.m_JerseyNumberUpDown = new System.Windows.Forms.NumericUpDown();
-			this.m_AutoUpdateButton = new System.Windows.Forms.Button();
-			this.mSimBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim4UpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim3UpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim2UpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim1UpDown)).BeginInit();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.m_JerseyNumberUpDown)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(8, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(33, 16);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Team";
-			// 
-			// m_TeamsComboBox
-			// 
-			this.m_TeamsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_TeamsComboBox.Items.AddRange(new object[] {
-																 "bills",
-																 "colts",
-																 "dolphins",
-																 "patriots",
-																 "jets",
-																 "bengals",
-																 "browns",
-																 "oilers",
-																 "steelers",
-																 "broncos",
-																 "chiefs",
-																 "raiders",
-																 "chargers",
-																 "seahawks",
-																 "redskins",
-																 "giants",
-																 "eagles",
-																 "cardinals",
-																 "cowboys",
-																 "bears",
-																 "lions",
-																 "packers",
-																 "vikings",
-																 "buccaneers",
-																 "49ers",
-																 "rams",
-																 "saints",
-																 "falcons"});
-			this.m_TeamsComboBox.Location = new System.Drawing.Point(56, 4);
-			this.m_TeamsComboBox.Name = "m_TeamsComboBox";
-			this.m_TeamsComboBox.Size = new System.Drawing.Size(104, 21);
-			this.m_TeamsComboBox.TabIndex = 0;
-			this.m_TeamsComboBox.SelectedIndexChanged += new System.EventHandler(this.m_TeamsComboBox_SelectedIndexChanged);
-			// 
-			// m_PositionComboBox
-			// 
-			this.m_PositionComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.m_PositionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_PositionComboBox.Items.AddRange(new object[] {
-																	"QB1",
-																	"QB2",
-																	"RB1",
-																	"RB2",
-																	"RB3",
-																	"RB4",
-																	"WR1",
-																	"WR2",
-																	"WR3",
-																	"WR4",
-																	"TE1",
-																	"TE2",
-																	"C",
-																	"LG",
-																	"RG",
-																	"LT",
-																	"RT",
-																	"RE",
-																	"NT",
-																	"LE",
-																	"ROLB",
-																	"RILB",
-																	"LILB",
-																	"LOLB",
-																	"RCB",
-																	"LCB",
-																	"FS",
-																	"SS",
-																	"K",
-																	"P"});
-			this.m_PositionComboBox.Location = new System.Drawing.Point(280, 4);
-			this.m_PositionComboBox.Name = "m_PositionComboBox";
-			this.m_PositionComboBox.Size = new System.Drawing.Size(104, 21);
-			this.m_PositionComboBox.TabIndex = 1;
-			this.m_PositionComboBox.SelectedIndexChanged += new System.EventHandler(this.m_PositionComboBox_SelectedIndexChanged);
-			// 
-			// label2
-			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(232, 8);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(45, 16);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Position";
-			// 
-			// m_FaceBox
-			// 
-			this.m_FaceBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.m_FaceBox.Image = ((System.Drawing.Image)(resources.GetObject("m_FaceBox.Image")));
-			this.m_FaceBox.Location = new System.Drawing.Point(8, 128);
-			this.m_FaceBox.Name = "m_FaceBox";
-			this.m_FaceBox.Size = new System.Drawing.Size(64, 64);
-			this.m_FaceBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.m_FaceBox.TabIndex = 4;
-			this.m_FaceBox.TabStop = false;
-			this.m_FaceBox.Click += new System.EventHandler(this.m_FaceBox_Click);
-			// 
-			// label4
-			// 
-			this.label4.Location = new System.Drawing.Point(8, 16);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(40, 10);
-			this.label4.TabIndex = 7;
-			this.label4.Text = "RS";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(56, 16);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(40, 10);
-			this.label5.TabIndex = 9;
-			this.label5.Text = "RP";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label6
-			// 
-			this.label6.Location = new System.Drawing.Point(152, 16);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(40, 10);
-			this.label6.TabIndex = 13;
-			this.label6.Text = "HP";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label7
-			// 
-			this.label7.Location = new System.Drawing.Point(104, 16);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(40, 10);
-			this.label7.TabIndex = 11;
-			this.label7.Text = "MS";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_RSBox
-			// 
-			this.m_RSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_RSBox.Items.AddRange(new object[] {
-														 "6",
-														 "13",
-														 "19",
-														 "25",
-														 "31",
-														 "38",
-														 "44",
-														 "50",
-														 "56",
-														 "63",
-														 "69",
-														 "75",
-														 "81",
-														 "88",
-														 "94",
-														 "100"});
-			this.m_RSBox.Location = new System.Drawing.Point(8, 32);
-			this.m_RSBox.Name = "m_RSBox";
-			this.m_RSBox.Size = new System.Drawing.Size(43, 21);
-			this.m_RSBox.TabIndex = 4;
-			this.m_RSBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_RPBox
-			// 
-			this.m_RPBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_RPBox.Items.AddRange(new object[] {
-														 "6",
-														 "13",
-														 "19",
-														 "25",
-														 "31",
-														 "38",
-														 "44",
-														 "50",
-														 "56",
-														 "63",
-														 "69",
-														 "75",
-														 "81",
-														 "88",
-														 "94",
-														 "100"});
-			this.m_RPBox.Location = new System.Drawing.Point(56, 32);
-			this.m_RPBox.Name = "m_RPBox";
-			this.m_RPBox.Size = new System.Drawing.Size(43, 21);
-			this.m_RPBox.TabIndex = 5;
-			this.m_RPBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_MSBox
-			// 
-			this.m_MSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_MSBox.Items.AddRange(new object[] {
-														 "6",
-														 "13",
-														 "19",
-														 "25",
-														 "31",
-														 "38",
-														 "44",
-														 "50",
-														 "56",
-														 "63",
-														 "69",
-														 "75",
-														 "81",
-														 "88",
-														 "94",
-														 "100"});
-			this.m_MSBox.Location = new System.Drawing.Point(104, 32);
-			this.m_MSBox.Name = "m_MSBox";
-			this.m_MSBox.Size = new System.Drawing.Size(43, 21);
-			this.m_MSBox.TabIndex = 6;
-			this.m_MSBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_HPBox
-			// 
-			this.m_HPBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_HPBox.Items.AddRange(new object[] {
-														 "6",
-														 "13",
-														 "19",
-														 "25",
-														 "31",
-														 "38",
-														 "44",
-														 "50",
-														 "56",
-														 "63",
-														 "69",
-														 "75",
-														 "81",
-														 "88",
-														 "94",
-														 "100"});
-			this.m_HPBox.Location = new System.Drawing.Point(152, 32);
-			this.m_HPBox.Name = "m_HPBox";
-			this.m_HPBox.Size = new System.Drawing.Size(43, 21);
-			this.m_HPBox.TabIndex = 7;
-			this.m_HPBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_ACCBox
-			// 
-			this.m_ACCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_ACCBox.Items.AddRange(new object[] {
-														  "6",
-														  "13",
-														  "19",
-														  "25",
-														  "31",
-														  "38",
-														  "44",
-														  "50",
-														  "56",
-														  "63",
-														  "69",
-														  "75",
-														  "81",
-														  "88",
-														  "94",
-														  "100"});
-			this.m_ACCBox.Location = new System.Drawing.Point(296, 32);
-			this.m_ACCBox.Name = "m_ACCBox";
-			this.m_ACCBox.Size = new System.Drawing.Size(43, 21);
-			this.m_ACCBox.TabIndex = 10;
-			this.m_ACCBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_PC_REC_QU_KABox
-			// 
-			this.m_PC_REC_QU_KABox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_PC_REC_QU_KABox.Items.AddRange(new object[] {
-																   "6",
-																   "13",
-																   "19",
-																   "25",
-																   "31",
-																   "38",
-																   "44",
-																   "50",
-																   "56",
-																   "63",
-																   "69",
-																   "75",
-																   "81",
-																   "88",
-																   "94",
-																   "100"});
-			this.m_PC_REC_QU_KABox.Location = new System.Drawing.Point(248, 32);
-			this.m_PC_REC_QU_KABox.Name = "m_PC_REC_QU_KABox";
-			this.m_PC_REC_QU_KABox.Size = new System.Drawing.Size(43, 21);
-			this.m_PC_REC_QU_KABox.TabIndex = 9;
-			this.m_PC_REC_QU_KABox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_PS_BC_PI_KABox
-			// 
-			this.m_PS_BC_PI_KABox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_PS_BC_PI_KABox.Items.AddRange(new object[] {
-																  "6",
-																  "13",
-																  "19",
-																  "25",
-																  "31",
-																  "38",
-																  "44",
-																  "50",
-																  "56",
-																  "63",
-																  "69",
-																  "75",
-																  "81",
-																  "88",
-																  "94",
-																  "100"});
-			this.m_PS_BC_PI_KABox.Location = new System.Drawing.Point(200, 32);
-			this.m_PS_BC_PI_KABox.Name = "m_PS_BC_PI_KABox";
-			this.m_PS_BC_PI_KABox.Size = new System.Drawing.Size(43, 21);
-			this.m_PS_BC_PI_KABox.TabIndex = 8;
-			this.m_PS_BC_PI_KABox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_A3Label
-			// 
-			this.m_A3Label.Location = new System.Drawing.Point(296, 16);
-			this.m_A3Label.Name = "m_A3Label";
-			this.m_A3Label.Size = new System.Drawing.Size(40, 10);
-			this.m_A3Label.TabIndex = 20;
-			this.m_A3Label.Text = "ACC";
-			this.m_A3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_A2Label
-			// 
-			this.m_A2Label.Location = new System.Drawing.Point(248, 16);
-			this.m_A2Label.Name = "m_A2Label";
-			this.m_A2Label.Size = new System.Drawing.Size(40, 10);
-			this.m_A2Label.TabIndex = 19;
-			this.m_A2Label.Text = "PC";
-			this.m_A2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_A1Label
-			// 
-			this.m_A1Label.Location = new System.Drawing.Point(200, 16);
-			this.m_A1Label.Name = "m_A1Label";
-			this.m_A1Label.Size = new System.Drawing.Size(40, 10);
-			this.m_A1Label.TabIndex = 18;
-			this.m_A1Label.Text = "PS";
-			this.m_A1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_Sim4Label
-			// 
-			this.m_Sim4Label.Location = new System.Drawing.Point(248, 16);
-			this.m_Sim4Label.Name = "m_Sim4Label";
-			this.m_Sim4Label.Size = new System.Drawing.Size(56, 32);
-			this.m_Sim4Label.TabIndex = 27;
-			this.m_Sim4Label.Text = "blank";
-			this.m_Sim4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_Sim3Label
-			// 
-			this.m_Sim3Label.Location = new System.Drawing.Point(168, 16);
-			this.m_Sim3Label.Name = "m_Sim3Label";
-			this.m_Sim3Label.Size = new System.Drawing.Size(56, 32);
-			this.m_Sim3Label.TabIndex = 26;
-			this.m_Sim3Label.Text = "Sim pocket";
-			this.m_Sim3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_Sim2Label
-			// 
-			this.m_Sim2Label.Location = new System.Drawing.Point(88, 16);
-			this.m_Sim2Label.Name = "m_Sim2Label";
-			this.m_Sim2Label.Size = new System.Drawing.Size(56, 32);
-			this.m_Sim2Label.TabIndex = 25;
-			this.m_Sim2Label.Text = "Sim Pass";
-			this.m_Sim2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_Sim1Label
-			// 
-			this.m_Sim1Label.Location = new System.Drawing.Point(8, 16);
-			this.m_Sim1Label.Name = "m_Sim1Label";
-			this.m_Sim1Label.Size = new System.Drawing.Size(56, 32);
-			this.m_Sim1Label.TabIndex = 24;
-			this.m_Sim1Label.Text = "Sim Run";
-			this.m_Sim1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// mSimBox
-			// 
-			this.mSimBox.Controls.Add(this.m_Sim4UpDown);
-			this.mSimBox.Controls.Add(this.m_Sim3UpDown);
-			this.mSimBox.Controls.Add(this.m_Sim2UpDown);
-			this.mSimBox.Controls.Add(this.m_Sim1UpDown);
-			this.mSimBox.Controls.Add(this.m_Sim4Label);
-			this.mSimBox.Controls.Add(this.m_Sim3Label);
-			this.mSimBox.Controls.Add(this.m_Sim2Label);
-			this.mSimBox.Controls.Add(this.m_Sim1Label);
-			this.mSimBox.Location = new System.Drawing.Point(88, 128);
-			this.mSimBox.Name = "mSimBox";
-			this.mSimBox.Size = new System.Drawing.Size(312, 80);
-			this.mSimBox.TabIndex = 6;
-			this.mSimBox.TabStop = false;
-			this.mSimBox.Text = "Sim attributes";
-			// 
-			// m_Sim4UpDown
-			// 
-			this.m_Sim4UpDown.Location = new System.Drawing.Point(254, 48);
-			this.m_Sim4UpDown.Maximum = new System.Decimal(new int[] {
-																		 255,
-																		 0,
-																		 0,
-																		 0});
-			this.m_Sim4UpDown.Name = "m_Sim4UpDown";
-			this.m_Sim4UpDown.Size = new System.Drawing.Size(40, 20);
-			this.m_Sim4UpDown.TabIndex = 14;
-			this.m_Sim4UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_Sim3UpDown
-			// 
-			this.m_Sim3UpDown.Location = new System.Drawing.Point(172, 48);
-			this.m_Sim3UpDown.Maximum = new System.Decimal(new int[] {
-																		 255,
-																		 0,
-																		 0,
-																		 0});
-			this.m_Sim3UpDown.Name = "m_Sim3UpDown";
-			this.m_Sim3UpDown.Size = new System.Drawing.Size(40, 20);
-			this.m_Sim3UpDown.TabIndex = 13;
-			this.m_Sim3UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_Sim2UpDown
-			// 
-			this.m_Sim2UpDown.Location = new System.Drawing.Point(90, 48);
-			this.m_Sim2UpDown.Maximum = new System.Decimal(new int[] {
-																		 255,
-																		 0,
-																		 0,
-																		 0});
-			this.m_Sim2UpDown.Name = "m_Sim2UpDown";
-			this.m_Sim2UpDown.Size = new System.Drawing.Size(40, 20);
-			this.m_Sim2UpDown.TabIndex = 12;
-			this.m_Sim2UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_Sim1UpDown
-			// 
-			this.m_Sim1UpDown.Location = new System.Drawing.Point(8, 48);
-			this.m_Sim1UpDown.Maximum = new System.Decimal(new int[] {
-																		 255,
-																		 0,
-																		 0,
-																		 0});
-			this.m_Sim1UpDown.Name = "m_Sim1UpDown";
-			this.m_Sim1UpDown.Size = new System.Drawing.Size(40, 20);
-			this.m_Sim1UpDown.TabIndex = 11;
-			this.m_Sim1UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.m_APBBox);
-			this.groupBox1.Controls.Add(this.m_A4Label);
-			this.groupBox1.Controls.Add(this.m_A2Label);
-			this.groupBox1.Controls.Add(this.label7);
-			this.groupBox1.Controls.Add(this.m_RSBox);
-			this.groupBox1.Controls.Add(this.m_MSBox);
-			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.label6);
-			this.groupBox1.Controls.Add(this.m_RPBox);
-			this.groupBox1.Controls.Add(this.m_HPBox);
-			this.groupBox1.Controls.Add(this.m_A1Label);
-			this.groupBox1.Controls.Add(this.m_PS_BC_PI_KABox);
-			this.groupBox1.Controls.Add(this.m_PC_REC_QU_KABox);
-			this.groupBox1.Controls.Add(this.m_ACCBox);
-			this.groupBox1.Controls.Add(this.m_A3Label);
-			this.groupBox1.Location = new System.Drawing.Point(8, 72);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(392, 56);
-			this.groupBox1.TabIndex = 5;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Attributes";
-			// 
-			// m_APBBox
-			// 
-			this.m_APBBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.m_APBBox.Items.AddRange(new object[] {
-														  "6",
-														  "13",
-														  "19",
-														  "25",
-														  "31",
-														  "38",
-														  "44",
-														  "50",
-														  "56",
-														  "63",
-														  "69",
-														  "75",
-														  "81",
-														  "88",
-														  "94",
-														  "100"});
-			this.m_APBBox.Location = new System.Drawing.Point(344, 32);
-			this.m_APBBox.Name = "m_APBBox";
-			this.m_APBBox.Size = new System.Drawing.Size(43, 21);
-			this.m_APBBox.TabIndex = 21;
-			this.m_APBBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_A4Label
-			// 
-			this.m_A4Label.Location = new System.Drawing.Point(344, 16);
-			this.m_A4Label.Name = "m_A4Label";
-			this.m_A4Label.Size = new System.Drawing.Size(40, 10);
-			this.m_A4Label.TabIndex = 22;
-			this.m_A4Label.Text = "APB";
-			this.m_A4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_NextPlayerButton
-			// 
-			this.m_NextPlayerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.m_NextPlayerButton.Location = new System.Drawing.Point(117, 248);
-			this.m_NextPlayerButton.Name = "m_NextPlayerButton";
-			this.m_NextPlayerButton.Size = new System.Drawing.Size(88, 24);
-			this.m_NextPlayerButton.TabIndex = 25;
-			this.m_NextPlayerButton.Text = "&Next Player";
-			this.m_NextPlayerButton.Click += new System.EventHandler(this.m_NextPlayerButton_Click);
-			// 
-			// label15
-			// 
-			this.label15.Location = new System.Drawing.Point(64, 32);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(100, 16);
-			this.label15.TabIndex = 35;
-			this.label15.Text = "First Name";
-			// 
-			// label16
-			// 
-			this.label16.Location = new System.Drawing.Point(232, 32);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(100, 16);
-			this.label16.TabIndex = 36;
-			this.label16.Text = "Last Name";
-			// 
-			// m_FirstNameTextBox
-			// 
-			this.m_FirstNameTextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.m_FirstNameTextBox.Location = new System.Drawing.Point(64, 48);
-			this.m_FirstNameTextBox.MaxLength = 16;
-			this.m_FirstNameTextBox.Name = "m_FirstNameTextBox";
-			this.m_FirstNameTextBox.Size = new System.Drawing.Size(152, 21);
-			this.m_FirstNameTextBox.TabIndex = 3;
-			this.m_FirstNameTextBox.Text = "";
-			this.m_FirstNameTextBox.TextChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_LastNameTextBox
-			// 
-			this.m_LastNameTextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.m_LastNameTextBox.Location = new System.Drawing.Point(232, 48);
-			this.m_LastNameTextBox.MaxLength = 16;
-			this.m_LastNameTextBox.Name = "m_LastNameTextBox";
-			this.m_LastNameTextBox.Size = new System.Drawing.Size(152, 21);
-			this.m_LastNameTextBox.TabIndex = 4;
-			this.m_LastNameTextBox.Text = "";
-			this.m_LastNameTextBox.TextChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_PrevPicture
-			// 
-			this.m_PrevPicture.Location = new System.Drawing.Point(8, 208);
-			this.m_PrevPicture.Name = "m_PrevPicture";
-			this.m_PrevPicture.Size = new System.Drawing.Size(32, 18);
-			this.m_PrevPicture.TabIndex = 15;
-			this.m_PrevPicture.Text = "\\/";
-			this.m_PrevPicture.Click += new System.EventHandler(this.m_PrevPicture_Click);
-			// 
-			// m_NextPicture
-			// 
-			this.m_NextPicture.Location = new System.Drawing.Point(40, 208);
-			this.m_NextPicture.Name = "m_NextPicture";
-			this.m_NextPicture.Size = new System.Drawing.Size(32, 18);
-			this.m_NextPicture.TabIndex = 16;
-			this.m_NextPicture.Text = "/\\";
-			this.m_NextPicture.Click += new System.EventHandler(this.m_NextPicture_Click);
-			// 
-			// m_FaceLabel
-			// 
-			this.m_FaceLabel.Location = new System.Drawing.Point(8, 192);
-			this.m_FaceLabel.Name = "m_FaceLabel";
-			this.m_FaceLabel.Size = new System.Drawing.Size(64, 16);
-			this.m_FaceLabel.TabIndex = 41;
-			this.m_FaceLabel.Text = "00";
-			this.m_FaceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_SaveButton
-			// 
-			this.m_SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.m_SaveButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.m_SaveButton.Location = new System.Drawing.Point(224, 248);
-			this.m_SaveButton.Name = "m_SaveButton";
-			this.m_SaveButton.Size = new System.Drawing.Size(80, 24);
-			this.m_SaveButton.TabIndex = 30;
-			this.m_SaveButton.Text = "&OK";
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(8, 32);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(32, 16);
-			this.label3.TabIndex = 43;
-			this.label3.Text = "#";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// m_PrevPlayerButton
-			// 
-			this.m_PrevPlayerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.m_PrevPlayerButton.Location = new System.Drawing.Point(8, 248);
-			this.m_PrevPlayerButton.Name = "m_PrevPlayerButton";
-			this.m_PrevPlayerButton.Size = new System.Drawing.Size(96, 24);
-			this.m_PrevPlayerButton.TabIndex = 20;
-			this.m_PrevPlayerButton.Text = "&Prev Player";
-			this.m_PrevPlayerButton.Click += new System.EventHandler(this.m_PrevPlayerButton_Click);
-			// 
-			// m_CancelButton
-			// 
-			this.m_CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.m_CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.m_CancelButton.Location = new System.Drawing.Point(312, 248);
-			this.m_CancelButton.Name = "m_CancelButton";
-			this.m_CancelButton.Size = new System.Drawing.Size(88, 24);
-			this.m_CancelButton.TabIndex = 35;
-			this.m_CancelButton.Text = "&Cancel";
-			// 
-			// m_JerseyNumberUpDown
-			// 
-			this.m_JerseyNumberUpDown.Location = new System.Drawing.Point(8, 48);
-			this.m_JerseyNumberUpDown.Maximum = new System.Decimal(new int[] {
-																				 99,
-																				 0,
-																				 0,
-																				 0});
-			this.m_JerseyNumberUpDown.Name = "m_JerseyNumberUpDown";
-			this.m_JerseyNumberUpDown.Size = new System.Drawing.Size(40, 20);
-			this.m_JerseyNumberUpDown.TabIndex = 2;
-			this.m_JerseyNumberUpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
-			// 
-			// m_AutoUpdateButton
-			// 
-			this.m_AutoUpdateButton.BackColor = System.Drawing.Color.LightCoral;
-			this.m_AutoUpdateButton.Location = new System.Drawing.Point(88, 216);
-			this.m_AutoUpdateButton.Name = "m_AutoUpdateButton";
-			this.m_AutoUpdateButton.Size = new System.Drawing.Size(312, 24);
-			this.m_AutoUpdateButton.TabIndex = 18;
-			this.m_AutoUpdateButton.Text = "&Auto Update All Player Sim Attributes";
-			this.m_AutoUpdateButton.Click += new System.EventHandler(this.m_AutoUpdateButton_Click);
-			// 
-			// AttributeForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(408, 278);
-			this.Controls.Add(this.m_AutoUpdateButton);
-			this.Controls.Add(this.m_JerseyNumberUpDown);
-			this.Controls.Add(this.m_CancelButton);
-			this.Controls.Add(this.m_PrevPlayerButton);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.m_SaveButton);
-			this.Controls.Add(this.m_FaceLabel);
-			this.Controls.Add(this.m_NextPicture);
-			this.Controls.Add(this.m_PrevPicture);
-			this.Controls.Add(this.m_LastNameTextBox);
-			this.Controls.Add(this.m_FirstNameTextBox);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.label16);
-			this.Controls.Add(this.label15);
-			this.Controls.Add(this.m_NextPlayerButton);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.mSimBox);
-			this.Controls.Add(this.m_FaceBox);
-			this.Controls.Add(this.m_PositionComboBox);
-			this.Controls.Add(this.m_TeamsComboBox);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximumSize = new System.Drawing.Size(416, 312);
-			this.MinimumSize = new System.Drawing.Size(416, 312);
-			this.Name = "AttributeForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Modify Players";
-			this.mSimBox.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim4UpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim3UpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim2UpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_Sim1UpDown)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.m_JerseyNumberUpDown)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AttributeForm));
+            this.label1 = new System.Windows.Forms.Label();
+            this.m_TeamsComboBox = new System.Windows.Forms.ComboBox();
+            this.m_PositionComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.m_FaceBox = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.m_RSBox = new System.Windows.Forms.ComboBox();
+            this.m_RPBox = new System.Windows.Forms.ComboBox();
+            this.m_MSBox = new System.Windows.Forms.ComboBox();
+            this.m_HPBox = new System.Windows.Forms.ComboBox();
+            this.m_ACCBox = new System.Windows.Forms.ComboBox();
+            this.m_PC_REC_QU_KABox = new System.Windows.Forms.ComboBox();
+            this.m_PS_BC_PI_KABox = new System.Windows.Forms.ComboBox();
+            this.m_A3Label = new System.Windows.Forms.Label();
+            this.m_A2Label = new System.Windows.Forms.Label();
+            this.m_A1Label = new System.Windows.Forms.Label();
+            this.m_Sim4Label = new System.Windows.Forms.Label();
+            this.m_Sim3Label = new System.Windows.Forms.Label();
+            this.m_Sim2Label = new System.Windows.Forms.Label();
+            this.m_Sim1Label = new System.Windows.Forms.Label();
+            this.mSimBox = new System.Windows.Forms.GroupBox();
+            this.m_Sim4UpDown = new System.Windows.Forms.NumericUpDown();
+            this.m_Sim3UpDown = new System.Windows.Forms.NumericUpDown();
+            this.m_Sim2UpDown = new System.Windows.Forms.NumericUpDown();
+            this.m_Sim1UpDown = new System.Windows.Forms.NumericUpDown();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.m_APBBox = new System.Windows.Forms.ComboBox();
+            this.m_A4Label = new System.Windows.Forms.Label();
+            this.m_NextPlayerButton = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.m_FirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.m_LastNameTextBox = new System.Windows.Forms.TextBox();
+            this.m_PrevPicture = new System.Windows.Forms.Button();
+            this.m_NextPicture = new System.Windows.Forms.Button();
+            this.m_FaceLabel = new System.Windows.Forms.Label();
+            this.m_SaveButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.m_PrevPlayerButton = new System.Windows.Forms.Button();
+            this.m_CancelButton = new System.Windows.Forms.Button();
+            this.m_JerseyNumberUpDown = new System.Windows.Forms.NumericUpDown();
+            this.m_AutoUpdateButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.m_FaceBox)).BeginInit();
+            this.mSimBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim4UpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim3UpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim2UpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim1UpDown)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_JerseyNumberUpDown)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Team";
+            // 
+            // m_TeamsComboBox
+            // 
+            this.m_TeamsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_TeamsComboBox.Items.AddRange(new object[] {
+            "bills",
+            "colts",
+            "dolphins",
+            "patriots",
+            "jets",
+            "bengals",
+            "browns",
+            "oilers",
+            "steelers",
+            "broncos",
+            "chiefs",
+            "raiders",
+            "chargers",
+            "seahawks",
+            "redskins",
+            "giants",
+            "eagles",
+            "cardinals",
+            "cowboys",
+            "bears",
+            "lions",
+            "packers",
+            "vikings",
+            "buccaneers",
+            "49ers",
+            "rams",
+            "saints",
+            "falcons"});
+            this.m_TeamsComboBox.Location = new System.Drawing.Point(56, 4);
+            this.m_TeamsComboBox.Name = "m_TeamsComboBox";
+            this.m_TeamsComboBox.Size = new System.Drawing.Size(104, 21);
+            this.m_TeamsComboBox.TabIndex = 0;
+            this.m_TeamsComboBox.SelectedIndexChanged += new System.EventHandler(this.m_TeamsComboBox_SelectedIndexChanged);
+            // 
+            // m_PositionComboBox
+            // 
+            this.m_PositionComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.m_PositionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_PositionComboBox.Items.AddRange(new object[] {
+            "QB1",
+            "QB2",
+            "RB1",
+            "RB2",
+            "RB3",
+            "RB4",
+            "WR1",
+            "WR2",
+            "WR3",
+            "WR4",
+            "TE1",
+            "TE2",
+            "C",
+            "LG",
+            "RG",
+            "LT",
+            "RT",
+            "RE",
+            "NT",
+            "LE",
+            "ROLB",
+            "RILB",
+            "LILB",
+            "LOLB",
+            "RCB",
+            "LCB",
+            "FS",
+            "SS",
+            "K",
+            "P"});
+            this.m_PositionComboBox.Location = new System.Drawing.Point(280, 4);
+            this.m_PositionComboBox.Name = "m_PositionComboBox";
+            this.m_PositionComboBox.Size = new System.Drawing.Size(104, 21);
+            this.m_PositionComboBox.TabIndex = 1;
+            this.m_PositionComboBox.SelectedIndexChanged += new System.EventHandler(this.m_PositionComboBox_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(232, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Position";
+            // 
+            // m_FaceBox
+            // 
+            this.m_FaceBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.m_FaceBox.Image = ((System.Drawing.Image)(resources.GetObject("m_FaceBox.Image")));
+            this.m_FaceBox.Location = new System.Drawing.Point(8, 128);
+            this.m_FaceBox.Name = "m_FaceBox";
+            this.m_FaceBox.Size = new System.Drawing.Size(64, 64);
+            this.m_FaceBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_FaceBox.TabIndex = 4;
+            this.m_FaceBox.TabStop = false;
+            this.m_FaceBox.Click += new System.EventHandler(this.m_FaceBox_Click);
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(8, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 10);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "RS";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(56, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 10);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "RP";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(152, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 10);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "HP";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(104, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 10);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "MS";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_RSBox
+            // 
+            this.m_RSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_RSBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_RSBox.Location = new System.Drawing.Point(8, 32);
+            this.m_RSBox.Name = "m_RSBox";
+            this.m_RSBox.Size = new System.Drawing.Size(43, 21);
+            this.m_RSBox.TabIndex = 4;
+            this.m_RSBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_RPBox
+            // 
+            this.m_RPBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_RPBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_RPBox.Location = new System.Drawing.Point(56, 32);
+            this.m_RPBox.Name = "m_RPBox";
+            this.m_RPBox.Size = new System.Drawing.Size(43, 21);
+            this.m_RPBox.TabIndex = 5;
+            this.m_RPBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_MSBox
+            // 
+            this.m_MSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_MSBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_MSBox.Location = new System.Drawing.Point(104, 32);
+            this.m_MSBox.Name = "m_MSBox";
+            this.m_MSBox.Size = new System.Drawing.Size(43, 21);
+            this.m_MSBox.TabIndex = 6;
+            this.m_MSBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_HPBox
+            // 
+            this.m_HPBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_HPBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_HPBox.Location = new System.Drawing.Point(152, 32);
+            this.m_HPBox.Name = "m_HPBox";
+            this.m_HPBox.Size = new System.Drawing.Size(43, 21);
+            this.m_HPBox.TabIndex = 7;
+            this.m_HPBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_ACCBox
+            // 
+            this.m_ACCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_ACCBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_ACCBox.Location = new System.Drawing.Point(296, 32);
+            this.m_ACCBox.Name = "m_ACCBox";
+            this.m_ACCBox.Size = new System.Drawing.Size(43, 21);
+            this.m_ACCBox.TabIndex = 10;
+            this.m_ACCBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_PC_REC_QU_KABox
+            // 
+            this.m_PC_REC_QU_KABox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_PC_REC_QU_KABox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_PC_REC_QU_KABox.Location = new System.Drawing.Point(248, 32);
+            this.m_PC_REC_QU_KABox.Name = "m_PC_REC_QU_KABox";
+            this.m_PC_REC_QU_KABox.Size = new System.Drawing.Size(43, 21);
+            this.m_PC_REC_QU_KABox.TabIndex = 9;
+            this.m_PC_REC_QU_KABox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_PS_BC_PI_KABox
+            // 
+            this.m_PS_BC_PI_KABox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_PS_BC_PI_KABox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_PS_BC_PI_KABox.Location = new System.Drawing.Point(200, 32);
+            this.m_PS_BC_PI_KABox.Name = "m_PS_BC_PI_KABox";
+            this.m_PS_BC_PI_KABox.Size = new System.Drawing.Size(43, 21);
+            this.m_PS_BC_PI_KABox.TabIndex = 8;
+            this.m_PS_BC_PI_KABox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_A3Label
+            // 
+            this.m_A3Label.Location = new System.Drawing.Point(296, 16);
+            this.m_A3Label.Name = "m_A3Label";
+            this.m_A3Label.Size = new System.Drawing.Size(40, 10);
+            this.m_A3Label.TabIndex = 20;
+            this.m_A3Label.Text = "ACC";
+            this.m_A3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_A2Label
+            // 
+            this.m_A2Label.Location = new System.Drawing.Point(248, 16);
+            this.m_A2Label.Name = "m_A2Label";
+            this.m_A2Label.Size = new System.Drawing.Size(40, 10);
+            this.m_A2Label.TabIndex = 19;
+            this.m_A2Label.Text = "PC";
+            this.m_A2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_A1Label
+            // 
+            this.m_A1Label.Location = new System.Drawing.Point(200, 16);
+            this.m_A1Label.Name = "m_A1Label";
+            this.m_A1Label.Size = new System.Drawing.Size(40, 10);
+            this.m_A1Label.TabIndex = 18;
+            this.m_A1Label.Text = "PS";
+            this.m_A1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_Sim4Label
+            // 
+            this.m_Sim4Label.Location = new System.Drawing.Point(248, 16);
+            this.m_Sim4Label.Name = "m_Sim4Label";
+            this.m_Sim4Label.Size = new System.Drawing.Size(56, 32);
+            this.m_Sim4Label.TabIndex = 27;
+            this.m_Sim4Label.Text = "blank";
+            this.m_Sim4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_Sim3Label
+            // 
+            this.m_Sim3Label.Location = new System.Drawing.Point(168, 16);
+            this.m_Sim3Label.Name = "m_Sim3Label";
+            this.m_Sim3Label.Size = new System.Drawing.Size(56, 32);
+            this.m_Sim3Label.TabIndex = 26;
+            this.m_Sim3Label.Text = "Sim pocket";
+            this.m_Sim3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_Sim2Label
+            // 
+            this.m_Sim2Label.Location = new System.Drawing.Point(88, 16);
+            this.m_Sim2Label.Name = "m_Sim2Label";
+            this.m_Sim2Label.Size = new System.Drawing.Size(56, 32);
+            this.m_Sim2Label.TabIndex = 25;
+            this.m_Sim2Label.Text = "Sim Pass";
+            this.m_Sim2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_Sim1Label
+            // 
+            this.m_Sim1Label.Location = new System.Drawing.Point(8, 16);
+            this.m_Sim1Label.Name = "m_Sim1Label";
+            this.m_Sim1Label.Size = new System.Drawing.Size(56, 32);
+            this.m_Sim1Label.TabIndex = 24;
+            this.m_Sim1Label.Text = "Sim Run";
+            this.m_Sim1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mSimBox
+            // 
+            this.mSimBox.Controls.Add(this.m_Sim4UpDown);
+            this.mSimBox.Controls.Add(this.m_Sim3UpDown);
+            this.mSimBox.Controls.Add(this.m_Sim2UpDown);
+            this.mSimBox.Controls.Add(this.m_Sim1UpDown);
+            this.mSimBox.Controls.Add(this.m_Sim4Label);
+            this.mSimBox.Controls.Add(this.m_Sim3Label);
+            this.mSimBox.Controls.Add(this.m_Sim2Label);
+            this.mSimBox.Controls.Add(this.m_Sim1Label);
+            this.mSimBox.Location = new System.Drawing.Point(88, 128);
+            this.mSimBox.Name = "mSimBox";
+            this.mSimBox.Size = new System.Drawing.Size(312, 80);
+            this.mSimBox.TabIndex = 6;
+            this.mSimBox.TabStop = false;
+            this.mSimBox.Text = "Sim attributes";
+            // 
+            // m_Sim4UpDown
+            // 
+            this.m_Sim4UpDown.Location = new System.Drawing.Point(254, 48);
+            this.m_Sim4UpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.m_Sim4UpDown.Name = "m_Sim4UpDown";
+            this.m_Sim4UpDown.Size = new System.Drawing.Size(40, 20);
+            this.m_Sim4UpDown.TabIndex = 14;
+            this.m_Sim4UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_Sim3UpDown
+            // 
+            this.m_Sim3UpDown.Location = new System.Drawing.Point(172, 48);
+            this.m_Sim3UpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.m_Sim3UpDown.Name = "m_Sim3UpDown";
+            this.m_Sim3UpDown.Size = new System.Drawing.Size(40, 20);
+            this.m_Sim3UpDown.TabIndex = 13;
+            this.m_Sim3UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_Sim2UpDown
+            // 
+            this.m_Sim2UpDown.Location = new System.Drawing.Point(90, 48);
+            this.m_Sim2UpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.m_Sim2UpDown.Name = "m_Sim2UpDown";
+            this.m_Sim2UpDown.Size = new System.Drawing.Size(40, 20);
+            this.m_Sim2UpDown.TabIndex = 12;
+            this.m_Sim2UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_Sim1UpDown
+            // 
+            this.m_Sim1UpDown.Location = new System.Drawing.Point(8, 48);
+            this.m_Sim1UpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.m_Sim1UpDown.Name = "m_Sim1UpDown";
+            this.m_Sim1UpDown.Size = new System.Drawing.Size(40, 20);
+            this.m_Sim1UpDown.TabIndex = 11;
+            this.m_Sim1UpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.m_APBBox);
+            this.groupBox1.Controls.Add(this.m_A4Label);
+            this.groupBox1.Controls.Add(this.m_A2Label);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.m_RSBox);
+            this.groupBox1.Controls.Add(this.m_MSBox);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.m_RPBox);
+            this.groupBox1.Controls.Add(this.m_HPBox);
+            this.groupBox1.Controls.Add(this.m_A1Label);
+            this.groupBox1.Controls.Add(this.m_PS_BC_PI_KABox);
+            this.groupBox1.Controls.Add(this.m_PC_REC_QU_KABox);
+            this.groupBox1.Controls.Add(this.m_ACCBox);
+            this.groupBox1.Controls.Add(this.m_A3Label);
+            this.groupBox1.Location = new System.Drawing.Point(8, 72);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(392, 56);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Attributes";
+            // 
+            // m_APBBox
+            // 
+            this.m_APBBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_APBBox.Items.AddRange(new object[] {
+            "6",
+            "13",
+            "19",
+            "25",
+            "31",
+            "38",
+            "44",
+            "50",
+            "56",
+            "63",
+            "69",
+            "75",
+            "81",
+            "88",
+            "94",
+            "100"});
+            this.m_APBBox.Location = new System.Drawing.Point(344, 32);
+            this.m_APBBox.Name = "m_APBBox";
+            this.m_APBBox.Size = new System.Drawing.Size(43, 21);
+            this.m_APBBox.TabIndex = 21;
+            this.m_APBBox.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_A4Label
+            // 
+            this.m_A4Label.Location = new System.Drawing.Point(344, 16);
+            this.m_A4Label.Name = "m_A4Label";
+            this.m_A4Label.Size = new System.Drawing.Size(40, 10);
+            this.m_A4Label.TabIndex = 22;
+            this.m_A4Label.Text = "APB";
+            this.m_A4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_NextPlayerButton
+            // 
+            this.m_NextPlayerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.m_NextPlayerButton.Location = new System.Drawing.Point(117, 248);
+            this.m_NextPlayerButton.Name = "m_NextPlayerButton";
+            this.m_NextPlayerButton.Size = new System.Drawing.Size(88, 24);
+            this.m_NextPlayerButton.TabIndex = 25;
+            this.m_NextPlayerButton.Text = "&Next Player";
+            this.m_NextPlayerButton.Click += new System.EventHandler(this.m_NextPlayerButton_Click);
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(64, 32);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 16);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "First Name";
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(232, 32);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 16);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Last Name";
+            // 
+            // m_FirstNameTextBox
+            // 
+            this.m_FirstNameTextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_FirstNameTextBox.Location = new System.Drawing.Point(64, 48);
+            this.m_FirstNameTextBox.MaxLength = 16;
+            this.m_FirstNameTextBox.Name = "m_FirstNameTextBox";
+            this.m_FirstNameTextBox.Size = new System.Drawing.Size(152, 21);
+            this.m_FirstNameTextBox.TabIndex = 3;
+            this.m_FirstNameTextBox.TextChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_LastNameTextBox
+            // 
+            this.m_LastNameTextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_LastNameTextBox.Location = new System.Drawing.Point(232, 48);
+            this.m_LastNameTextBox.MaxLength = 16;
+            this.m_LastNameTextBox.Name = "m_LastNameTextBox";
+            this.m_LastNameTextBox.Size = new System.Drawing.Size(152, 21);
+            this.m_LastNameTextBox.TabIndex = 4;
+            this.m_LastNameTextBox.TextChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_PrevPicture
+            // 
+            this.m_PrevPicture.Location = new System.Drawing.Point(8, 208);
+            this.m_PrevPicture.Name = "m_PrevPicture";
+            this.m_PrevPicture.Size = new System.Drawing.Size(32, 18);
+            this.m_PrevPicture.TabIndex = 15;
+            this.m_PrevPicture.Text = "\\/";
+            this.m_PrevPicture.Click += new System.EventHandler(this.m_PrevPicture_Click);
+            // 
+            // m_NextPicture
+            // 
+            this.m_NextPicture.Location = new System.Drawing.Point(40, 208);
+            this.m_NextPicture.Name = "m_NextPicture";
+            this.m_NextPicture.Size = new System.Drawing.Size(32, 18);
+            this.m_NextPicture.TabIndex = 16;
+            this.m_NextPicture.Text = "/\\";
+            this.m_NextPicture.Click += new System.EventHandler(this.m_NextPicture_Click);
+            // 
+            // m_FaceLabel
+            // 
+            this.m_FaceLabel.Location = new System.Drawing.Point(8, 192);
+            this.m_FaceLabel.Name = "m_FaceLabel";
+            this.m_FaceLabel.Size = new System.Drawing.Size(64, 16);
+            this.m_FaceLabel.TabIndex = 41;
+            this.m_FaceLabel.Text = "00";
+            this.m_FaceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_SaveButton
+            // 
+            this.m_SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.m_SaveButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.m_SaveButton.Location = new System.Drawing.Point(224, 248);
+            this.m_SaveButton.Name = "m_SaveButton";
+            this.m_SaveButton.Size = new System.Drawing.Size(80, 24);
+            this.m_SaveButton.TabIndex = 30;
+            this.m_SaveButton.Text = "&OK";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(8, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 16);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "#";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // m_PrevPlayerButton
+            // 
+            this.m_PrevPlayerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.m_PrevPlayerButton.Location = new System.Drawing.Point(8, 248);
+            this.m_PrevPlayerButton.Name = "m_PrevPlayerButton";
+            this.m_PrevPlayerButton.Size = new System.Drawing.Size(96, 24);
+            this.m_PrevPlayerButton.TabIndex = 20;
+            this.m_PrevPlayerButton.Text = "&Prev Player";
+            this.m_PrevPlayerButton.Click += new System.EventHandler(this.m_PrevPlayerButton_Click);
+            // 
+            // m_CancelButton
+            // 
+            this.m_CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.m_CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.m_CancelButton.Location = new System.Drawing.Point(312, 248);
+            this.m_CancelButton.Name = "m_CancelButton";
+            this.m_CancelButton.Size = new System.Drawing.Size(88, 24);
+            this.m_CancelButton.TabIndex = 35;
+            this.m_CancelButton.Text = "&Cancel";
+            // 
+            // m_JerseyNumberUpDown
+            // 
+            this.m_JerseyNumberUpDown.Location = new System.Drawing.Point(8, 48);
+            this.m_JerseyNumberUpDown.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.m_JerseyNumberUpDown.Name = "m_JerseyNumberUpDown";
+            this.m_JerseyNumberUpDown.Size = new System.Drawing.Size(40, 20);
+            this.m_JerseyNumberUpDown.TabIndex = 2;
+            this.m_JerseyNumberUpDown.ValueChanged += new System.EventHandler(this.ValueChanged);
+            // 
+            // m_AutoUpdateButton
+            // 
+            this.m_AutoUpdateButton.BackColor = System.Drawing.Color.LightCoral;
+            this.m_AutoUpdateButton.Location = new System.Drawing.Point(88, 216);
+            this.m_AutoUpdateButton.Name = "m_AutoUpdateButton";
+            this.m_AutoUpdateButton.Size = new System.Drawing.Size(312, 24);
+            this.m_AutoUpdateButton.TabIndex = 18;
+            this.m_AutoUpdateButton.Text = "&Auto Update All Player Sim Attributes";
+            this.m_AutoUpdateButton.UseVisualStyleBackColor = false;
+            this.m_AutoUpdateButton.Click += new System.EventHandler(this.m_AutoUpdateButton_Click);
+            // 
+            // AttributeForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(400, 274);
+            this.Controls.Add(this.m_AutoUpdateButton);
+            this.Controls.Add(this.m_JerseyNumberUpDown);
+            this.Controls.Add(this.m_CancelButton);
+            this.Controls.Add(this.m_PrevPlayerButton);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.m_SaveButton);
+            this.Controls.Add(this.m_FaceLabel);
+            this.Controls.Add(this.m_NextPicture);
+            this.Controls.Add(this.m_PrevPicture);
+            this.Controls.Add(this.m_LastNameTextBox);
+            this.Controls.Add(this.m_FirstNameTextBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.m_NextPlayerButton);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.mSimBox);
+            this.Controls.Add(this.m_FaceBox);
+            this.Controls.Add(this.m_PositionComboBox);
+            this.Controls.Add(this.m_TeamsComboBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(416, 312);
+            this.MinimumSize = new System.Drawing.Size(416, 312);
+            this.Name = "AttributeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Modify Players";
+            ((System.ComponentModel.ISupportInitialize)(this.m_FaceBox)).EndInit();
+            this.mSimBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim4UpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim3UpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim2UpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Sim1UpDown)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_JerseyNumberUpDown)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion

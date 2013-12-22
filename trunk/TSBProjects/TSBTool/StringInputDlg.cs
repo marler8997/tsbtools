@@ -215,64 +215,64 @@ namespace TSBTool
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.okButton = new System.Windows.Forms.Button();
-			this.cancelButton = new System.Windows.Forms.Button();
-			this.userInput = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// okButton
-			// 
-			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.okButton.Location = new System.Drawing.Point(65, 64);
-			this.okButton.Name = "okButton";
-			this.okButton.Size = new System.Drawing.Size(60, 23);
-			this.okButton.TabIndex = 1;
-			this.okButton.Text = "OK";
-			this.okButton.Click += new System.EventHandler(this.okButton_Click);
-			// 
-			// cancelButton
-			// 
-			this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.cancelButton.Location = new System.Drawing.Point(141, 64);
-			this.cancelButton.Name = "cancelButton";
-			this.cancelButton.Size = new System.Drawing.Size(60, 23);
-			this.cancelButton.TabIndex = 2;
-			this.cancelButton.Text = "Cancel";
-			this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-			// 
-			// userInput
-			// 
-			this.userInput.Location = new System.Drawing.Point(56, 40);
-			this.userInput.Name = "userInput";
-			this.userInput.Size = new System.Drawing.Size(200, 20);
-			this.userInput.TabIndex = 0;
-			this.userInput.Text = "";
-			this.userInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userInput_KeyDown);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(56, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(208, 32);
-			this.label1.TabIndex = 3;
-			// 
-			// StringInputDlg
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(282, 104);
-			this.ControlBox = false;
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.userInput);
-			this.Controls.Add(this.cancelButton);
-			this.Controls.Add(this.okButton);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "StringInputDlg";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "StringInputDlg";
-			this.ResumeLayout(false);
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.userInput = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // okButton
+            // 
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Location = new System.Drawing.Point(65, 64);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(60, 23);
+            this.okButton.TabIndex = 1;
+            this.okButton.Text = "OK";
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Location = new System.Drawing.Point(141, 64);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(60, 23);
+            this.cancelButton.TabIndex = 2;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // userInput
+            // 
+            this.userInput.Location = new System.Drawing.Point(56, 40);
+            this.userInput.Name = "userInput";
+            this.userInput.Size = new System.Drawing.Size(200, 20);
+            this.userInput.TabIndex = 0;
+            this.userInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userInput_KeyDown);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(56, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 32);
+            this.label1.TabIndex = 3;
+            // 
+            // StringInputDlg
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(282, 104);
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.userInput);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "StringInputDlg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "StringInputDlg";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion

@@ -142,133 +142,136 @@ namespace TSBTool
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(NumberForm));
-			this.label1 = new System.Windows.Forms.Label();
-			this.nameLabel = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.playerNumberTextBox = new System.Windows.Forms.TextBox();
-			this.okButton = new System.Windows.Forms.Button();
-			this.nextButton = new System.Windows.Forms.Button();
-			this.cancelButton = new System.Windows.Forms.Button();
-			this.stopOnTextBox = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.positionLabel = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(160, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(112, 23);
-			this.label1.TabIndex = 6;
-			this.label1.Text = "Team";
-			// 
-			// nameLabel
-			// 
-			this.nameLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.nameLabel.ForeColor = System.Drawing.Color.Green;
-			this.nameLabel.Location = new System.Drawing.Point(128, 48);
-			this.nameLabel.Name = "nameLabel";
-			this.nameLabel.Size = new System.Drawing.Size(168, 23);
-			this.nameLabel.TabIndex = 1;
-			this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(8, 16);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(128, 23);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Player Number";
-			// 
-			// playerNumberTextBox
-			// 
-			this.playerNumberTextBox.Location = new System.Drawing.Point(16, 48);
-			this.playerNumberTextBox.Name = "playerNumberTextBox";
-			this.playerNumberTextBox.Size = new System.Drawing.Size(48, 22);
-			this.playerNumberTextBox.TabIndex = 0;
-			this.playerNumberTextBox.Text = "";
-			this.playerNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.playerNumberTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numberTextBox_KeyDown);
-			this.playerNumberTextBox.TextChanged += new System.EventHandler(this.stopOnTextBox_TextChanged);
-			// 
-			// okButton
-			// 
-			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.okButton.Location = new System.Drawing.Point(216, 96);
-			this.okButton.Name = "okButton";
-			this.okButton.TabIndex = 3;
-			this.okButton.Text = "&OK";
-			this.okButton.Click += new System.EventHandler(this.okCancelButton_Click);
-			// 
-			// nextButton
-			// 
-			this.nextButton.Location = new System.Drawing.Point(16, 96);
-			this.nextButton.Name = "nextButton";
-			this.nextButton.TabIndex = 2;
-			this.nextButton.Text = "&Next";
-			this.nextButton.Click += new System.EventHandler(this.doNext);
-			// 
-			// cancelButton
-			// 
-			this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.cancelButton.Location = new System.Drawing.Point(304, 96);
-			this.cancelButton.Name = "cancelButton";
-			this.cancelButton.TabIndex = 4;
-			this.cancelButton.Text = "&Cancel";
-			this.cancelButton.Click += new System.EventHandler(this.okCancelButton_Click);
-			// 
-			// stopOnTextBox
-			// 
-			this.stopOnTextBox.Location = new System.Drawing.Point(312, 48);
-			this.stopOnTextBox.Name = "stopOnTextBox";
-			this.stopOnTextBox.Size = new System.Drawing.Size(56, 22);
-			this.stopOnTextBox.TabIndex = 1;
-			this.stopOnTextBox.Text = "0";
-			this.stopOnTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.stopOnTextBox.TextChanged += new System.EventHandler(this.stopOnTextBox_TextChanged);
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(304, 16);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(80, 23);
-			this.label3.TabIndex = 8;
-			this.label3.Text = "Stop on";
-			// 
-			// positionLabel
-			// 
-			this.positionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.positionLabel.ForeColor = System.Drawing.Color.Purple;
-			this.positionLabel.Location = new System.Drawing.Point(72, 48);
-			this.positionLabel.Name = "positionLabel";
-			this.positionLabel.Size = new System.Drawing.Size(40, 23);
-			this.positionLabel.TabIndex = 9;
-			this.positionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// NumberForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(8, 15);
-			this.CancelButton = this.cancelButton;
-			this.ClientSize = new System.Drawing.Size(392, 142);
-			this.Controls.Add(this.positionLabel);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.stopOnTextBox);
-			this.Controls.Add(this.playerNumberTextBox);
-			this.Controls.Add(this.cancelButton);
-			this.Controls.Add(this.nextButton);
-			this.Controls.Add(this.okButton);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.nameLabel);
-			this.Controls.Add(this.label1);
-			this.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximumSize = new System.Drawing.Size(400, 176);
-			this.MinimizeBox = false;
-			this.MinimumSize = new System.Drawing.Size(400, 176);
-			this.Name = "NumberForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NumberForm));
+            this.label1 = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.playerNumberTextBox = new System.Windows.Forms.TextBox();
+            this.okButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.stopOnTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.positionLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(160, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 23);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Team";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nameLabel.ForeColor = System.Drawing.Color.Green;
+            this.nameLabel.Location = new System.Drawing.Point(128, 48);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(168, 23);
+            this.nameLabel.TabIndex = 1;
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(8, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Player Number";
+            // 
+            // playerNumberTextBox
+            // 
+            this.playerNumberTextBox.Location = new System.Drawing.Point(16, 48);
+            this.playerNumberTextBox.Name = "playerNumberTextBox";
+            this.playerNumberTextBox.Size = new System.Drawing.Size(48, 22);
+            this.playerNumberTextBox.TabIndex = 0;
+            this.playerNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.playerNumberTextBox.TextChanged += new System.EventHandler(this.stopOnTextBox_TextChanged);
+            this.playerNumberTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numberTextBox_KeyDown);
+            // 
+            // okButton
+            // 
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Location = new System.Drawing.Point(216, 96);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.TabIndex = 3;
+            this.okButton.Text = "&OK";
+            this.okButton.Click += new System.EventHandler(this.okCancelButton_Click);
+            // 
+            // nextButton
+            // 
+            this.nextButton.Location = new System.Drawing.Point(16, 96);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.TabIndex = 2;
+            this.nextButton.Text = "&Next";
+            this.nextButton.Click += new System.EventHandler(this.doNext);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Location = new System.Drawing.Point(304, 96);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 4;
+            this.cancelButton.Text = "&Cancel";
+            this.cancelButton.Click += new System.EventHandler(this.okCancelButton_Click);
+            // 
+            // stopOnTextBox
+            // 
+            this.stopOnTextBox.Location = new System.Drawing.Point(312, 48);
+            this.stopOnTextBox.Name = "stopOnTextBox";
+            this.stopOnTextBox.Size = new System.Drawing.Size(56, 22);
+            this.stopOnTextBox.TabIndex = 1;
+            this.stopOnTextBox.Text = "0";
+            this.stopOnTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.stopOnTextBox.TextChanged += new System.EventHandler(this.stopOnTextBox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(304, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Stop on";
+            // 
+            // positionLabel
+            // 
+            this.positionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.positionLabel.ForeColor = System.Drawing.Color.Purple;
+            this.positionLabel.Location = new System.Drawing.Point(72, 48);
+            this.positionLabel.Name = "positionLabel";
+            this.positionLabel.Size = new System.Drawing.Size(40, 23);
+            this.positionLabel.TabIndex = 9;
+            this.positionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // NumberForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.CancelButton = this.cancelButton;
+            this.ClientSize = new System.Drawing.Size(384, 138);
+            this.Controls.Add(this.positionLabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.stopOnTextBox);
+            this.Controls.Add(this.playerNumberTextBox);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.nextButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(400, 176);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(400, 176);
+            this.Name = "NumberForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
