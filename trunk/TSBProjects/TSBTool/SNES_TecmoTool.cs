@@ -1535,7 +1535,7 @@ Do you want to continue?",ROM_LENGTH),
 						break;
 					default:
 						errors.Add(string.Format(
-							"ERROR! Formation {0} for team {1} is invalid.",formation, team));
+							"ERROR! Formation {0:x} for team '{1}' is invalid.",formation, team));
 						errors.Add(string.Format("  Valid formations are:\n  {0}\n  {1}\n  {2}",
 							m2RB_2WR_1TE, m1RB_3WR_1TE, m1RB_4WR ));
 						break;
@@ -1574,7 +1574,7 @@ Do you want to continue?",ROM_LENGTH),
 						break;
 					default:
 						errors.Add(string.Format(
-							"ERROR! Formation {0} for team {1} is invalid, ROM is messed up.",formation, team));
+							"ERROR! Formation {0:x} for team {1} is invalid, ROM FORMATIONS could be messed up.",formation, team));
 						ret="";
 						break;
 				}

@@ -2,25 +2,13 @@ using System;
 
 namespace TSBTool
 {
-	public enum TeamIndex_32
-	{
-		bills=0,     dolphins, patriots, jets,
-		bengals,    browns,  ravens,   steelers,
-		colts,      texans,  jaguars,  titans,
-		broncos,    chiefs,  raiders,  chargers,  
-		redskins,   giants,  eagles,   cowboys,
-		bears,      lions,   packers,  vikings,   
-		buccaneers, saints,  falcons,  panthers,
-		AFC,     NFC,
-		fortyNiners,   rams, seahawks,   cardinals
-	}
 	/// <summary>
 	/// Summary description for TecmoToolFactory.
 	/// </summary>
 	public class TecmoToolFactory
 	{
 
-		public static ITecmoTool GetToolForRom(string fileName)
+		public static ITecmoTool GetToolForRom(String fileName)
 		{
 			ITecmoTool tool = null;
 			ROM_TYPE type = ROM_TYPE.NONE;
@@ -45,7 +33,7 @@ namespace TSBTool
 			{
 				tool = new CXRomTSBTool();
 				tool.Init(fileName);
-				TecmoTool.Teams = new string[] 
+				TecmoTool.Teams = new String[] 
 					{
 						"bills",     "dolphins", "patriots", "jets",
 						"bengals",    "browns",  "ravens",   "steelers",
@@ -62,7 +50,7 @@ namespace TSBTool
 			}
 			else if( type == ROM_TYPE.SNES )
 			{
-				TecmoTool.Teams = new string[] {
+				TecmoTool.Teams = new String[] {
 				"bills",   "colts",  "dolphins", "patriots",  "jets",
 				"bengals", "browns", "oilers",   "steelers",
 				"broncos", "chiefs", "raiders",  "chargers",  "seahawks",
@@ -81,7 +69,7 @@ namespace TSBTool
 					tool = new TecmoTool(fileName);
 				else
 					tool = new TecmoTool();
-				TecmoTool.Teams = new string[] 
+				TecmoTool.Teams = new String[] 
 					{
 						"bills",   "colts",  "dolphins", "patriots",  "jets",
 						"bengals", "browns", "oilers",   "steelers",

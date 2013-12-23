@@ -790,16 +790,18 @@ namespace TSBTool
 				{
 					fn = filename.Substring(index);
 				}
+                String type = tool.RomVersion;
+                switch (tool.OutputRom.Length)
+                {
+                    case CXRomTSBTool.ROM_SIZE_v1_05:
+                        type = "32TeamNES CXROM_v1.05";
+                        break;
+                    case CXRomTSBTool.ROM_SIZE_v1_11:
+                        type = "32TeamNES CXROM_v1.11";
+                        break;
+                }
 				if( fn.Length > 4 )
-					this.Text = string.Format("TSBTool Supreme   '{0}' Loaded", fn);
-				string type = "  (normal nes file)";
-				if( this.tool is CXRomTSBTool )
-					type = "   (32 team ROM file)";
-				else if( this.tool is SNES_TecmoTool )
-				{
-					type = "   (SNES TSB1 ROM file)";
-				}
-				this.Text += type;
+                    this.Text = string.Format("TSBTool Supreme   '{0}' Loaded   ({1})", fn, type);
 			}
 		}
 
@@ -913,6 +915,11 @@ namespace TSBTool
 			richTextBox1.SelectionColor = Color.Magenta;
 			richTextBox1.SelectionStart = 0;
 			richTextBox1.SelectionLength = 0;
+            if (tool.Errors != null && tool.Errors.Count > 0)
+            {
+                MainClass.ShowErrors(tool.Errors);
+                tool.Errors.Clear();
+            }
 		}
 		/// <summary>
 		/// 
@@ -982,8 +989,7 @@ Double Click on 'WEEK x' or a game to edit schedule.
 =============================================
 This tool was created to make it easier and faster to edit players and schedules in 
 Tecmo Super Bowl (nes version, 32 team nes version, snes TSB1 version). 
-It is intended to be used as a complement to TSBM (from emuware).It does not do 
-everything that TSBM or TSBM 2000 does. It's purpose is to make it easy and fast to 
+It's purpose is to make it easy and fast to 
 modify player names, player attributes, team attributes and season schedules.
 
 This program can read from standard in or from a file (when executed from command line)

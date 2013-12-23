@@ -58,46 +58,72 @@ namespace TSBTool
 		 int fortyNinersRESimLoc = 0x199D9;//0x199DF;
 
 		//const int fortyNinersRunPassPreferenceLoc = 0x27526; // defect
-		const int fortyNinersRunPassPreferenceLoc   = 0x27fdb;
+		private int fortyNinersRunPassPreferenceLoc   = 0x27fdb;
 		
 		private  int  FORTY_NINERS_QB1_POINTER   = 0x3eb0;
-		private  int  RAMS_QB1_POINTER           = 0x3eec;
-		private  int  SEAHAWKS_QB1_POINTER       = 0x3f28;
-		private  int  CARDINALS_QB1_POINTER      = 0x3f64;
 
-		private  int  FORTY_NINERSERS_PUNTER_POINTER   = 0x3eec;
-		private  int  RAMS_PUNTER_POINTER              = 0x3f28;
-		private  int  SEAHAWKS_PUNTER_POINTER          = 0x3f64;
-		private  int  CARDINALS_PUNTER_POINTER         = 0x3fa0;
-
-		private const int FORTY_NINERS_KR_PR_LOC   = 0x32cb2;
-		private const int FORTY_NINERS_KR_PR_LOC_1 = 0x3F93C;
-		
+        public const int ROM_SIZE_v1_05 = 0x80010;
+        public const int ROM_SIZE_v1_11 = 0xc0010; // 786448;
+        /* v1.11 
+         * if( outputRom.length == 786448){
+         *   FORTY_NINERS_QB1_POINTER = 0x3e054
+         *   mGetDataPositionOffset = 0x36010;
+         * }
+         * TODO:
+         * Currently needs fixing v1.11: 
+         *   1. Offensive formations (all)
+         */
+        private int mGetDataPositionOffset = 0x30000 + 0x010;
+        private int FORTY_NINERS_KR_PR_LOC = 0x32cb2;
+        private int FORTY_NINERS_KR_PR_LOC_1 = 0x3F93C;		
 		private  int    m_ExpansionSegmentEnd = 0x3fff0;
 		private byte[] m_RomVersionData = null;
 
         /// <summary>
         /// Returns the rom version 
         /// </summary>
-        public override string RomVersion { get { return "32TeamNES"; } }
+        public override string RomVersion { 
+            get
+            {
+                //if (ROM_LENGTH == ROM_SIZE_v1_11)
+                //    return "32TeamNES_CXROM_v1.11";
+                //else
+                //    return "32TeamNES_CXROM_v1.05";
+                return "32TeamNES";
+            } 
+        }
 
 		public CXRomTSBTool()
 		{
-			SetupForCxROM();
 		}
 
 		public CXRomTSBTool(string fileName)
 		{
-			SetupForCxROM();
 			Init(fileName);
 		}
 
 		private void SetupForCxROM()
 		{
-			ROM_LENGTH                 = 0x80010;
-			mTeamFormationsStartingLoc = 0x3f940;
-			namePointersStart          = 0x48+12;
-			lastPointer                = 0x06e4;//0x6d9 + 12;
+            if (outputRom.Length == ROM_SIZE_v1_11)
+            {
+                /* Version 1.11*/
+                FORTY_NINERS_QB1_POINTER = 0x3e054;
+                mGetDataPositionOffset = 0x36010;
+                fortyNinersRunPassPreferenceLoc = 0x27fd6;
+                ROM_LENGTH = ROM_SIZE_v1_11;
+                //KR/PR 
+                FORTY_NINERS_KR_PR_LOC = 0x32CC7;
+                FORTY_NINERS_KR_PR_LOC_1 = 0x7FD51;
+            }
+            else
+            {
+                /* Version 1.05*/
+                ROM_LENGTH = ROM_SIZE_v1_05;
+            }
+
+            mTeamFormationsStartingLoc = 0x3f940;
+            namePointersStart = 0x48 + 12;
+            lastPointer = 0x06e4;//0x6d9 + 12;
 			
 			try
 			{
@@ -112,8 +138,6 @@ namespace TSBTool
 				{
 					FORTY_NINERS_QB1_POINTER = Int32.Parse( test,
 						System.Globalization.NumberStyles.AllowHexSpecifier);
-					FORTY_NINERSERS_PUNTER_POINTER = FORTY_NINERS_QB1_POINTER + 0x3c;
-					CARDINALS_PUNTER_POINTER = FORTY_NINERSERS_PUNTER_POINTER + 0xb4;
 				}
 				test = ConfigurationSettings.AppSettings["CXROM_FortyNinersQB1SimAttrStart"];
 				if( test != null && test.Length > 1 )
@@ -175,6 +199,7 @@ namespace TSBTool
 				};
 		}
 
+        bool mAddedFormationRomError = false;
 		/// <summary>
 		/// Sets the team's offensive formation.
 		/// </summary>
@@ -182,6 +207,15 @@ namespace TSBTool
 		/// <param name="formation"></param>
 		public override void SetTeamOffensiveFormation( string team, string formation)
 		{
+            if (outputRom.Length == ROM_SIZE_v1_11)
+            {
+                if (!mAddedFormationRomError)
+                {
+                    mAddedFormationRomError = true;
+                    Errors.Add("Setting offensive formation on CXROM_v1.11 ROM is not yet supported.");
+                }
+                return;
+            }
 			int teamIndex = GetTeamIndex(team);
 			if( teamIndex > -1 && teamIndex < 34 )
 			{
@@ -204,7 +238,7 @@ namespace TSBTool
 						break;
 					default:
 						Errors.Add(string.Format(
-							"ERROR! Formation {0} for team {1} is invalid.",formation, team));
+							"ERROR! Formation {0} for team '{1}' is invalid.",formation, team));
 						Errors.Add(string.Format("  Valid formations are:\n  {0}\n  {1}\n  {2}",
 							m2RB_2WR_1TE, m1RB_3WR_1TE, m1RB_4WR ));
 						break;
@@ -216,12 +250,36 @@ namespace TSBTool
 			}
 		}
 
+        /**
+         * 
+         * @param len the length of the ROM
+         * @return true if it's the correct length, false otherwise.
+         */
+        public override bool IsValidRomSize(long len)
+        {
+            bool ret = false;
+            if( len == ROM_SIZE_v1_05 )
+            {
+                /* Version 1.05*/
+                ret = true;
+            }
+            else if( len == ROM_SIZE_v1_11)
+            {
+                /* Version 1.11*/
+                //FORTY_NINERS_QB1_POINTER = 0x3e054;
+                //mGetDataPositionOffset = 0x36010;
+                ret = true;
+            }
+            return ret;
+        }
+
 		public override bool ReadRom(string filename)
 		{
 			bool ret = false;
 			ret = base.ReadRom (filename);
 			if( ret )
 			{
+                SetupForCxROM();
 				m_RomVersionData = new byte[14];
 				for(int i = 0; i < m_RomVersionData.Length; i++)
 				{
@@ -412,6 +470,21 @@ namespace TSBTool
 
 			return all.ToString();
 		}
+
+        /// <summary>
+        /// Offensive formation is messed up in CXROM 
+        /// </summary>
+        /// <param name="team"></param>
+        /// <returns></returns>
+        public override string GetTeamOffensiveFormation(string team)
+        {
+            String retVal = "";
+            if (outputRom.Length != ROM_SIZE_v1_11)
+            {
+                retVal = base.GetTeamOffensiveFormation(team);
+            }
+            return retVal;
+        }
 
 		private string GetExpansionTeams()
 		{
@@ -606,22 +679,9 @@ namespace TSBTool
 				int positionIndex = GetPositionIndex(position);
 				// the players total index (QB1 bills=0, QB2 bills=2 ...)
 				int pointerLocation = 0;
-				
-				switch(teamIndex )
-				{
-					case (int)TeamIndex_32.fortyNiners:
-						pointerLocation = FORTY_NINERS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.rams:
-						pointerLocation = RAMS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.seahawks:
-						pointerLocation = SEAHAWKS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.cardinals:
-						pointerLocation = CARDINALS_QB1_POINTER + (positionIndex*2);
-						break;
-				}
+
+                pointerLocation = (teamIndex - 30) * 0x3c + FORTY_NINERS_QB1_POINTER
+                   + (positionIndex * 2);
 
 				byte lowByte = outputRom[pointerLocation];
 				int  hiByte  = outputRom[pointerLocation+1];
@@ -629,8 +689,8 @@ namespace TSBTool
 				hiByte = hiByte + lowByte;
 
 				//int ret = hiByte - 0x8000 + 0x010;
-				ret = hiByte + 0x30000 + 0x010;
-				//ret = hiByte + dataPositionOffset;
+				//ret = hiByte + 0x30000 + 0x010;
+                ret = hiByte + mGetDataPositionOffset;
 			}
 			return  ret;
 		}
@@ -649,42 +709,13 @@ namespace TSBTool
 
 			if( teamIndex > 29 && position == "P" )
 			{
-				switch( teamIndex )
-				{
-					case (int)TeamIndex_32.fortyNiners:
-						pointerLocation = FORTY_NINERSERS_PUNTER_POINTER;
-						break;
-					case (int)TeamIndex_32.rams:
-						pointerLocation = RAMS_PUNTER_POINTER;
-						break;
-					case (int)TeamIndex_32.seahawks:
-						pointerLocation = SEAHAWKS_PUNTER_POINTER;
-						break;
-					case (int)TeamIndex_32.cardinals:
-						pointerLocation = CARDINALS_PUNTER_POINTER;
-						break;
-				}
+                pointerLocation = FORTY_NINERS_QB1_POINTER + 0x3c + (teamIndex - 30) * 0x3c;
 			}
 			else if( teamIndex > 29 )
 			{
-				
 				int positionIndex = GetPositionIndex(position)+1;
-				switch(teamIndex )
-				{
-					case (int)TeamIndex_32.fortyNiners:
-						pointerLocation = FORTY_NINERS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.rams:
-						pointerLocation = RAMS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.seahawks:
-						pointerLocation = SEAHAWKS_QB1_POINTER + (positionIndex*2);
-						break;
-					case (int)TeamIndex_32.cardinals:
-						pointerLocation = CARDINALS_QB1_POINTER + (positionIndex*2);
-						break;
-				}
-
+                pointerLocation = (teamIndex - 30) * 0x3c + FORTY_NINERS_QB1_POINTER
+                    + (positionIndex * 2);
 			}
 
 			if( pointerLocation != 0 )
@@ -695,7 +726,8 @@ namespace TSBTool
 				hiByte = hiByte + lowByte;
 
 				//int ret = hiByte - 0x8000 + 0x010;
-				int ret = hiByte + 0x30000 + 0x010;
+                //int ret = hiByte + 0x30000 + 0x010;
+                int ret = hiByte + mGetDataPositionOffset;
 				return ret;
 			}
 			
@@ -796,7 +828,8 @@ namespace TSBTool
 				int start = pos+2;
 				int i=0;
 				int end = //-1;
-				CARDINALS_PUNTER_POINTER + 2;
+                        //CARDINALS_PUNTER_POINTER + 2; // cards are team #33
+                        FORTY_NINERS_QB1_POINTER + 0x3c + (33 - 30) * 0x3c + 2;
 				
 				for( i = start; i < end; i+=2)
 				{
