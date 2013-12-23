@@ -1,6 +1,14 @@
 TSBToolSupreme README
 ======================================================================================================
-TSBToolSupreme Version 1.0.0.1
+TSBToolSupreme Version 1.0.0.2 (22 Dec 2013)
+1. Added Schedule GUI
+2. Added support for CXROM 1.11 (Except formations)
+
+Double click on schedule to bring up scheduler gui.
+CXROM 1.11 Rom should not really be used, but I added support for it to make the program 
+more compatible with it's java (android) counterpart.
+======================================================================================================
+TSBToolSupreme Version 1.0.0.1 (29 Sep 2013)
 Defects Fixed:
 1. Should work under mono on Linux & Mac now
 2. Team Formation Fix.
