@@ -2029,7 +2029,8 @@ Do you want to continue?",ROM_LENGTH, filename, len),
                 }
                 else
                 {
-                    MainClass.ShowError("Rom version not specified in Hack: " + line);
+                    //MainClass.ShowError("Rom version not specified in Hack: " + line);
+                    errors.Add(string.Format("line '{0}' not applied,",line));
                 }
             }
 			else

@@ -81,6 +81,7 @@ namespace TSBTool
         private MenuItem mProBowlMenuItem;
         private MenuItem mScheduleGUIMenuItem;
         private MenuItem mScheduleMenuItem;
+        private MenuItem mHackStompMenuItem;
 		//filter="Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*"
 		//private string nesFilter = "nes files (*.nes)|*.nes|SNES files (*.smc)|*.smc";
 		private string nesFilter = "TSB files (*.nes;*.smc)|*.nes;*.smc";
@@ -292,6 +293,7 @@ namespace TSBTool
             this.findNextMenuItem = new System.Windows.Forms.MenuItem();
             this.findPrevMenuItem = new System.Windows.Forms.MenuItem();
             this.hacksMainMenuItem = new System.Windows.Forms.MenuItem();
+            this.mHackStompMenuItem = new System.Windows.Forms.MenuItem();
             this.mScheduleMenuItem = new System.Windows.Forms.MenuItem();
             this.mScheduleGUIMenuItem = new System.Windows.Forms.MenuItem();
             this.menuItem9 = new System.Windows.Forms.MenuItem();
@@ -508,7 +510,15 @@ namespace TSBTool
             // hacksMainMenuItem
             // 
             this.hacksMainMenuItem.Index = 3;
+            this.hacksMainMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mHackStompMenuItem});
             this.hacksMainMenuItem.Text = "&Hacks";
+            // 
+            // mHackStompMenuItem
+            // 
+            this.mHackStompMenuItem.Index = 0;
+            this.mHackStompMenuItem.Text = "&Check for \'SET\' commands setting values in the same locations";
+            this.mHackStompMenuItem.Click += new System.EventHandler(this.mHackStompMenuItem_Click);
             // 
             // mScheduleMenuItem
             // 
@@ -1792,6 +1802,24 @@ This Program is not endorsed or related to the Tecmo video game company.
                 }
             }
             return retVal;
+        }
+
+        private void mHackStompMenuItem_Click(object sender, EventArgs e)
+        {
+            string errors = InputParser.CheckTextForRedundentSetCommands(richTextBox1.Text);
+            if (!String.IsNullOrEmpty(errors))
+            {
+                RichTextDisplay disp = new RichTextDisplay();
+                disp.ContentBox.Font = richTextBox1.Font;
+                disp.ContentBox.Text = errors;
+                disp.Text = string.Concat("HACK 'Stomp' check  Results");
+                disp.Show();
+                //MessageBox.Show(errors);
+            }
+            else
+            {
+                MessageBox.Show("No conflicts detected!");
+            }
         }
 
 	}

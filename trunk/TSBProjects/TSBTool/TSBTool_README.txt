@@ -1,5 +1,17 @@
 TSBToolSupreme README
 ======================================================================================================
+TSBToolSupreme Version 1.0.0.3 (1 Jan 2014)
+1. Little fixup in 'Hacks' support.
+
+Added a menu item that will check every 'SET' command loaded into the editor to ensure that
+you're not setting the same location multiple times (it will however ignore warning you against 
+identical lines because you're setting them to exactly the same value and hence there isn't a conflict).
+
+Also, for SET commands like:
+	>>>> SET(0x2224B, {28TeamNES PromptUser:Msg="Enter desired quarter length":int(1-15)} )
+The line will only apply to a 28 Team ROM, it will not be applied to a SNES or 32 team ROM.
+
+======================================================================================================
 TSBToolSupreme Version 1.0.0.2 (22 Dec 2013)
 1. Added Schedule GUI
 2. Added support for CXROM 1.11 (Except formations)
