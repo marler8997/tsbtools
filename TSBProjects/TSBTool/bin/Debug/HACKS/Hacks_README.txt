@@ -1,5 +1,9 @@
-These hacks were made by using the windows command line utility 'fc'
-and a text editor like folows:
+========================== HACKS README ===========================
+This folder contains some hacks. The hacks in this folder were taken 
+from ROMS found in the message boards at tecmobowl.org.
+
+These hacks were mostly made by using the windows command line utility
+'fc' and a text editor like folows:
 
 At Windows command line:
 C:\RomDirectory> FC /B hacked_rom.nes OriginalTecmoROM.nes > hack.txt
@@ -19,7 +23,7 @@ Comparing files hacked_rom.nes and OriginalTecmoROM.nes
 0002BFF3: AA FF
 0002BFF4: E0 FF
 ===================================================================
-Then I used a text editor (notepad++ Search Mode=Regular expression )
+Then I used a text editor (notepad++, Search Mode=Regular expression )
 (type Ctrl+H to bring up the replace dialog) and make these 
 replacements (the space matters!):
 ': '            with   ',0x'
@@ -44,3 +48,4 @@ SET(0x2BFF3,0xAA)
 Note:
 In regular expressions, the '^' denotes the beginning of a line, 
 the '$' denotes the ending of a line.
+===================================================================

@@ -203,7 +203,6 @@
     <Compile Include="TecmoToolFactory.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TestClass.cs" />
     <Compile Include="UniformEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,8 +213,12 @@
       <DependentUpon>WeekScheduler.cs</DependentUpon>
     </Compile>
     <Content Include="ROM_HACK_INFO.txt" />
-    <Content Include="TSBTool_README.txt" />
-    <Content Include="WindowsCommandLine.txt" />
+    <Content Include="TSBTool_README.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WindowsCommandLine.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="49ers.ico" />
     <EmbeddedResource Include="AllStarConfrenceControl.resx">
       <DependentUpon>AllStarConfrenceControl.cs</DependentUpon>

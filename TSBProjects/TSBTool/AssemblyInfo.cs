@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("")]
+[assembly: AssemblyTitle("TSBToolSupreme")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -29,7 +29,8 @@ using System.Runtime.CompilerServices;
 //[assembly: AssemblyVersion("1.2.0.2")]
 //[assembly: AssemblyVersion("2.0.0.1")] Defect with menu selection
 //[assembly: AssemblyVersion("1.0.0.1")] // mono support + pro bowl form
-[assembly: AssemblyVersion("1.0.0.2")]   // Schedule gui
+//[assembly: AssemblyVersion("1.0.0.2")]   // Schedule gui
+[assembly: AssemblyVersion("1.0.0.3")]   // Hacks improvement
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 

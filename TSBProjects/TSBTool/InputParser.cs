@@ -165,6 +165,44 @@ namespace TSBTool
 			}
 		}
 
+        public static String CheckTextForRedundentSetCommands(String input)
+        {
+            StringBuilder ret = new StringBuilder();
+            Regex simpleSetRegex = new Regex("SET\\s*\\(\\s*(0x[0-9a-fA-F]+)\\s*,\\s*(0x[0-9a-fA-F]+)\\s*\\)");
+            MatchCollection mc = simpleSetRegex.Matches(input);
+            Match current = null;
+            Match m = null;
+            long location1 = 0;
+            long location2 = 0;
+            int valueLength1 = 0;
+            int valueLength2 = 0;
+            for (int i = 0; i < mc.Count; i++)
+            {
+                current = mc[i];
+                location1 = long.Parse(current.Groups[1].ToString().Substring(2), System.Globalization.NumberStyles.AllowHexSpecifier);
+                valueLength1 = current.Groups[2].Length / 2 ;
+                for (int j = i+1; j < mc.Count; j++)
+                {
+                    m = mc[j];
+                    location2 = long.Parse(m.Groups[1].ToString().Substring(2), System.Globalization.NumberStyles.AllowHexSpecifier);
+                    valueLength2 = m.Groups[2].Length / 2 ;
+                    if ((location2 >= location1 && location2 <= location1 + (valueLength1-2)) ||
+                        (location1 >= location2 && location1 <= location2 + (valueLength2-2))    )
+                    {
+                        if (current.Groups[0].ToString() != m.Groups[0].ToString())
+                        {
+                            ret.Append("WARNING!\n 'SET' Commands modify same locations '");
+                            ret.Append(current.Groups[0]);
+                            ret.Append("' and '");
+                            ret.Append(m.Groups[0]);
+                            ret.Append("'\n");
+                        }
+                    }
+                }
+            }
+            return ret.ToString();
+        }
+
 		/// <summary>
 		/// 
 		/// </summary>
