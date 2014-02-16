@@ -82,6 +82,7 @@ namespace TSBTool
         private MenuItem mScheduleGUIMenuItem;
         private MenuItem mScheduleMenuItem;
         private MenuItem mHackStompMenuItem;
+        private MenuItem mSetPatchMenuItem;
 		//filter="Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*"
 		//private string nesFilter = "nes files (*.nes)|*.nes|SNES files (*.smc)|*.smc";
 		private string nesFilter = "TSB files (*.nes;*.smc)|*.nes;*.smc";
@@ -294,6 +295,7 @@ namespace TSBTool
             this.findPrevMenuItem = new System.Windows.Forms.MenuItem();
             this.hacksMainMenuItem = new System.Windows.Forms.MenuItem();
             this.mHackStompMenuItem = new System.Windows.Forms.MenuItem();
+            this.mSetPatchMenuItem = new System.Windows.Forms.MenuItem();
             this.mScheduleMenuItem = new System.Windows.Forms.MenuItem();
             this.mScheduleGUIMenuItem = new System.Windows.Forms.MenuItem();
             this.menuItem9 = new System.Windows.Forms.MenuItem();
@@ -511,7 +513,8 @@ namespace TSBTool
             // 
             this.hacksMainMenuItem.Index = 3;
             this.hacksMainMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.mHackStompMenuItem});
+            this.mHackStompMenuItem,
+            this.mSetPatchMenuItem});
             this.hacksMainMenuItem.Text = "&Hacks";
             // 
             // mHackStompMenuItem
@@ -519,6 +522,12 @@ namespace TSBTool
             this.mHackStompMenuItem.Index = 0;
             this.mHackStompMenuItem.Text = "&Check for \'SET\' commands setting values in the same locations";
             this.mHackStompMenuItem.Click += new System.EventHandler(this.mHackStompMenuItem_Click);
+            // 
+            // mSetPatchMenuItem
+            // 
+            this.mSetPatchMenuItem.Index = 1;
+            this.mSetPatchMenuItem.Text = "Create \'SET\' patch";
+            this.mSetPatchMenuItem.Click += new System.EventHandler(this.mSetPatchMenuItem_Click);
             // 
             // mScheduleMenuItem
             // 
@@ -1820,6 +1829,12 @@ This Program is not endorsed or related to the Tecmo video game company.
             {
                 MessageBox.Show("No conflicts detected!");
             }
+        }
+
+        private void mSetPatchMenuItem_Click(object sender, EventArgs e)
+        {
+            PatchMaker maker = new PatchMaker();
+            maker.Show();
         }
 
 	}

@@ -162,6 +162,12 @@
     <Compile Include="NumberForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PatchMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatchMaker.Designer.cs">
+      <DependentUpon>PatchMaker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -422,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NumberForm.resx">
       <DependentUpon>NumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatchMaker.resx">
+      <DependentUpon>PatchMaker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PLAYS\P1-0.BMP" />
     <EmbeddedResource Include="PLAYS\P1-1.BMP" />
